@@ -5,6 +5,7 @@ module  demonstrate (
 							output CS_n,//AD_CS
 							output SCK,//AD_SCK
 							output rs_tx,
+							output tx_1452,
 							input 			flag,						//启动flag
 												
 							output  	 		F1_8ADD_A,				//底层八选一
@@ -26,7 +27,7 @@ module  demonstrate (
 
 wire [11:0] data_out;//AD量化值输出
 
-assign unlock = 1'b0;			//unlock 在MAX1452正常工作配置低电平	
+//assign unlock = 1'b0;			//unlock 在MAX1452正常工作配置低电平	
 
 
 
@@ -100,7 +101,12 @@ my_uart_tx i_my_uart_tx(
 .rs_tx(rs_tx)
 );
 
-
+ max1452_top max1452(
+							. clk(clk),
+							. rst_n(reset_n),
+							. rs_tx(tx_1452),
+							. unlock(unlock),// unlock send complete turn to low!!!!!!!!!!																		
+							);
 
 
 
