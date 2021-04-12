@@ -14,17 +14,14 @@ module max1452_top(
 							output 			F3_8ADD_B,
 							output 			F3_8ADD_C,
 
-				
-							
-							
+						
 							input				SDO,						//AD_SDO
 							output  			CS_n,						//AD_CS
 							output 			SCK,						//AD_SCK
 							output 			[11:0] data_out						
 							);
 							
-							
-							
+												
 reg [2:0] F1_8ADD;
 reg [2:0] F2_8ADD;
 reg [2:0] F3_8ADD;					
