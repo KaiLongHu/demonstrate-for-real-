@@ -1,5 +1,5 @@
 Flow report for demonstrate
-Mon Apr 12 20:55:43 2021
+Tue Apr 13 15:25:58 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,20 +40,20 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 12 20:55:43 2021       ;
+; Flow Status                        ; Successful - Tue Apr 13 15:25:58 2021       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; demonstrate                                 ;
 ; Top-level Entity Name              ; demonstrate                                 ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE10E22C8                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,160 / 10,320 ( 11 % )                     ;
-;     Total combinational functions  ; 830 / 10,320 ( 8 % )                        ;
-;     Dedicated logic registers      ; 908 / 10,320 ( 9 % )                        ;
-; Total registers                    ; 908                                         ;
+; Total logic elements               ; 1,196 / 10,320 ( 12 % )                     ;
+;     Total combinational functions  ; 863 / 10,320 ( 8 % )                        ;
+;     Dedicated logic registers      ; 927 / 10,320 ( 9 % )                        ;
+; Total registers                    ; 927                                         ;
 ; Total pins                         ; 18 / 92 ( 20 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 35,840 / 423,936 ( 8 % )                    ;
+; Total memory bits                  ; 265,216 / 423,936 ( 63 % )                  ;
 ; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                              ;
 ; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
@@ -128,7 +128,13 @@ applicable agreement for further details.
 ; Assembler                 ; 00:00:01     ; 1.0                     ; 517 MB              ; 00:00:01                           ;
 ; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 619 MB              ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 493 MB              ; 00:00:02                           ;
-; Total                     ; 00:00:28     ; --                      ; --                  ; 00:00:32                           ;
+; Analysis & Synthesis      ; 00:00:08     ; 1.4                     ; 631 MB              ; 00:00:08                           ;
+; Partition Merge           ; 00:00:04     ; 1.0                     ; 586 MB              ; 00:00:01                           ;
+; Fitter                    ; 00:00:11     ; 1.0                     ; 1338 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 522 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 612 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 495 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:56     ; --                      ; --                  ; 00:00:53                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -148,6 +154,12 @@ applicable agreement for further details.
 ; Assembler                 ; 7BMV0F92WLAYJZ1  ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; 7BMV0F92WLAYJZ1  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; 7BMV0F92WLAYJZ1  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; 7BMV0F92WLAYJZ1  ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; 7BMV0F92WLAYJZ1  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; 7BMV0F92WLAYJZ1  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; 7BMV0F92WLAYJZ1  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; 7BMV0F92WLAYJZ1  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; 7BMV0F92WLAYJZ1  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -155,6 +167,12 @@ applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off demonstrate -c demonstrate
+quartus_fit --read_settings_files=off --write_settings_files=off demonstrate -c demonstrate
+quartus_asm --read_settings_files=off --write_settings_files=off demonstrate -c demonstrate
+quartus_sta demonstrate -c demonstrate
+quartus_eda --read_settings_files=off --write_settings_files=off demonstrate -c demonstrate
+quartus_map --read_settings_files=on --write_settings_files=off demonstrate -c demonstrate
+quartus_cdb --read_settings_files=off --write_settings_files=off demonstrate -c demonstrate --merge=on
 quartus_fit --read_settings_files=off --write_settings_files=off demonstrate -c demonstrate
 quartus_asm --read_settings_files=off --write_settings_files=off demonstrate -c demonstrate
 quartus_sta demonstrate -c demonstrate

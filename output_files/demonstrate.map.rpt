@@ -1,5 +1,5 @@
 Analysis & Synthesis report for demonstrate
-Mon Apr 12 20:55:24 2021
+Tue Apr 13 15:25:28 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -13,20 +13,26 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis IP Cores Summary
   7. Partition Status Summary
-  8. Source assignments for switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|dpram_f811:FIFOram|altsyncram_g3k1:altsyncram1
-  9. Parameter Settings for User Entity Instance: switch_ctrl:i_switch_ctrl
- 10. Parameter Settings for User Entity Instance: switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component
- 11. Parameter Settings for User Entity Instance: speed_select:i_speed_select
- 12. Parameter Settings for User Entity Instance: max1452_top:max1452
- 13. Parameter Settings for User Entity Instance: max1452_top:max1452|speed_select:speed_select
- 14. Partition Dependent Files
- 15. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 16. Port Connectivity Checks: "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i"
- 17. Port Connectivity Checks: "switch_ctrl:i_switch_ctrl"
- 18. Port Connectivity Checks: "LTC231512:lt1"
- 19. SignalTap II Logic Analyzer Settings
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
+  8. Partition for Top-Level Resource Utilization by Entity
+  9. State Machine - |demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx|state
+ 10. State Machine - |demonstrate|my_uart_tx:i_my_uart_tx|state
+ 11. State Machine - |demonstrate|switch_ctrl:i_switch_ctrl|state
+ 12. Registers Removed During Synthesis
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|dpram_i811:FIFOram|altsyncram_m3k1:altsyncram1
+ 15. Parameter Settings for User Entity Instance: switch_ctrl:i_switch_ctrl
+ 16. Parameter Settings for User Entity Instance: switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component
+ 17. Parameter Settings for User Entity Instance: speed_select:i_speed_select
+ 18. Parameter Settings for User Entity Instance: max1452_top:max1452
+ 19. Parameter Settings for User Entity Instance: max1452_top:max1452|speed_select:speed_select
+ 20. Partition Dependent Files
+ 21. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 22. Port Connectivity Checks: "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i"
+ 23. Port Connectivity Checks: "switch_ctrl:i_switch_ctrl"
+ 24. Port Connectivity Checks: "LTC231512:lt1"
+ 25. SignalTap II Logic Analyzer Settings
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
 
 
 
@@ -52,7 +58,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 12 20:55:24 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 13 15:25:28 2021       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; demonstrate                                 ;
 ; Top-level Entity Name              ; demonstrate                                 ;
@@ -194,13 +200,15 @@ applicable agreement for further details.
 ; a_fffifo.inc                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/a_fffifo.inc                            ;         ;
 ; a_f2fifo.inc                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/a_f2fifo.inc                            ;         ;
 ; aglobal131.inc                   ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                          ;         ;
-; db/scfifo_ep31.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/scfifo_ep31.tdf     ;         ;
-; db/a_dpfifo_lv31.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/a_dpfifo_lv31.tdf   ;         ;
-; db/a_fefifo_1bf.tdf              ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/a_fefifo_1bf.tdf    ;         ;
-; db/cntr_qp7.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/cntr_qp7.tdf        ;         ;
-; db/dpram_f811.tdf                ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/dpram_f811.tdf      ;         ;
-; db/altsyncram_g3k1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/altsyncram_g3k1.tdf ;         ;
-; db/cntr_epb.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/cntr_epb.tdf        ;         ;
+; db/scfifo_9r31.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/scfifo_9r31.tdf     ;         ;
+; db/a_dpfifo_g141.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/a_dpfifo_g141.tdf   ;         ;
+; db/a_fefifo_scf.tdf              ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/a_fefifo_scf.tdf    ;         ;
+; db/cntr_tp7.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/cntr_tp7.tdf        ;         ;
+; db/dpram_i811.tdf                ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/dpram_i811.tdf      ;         ;
+; db/altsyncram_m3k1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/altsyncram_m3k1.tdf ;         ;
+; db/decode_d87.tdf                ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/decode_d87.tdf      ;         ;
+; db/mux_t28.tdf                   ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/mux_t28.tdf         ;         ;
+; db/cntr_hpb.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/cntr_hpb.tdf        ;         ;
 ; sld_signaltap.vhd                ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/sld_signaltap.vhd                       ;         ;
 ; sld_signaltap_impl.vhd           ; yes             ; Encrypted Megafunction       ; d:/altera/13.1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                  ;         ;
 ; sld_ela_control.vhd              ; yes             ; Encrypted Megafunction       ; d:/altera/13.1/quartus/libraries/megafunctions/sld_ela_control.vhd                     ;         ;
@@ -260,19 +268,146 @@ applicable agreement for further details.
 +--------+--------------+---------+--------------+--------------+----------------------------------------------------------+---------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------+
-; Partition Status Summary                                                      ;
-+--------------------------------+-------------+--------------------------------+
-; Partition Name                 ; Synthesized ; Reason                         ;
-+--------------------------------+-------------+--------------------------------+
-; Top                            ; no          ; No relevant changes            ;
-; sld_hub:auto_hub               ; yes         ; No netlist in project database ;
-; sld_signaltap:auto_signaltap_0 ; yes         ; No netlist in project database ;
-+--------------------------------+-------------+--------------------------------+
++------------------------------------------------------------------------+
+; Partition Status Summary                                               ;
++--------------------------------+-------------+-------------------------+
+; Partition Name                 ; Synthesized ; Reason                  ;
++--------------------------------+-------------+-------------------------+
+; Top                            ; yes         ; Dependent files changed ;
+; sld_hub:auto_hub               ; yes         ; Parameters changed      ;
+; sld_signaltap:auto_signaltap_0 ; no          ; No relevant changes     ;
++--------------------------------+-------------+-------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition for Top-Level Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                             ;
++----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                ; Library Name ;
++----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |demonstrate                                       ; 385 (2)           ; 277 (0)      ; 262144      ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate                                                                                                                                                                                       ; work         ;
+;    |LTC231512:lt1|                                 ; 33 (33)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|LTC231512:lt1                                                                                                                                                                         ; work         ;
+;    |max1452_top:max1452|                           ; 113 (25)          ; 82 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|max1452_top:max1452                                                                                                                                                                   ; work         ;
+;       |my_uart_tx:my_uart_tx|                      ; 66 (66)           ; 53 (53)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx                                                                                                                                             ; work         ;
+;       |speed_select:speed_select|                  ; 22 (22)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|max1452_top:max1452|speed_select:speed_select                                                                                                                                         ; work         ;
+;    |my_uart_tx:i_my_uart_tx|                       ; 66 (66)           ; 53 (53)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|my_uart_tx:i_my_uart_tx                                                                                                                                                               ; work         ;
+;    |switch:i_switch|                               ; 11 (11)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch:i_switch                                                                                                                                                                       ; work         ;
+;    |switch_ctrl:i_switch_ctrl|                     ; 160 (80)          ; 113 (64)     ; 262144      ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl                                                                                                                                                             ; work         ;
+;       |AD_FIFO:AD_FIFO_i|                          ; 80 (0)            ; 49 (0)       ; 262144      ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i                                                                                                                                           ; work         ;
+;          |scfifo:scfifo_component|                 ; 80 (0)            ; 49 (0)       ; 262144      ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component                                                                                                                   ; work         ;
+;             |scfifo_9r31:auto_generated|           ; 80 (0)            ; 49 (0)       ; 262144      ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated                                                                                        ; work         ;
+;                |a_dpfifo_g141:dpfifo|              ; 80 (2)            ; 49 (0)       ; 262144      ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo                                                                   ; work         ;
+;                   |a_fefifo_scf:fifo_state|        ; 28 (13)           ; 17 (2)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|a_fefifo_scf:fifo_state                                           ; work         ;
+;                      |cntr_tp7:count_usedw|        ; 15 (15)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|a_fefifo_scf:fifo_state|cntr_tp7:count_usedw                      ; work         ;
+;                   |cntr_hpb:rd_ptr_count|          ; 15 (15)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|cntr_hpb:rd_ptr_count                                             ; work         ;
+;                   |cntr_hpb:wr_ptr|                ; 15 (15)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|cntr_hpb:wr_ptr                                                   ; work         ;
+;                   |dpram_i811:FIFOram|             ; 20 (0)            ; 2 (0)        ; 262144      ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|dpram_i811:FIFOram                                                ; work         ;
+;                      |altsyncram_m3k1:altsyncram1| ; 20 (0)            ; 2 (2)        ; 262144      ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|dpram_i811:FIFOram|altsyncram_m3k1:altsyncram1                    ; work         ;
+;                         |decode_d87:decode3|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|dpram_i811:FIFOram|altsyncram_m3k1:altsyncram1|decode_d87:decode3 ; work         ;
+;                         |mux_t28:mux4|             ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|dpram_i811:FIFOram|altsyncram_m3k1:altsyncram1|mux_t28:mux4       ; work         ;
++----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx|state      ;
++-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; Name      ; state.101 ; state.100 ; state.011 ; state.010 ; state.001 ; state.000 ;
++-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; state.000 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ;
+; state.001 ; 0         ; 0         ; 0         ; 0         ; 1         ; 1         ;
+; state.010 ; 0         ; 0         ; 0         ; 1         ; 0         ; 1         ;
+; state.011 ; 0         ; 0         ; 1         ; 0         ; 0         ; 1         ;
+; state.100 ; 0         ; 1         ; 0         ; 0         ; 0         ; 1         ;
+; state.101 ; 1         ; 0         ; 0         ; 0         ; 0         ; 1         ;
++-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |demonstrate|my_uart_tx:i_my_uart_tx|state                        ;
++-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; Name      ; state.101 ; state.100 ; state.011 ; state.010 ; state.001 ; state.000 ;
++-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+; state.000 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ;
+; state.001 ; 0         ; 0         ; 0         ; 0         ; 1         ; 1         ;
+; state.010 ; 0         ; 0         ; 0         ; 1         ; 0         ; 1         ;
+; state.011 ; 0         ; 0         ; 1         ; 0         ; 0         ; 1         ;
+; state.100 ; 0         ; 1         ; 0         ; 0         ; 0         ; 1         ;
+; state.101 ; 1         ; 0         ; 0         ; 0         ; 0         ; 1         ;
++-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |demonstrate|switch_ctrl:i_switch_ctrl|state                                                                                                       ;
++--------------------+---------------+---------------+-------------+--------------+---------------+---------------+---------------+-------------+--------------------+
+; Name               ; state.s_wr_0a ; state.s_wr_0d ; state.s_end ; state.s_next ; state.s_getAD ; state.s_delay ; state.s_start ; state.00000 ; state.s_addressadd ;
++--------------------+---------------+---------------+-------------+--------------+---------------+---------------+---------------+-------------+--------------------+
+; state.00000        ; 0             ; 0             ; 0           ; 0            ; 0             ; 0             ; 0             ; 0           ; 0                  ;
+; state.s_start      ; 0             ; 0             ; 0           ; 0            ; 0             ; 0             ; 1             ; 1           ; 0                  ;
+; state.s_delay      ; 0             ; 0             ; 0           ; 0            ; 0             ; 1             ; 0             ; 1           ; 0                  ;
+; state.s_getAD      ; 0             ; 0             ; 0           ; 0            ; 1             ; 0             ; 0             ; 1           ; 0                  ;
+; state.s_next       ; 0             ; 0             ; 0           ; 1            ; 0             ; 0             ; 0             ; 1           ; 0                  ;
+; state.s_end        ; 0             ; 0             ; 1           ; 0            ; 0             ; 0             ; 0             ; 1           ; 0                  ;
+; state.s_wr_0d      ; 0             ; 1             ; 0           ; 0            ; 0             ; 0             ; 0             ; 1           ; 0                  ;
+; state.s_wr_0a      ; 1             ; 0             ; 0           ; 0            ; 0             ; 0             ; 0             ; 1           ; 0                  ;
+; state.s_addressadd ; 0             ; 0             ; 0           ; 0            ; 0             ; 0             ; 0             ; 1           ; 1                  ;
++--------------------+---------------+---------------+-------------+--------------+---------------+---------------+---------------+-------------+--------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                      ;
++---------------------------------------------------+---------------------------------------------------------------------+
+; Register name                                     ; Reason for Removal                                                  ;
++---------------------------------------------------+---------------------------------------------------------------------+
+; switch:i_switch|F3_8ADD[0..2]                     ; Stuck at GND due to stuck port data_in                              ;
+; switch:i_switch|F2_8ADD[2]                        ; Stuck at GND due to stuck port data_in                              ;
+; speed_select:i_speed_select|clk_bps_r             ; Merged with max1452_top:max1452|speed_select:speed_select|clk_bps_r ;
+; speed_select:i_speed_select|cnt[12]               ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[12]   ;
+; speed_select:i_speed_select|cnt[10]               ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[10]   ;
+; speed_select:i_speed_select|cnt[6]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[6]    ;
+; speed_select:i_speed_select|cnt[4]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[4]    ;
+; speed_select:i_speed_select|cnt[3]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[3]    ;
+; speed_select:i_speed_select|cnt[13]               ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[13]   ;
+; speed_select:i_speed_select|cnt[11]               ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[11]   ;
+; speed_select:i_speed_select|cnt[9]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[9]    ;
+; speed_select:i_speed_select|cnt[8]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[8]    ;
+; speed_select:i_speed_select|cnt[7]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[7]    ;
+; speed_select:i_speed_select|cnt[5]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[5]    ;
+; speed_select:i_speed_select|cnt[2]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[2]    ;
+; speed_select:i_speed_select|cnt[1]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[1]    ;
+; speed_select:i_speed_select|cnt[0]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[0]    ;
+; max1452_top:max1452|my_uart_tx:my_uart_tx|state~4 ; Lost fanout                                                         ;
+; max1452_top:max1452|my_uart_tx:my_uart_tx|state~5 ; Lost fanout                                                         ;
+; max1452_top:max1452|my_uart_tx:my_uart_tx|state~6 ; Lost fanout                                                         ;
+; my_uart_tx:i_my_uart_tx|state~4                   ; Lost fanout                                                         ;
+; my_uart_tx:i_my_uart_tx|state~5                   ; Lost fanout                                                         ;
+; my_uart_tx:i_my_uart_tx|state~6                   ; Lost fanout                                                         ;
+; switch_ctrl:i_switch_ctrl|state~4                 ; Lost fanout                                                         ;
+; switch_ctrl:i_switch_ctrl|state~5                 ; Lost fanout                                                         ;
+; switch_ctrl:i_switch_ctrl|state~6                 ; Lost fanout                                                         ;
+; switch_ctrl:i_switch_ctrl|state~8                 ; Lost fanout                                                         ;
+; Total Number of Removed Registers = 29            ;                                                                     ;
++---------------------------------------------------+---------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|times[0]               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|address[2]             ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx|num[1] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |demonstrate|my_uart_tx:i_my_uart_tx|num[3]                   ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|FIFO_data[0]           ;
+; 64:1               ; 4 bits    ; 168 LEs       ; 40 LEs               ; 128 LEs                ; Yes        ; |demonstrate|switch:i_switch|F2_8ADD[1]                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|dpram_f811:FIFOram|altsyncram_g3k1:altsyncram1 ;
+; Source assignments for switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|dpram_i811:FIFOram|altsyncram_m3k1:altsyncram1 ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                                                                          ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------------------------------------------------------------+
@@ -310,8 +445,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS     ; ON           ; AUTO_CASCADE                                                            ;
 ; IGNORE_CASCADE_BUFFERS  ; OFF          ; IGNORE_CASCADE                                                          ;
 ; lpm_width               ; 8            ; Signed Integer                                                          ;
-; LPM_NUMWORDS            ; 4096         ; Signed Integer                                                          ;
-; LPM_WIDTHU              ; 12           ; Signed Integer                                                          ;
+; LPM_NUMWORDS            ; 32768        ; Signed Integer                                                          ;
+; LPM_WIDTHU              ; 15           ; Signed Integer                                                          ;
 ; LPM_SHOWAHEAD           ; OFF          ; Untyped                                                                 ;
 ; UNDERFLOW_CHECKING      ; ON           ; Untyped                                                                 ;
 ; OVERFLOW_CHECKING       ; ON           ; Untyped                                                                 ;
@@ -323,7 +458,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; MAXIMIZE_SPEED          ; 5            ; Untyped                                                                 ;
 ; DEVICE_FAMILY           ; Cyclone IV E ; Untyped                                                                 ;
 ; OPTIMIZE_FOR_SPEED      ; 5            ; Untyped                                                                 ;
-; CBXI_PARAMETER          ; scfifo_ep31  ; Untyped                                                                 ;
+; CBXI_PARAMETER          ; scfifo_9r31  ; Untyped                                                                 ;
 +-------------------------+--------------+-------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -372,14 +507,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; libraries/megafunctions/a_regfifo.inc  ; Quartus II Install ; work    ; 8b2977668c08752c10a1f1977c9b9ee6 ;
 ; libraries/megafunctions/aglobal131.inc ; Quartus II Install ; work    ; 46a692cfa63d614e604a6d817facb03f ;
 ; libraries/megafunctions/scfifo.tdf     ; Quartus II Install ; work    ; 93adc7ac1560be09a7e7fdaae5e57a95 ;
-; AD_FIFO.v                              ; Project Directory  ; work    ; dcf818dee3b5d967157738459c80ac36 ;
-; db/a_dpfifo_lv31.tdf                   ; Project Directory  ; work    ; a8a38ca26733dd78a0242be81251587d ;
-; db/a_fefifo_1bf.tdf                    ; Project Directory  ; work    ; c4bb1aa7197484863bd2ecf409703db6 ;
-; db/altsyncram_g3k1.tdf                 ; Project Directory  ; work    ; 275802f71b7d26c224f33185c5812f59 ;
-; db/cntr_epb.tdf                        ; Project Directory  ; work    ; de8ef28d043cc5b361a0aebd28f54b85 ;
-; db/cntr_qp7.tdf                        ; Project Directory  ; work    ; 333e6ccd778b9d70221872064aa7bdb3 ;
-; db/dpram_f811.tdf                      ; Project Directory  ; work    ; 537cfe3fbbe690fe94b1001c9afee2c0 ;
-; db/scfifo_ep31.tdf                     ; Project Directory  ; work    ; 5cec37bcb7e1d5a7ed3d5560ea9a8a57 ;
+; AD_FIFO.v                              ; Project Directory  ; work    ; 2b08c8669ac12136e5b54f5d81ec372c ;
+; db/a_dpfifo_g141.tdf                   ; Project Directory  ; work    ; ffbb4b1eb5b85122e689f8c13bc1c64d ;
+; db/a_fefifo_scf.tdf                    ; Project Directory  ; work    ; a8576c7ebf6126c4c4a7709451227840 ;
+; db/altsyncram_m3k1.tdf                 ; Project Directory  ; work    ; 73c4d74a2f1b01afbeccf257ae79d570 ;
+; db/cntr_hpb.tdf                        ; Project Directory  ; work    ; 9b95ac1902ff9fa2398a9b70b51b593a ;
+; db/cntr_tp7.tdf                        ; Project Directory  ; work    ; 88f138123e7745aab8c5d4510be880fd ;
+; db/decode_d87.tdf                      ; Project Directory  ; work    ; 810831fddeb1363e9a17c46da4c5e743 ;
+; db/dpram_i811.tdf                      ; Project Directory  ; work    ; 8c76ad402eea41fe442fa38a199a591f ;
+; db/mux_t28.tdf                         ; Project Directory  ; work    ; 47f0375dd18ad27c4eea352728f50e56 ;
+; db/scfifo_9r31.tdf                     ; Project Directory  ; work    ; 5849e9ab042cabc23292c2fdb27cee05 ;
 ; demonstrate.v                          ; Project Directory  ; work    ; e9ccf868320c261f8c1a65819ce945d6 ;
 ; LTC231512.v                            ; Project Directory  ; work    ; 8fb5da34e4d06d8ea59c30a7ee29d709 ;
 ; max1452_top.v                          ; Project Directory  ; work    ; c1e2ec0629e97c91d2f24d9b532f8685 ;
@@ -455,8 +592,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port         ; Type   ; Severity ; Details                                                                                                                                                                 ;
 +--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; usedw        ; Output ; Warning  ; Output or bidir port (12 bits) is smaller than the port expression (16 bits) it drives.  The 4 most-significant bit(s) in the port expression will be connected to GND. ;
-; usedw[11..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                     ;
+; usedw        ; Output ; Warning  ; Output or bidir port (15 bits) is smaller than the port expression (16 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
+; usedw[14..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                     ;
 +--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -487,14 +624,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
 
 
-+-----------------------------------------------+
-; Elapsed Time Per Partition                    ;
-+--------------------------------+--------------+
-; Partition Name                 ; Elapsed Time ;
-+--------------------------------+--------------+
-; sld_signaltap:auto_signaltap_0 ; 00:00:03     ;
-; sld_hub:auto_hub               ; 00:00:03     ;
-+--------------------------------+--------------+
++---------------------------------+
+; Elapsed Time Per Partition      ;
++------------------+--------------+
+; Partition Name   ; Elapsed Time ;
++------------------+--------------+
+; Top              ; 00:00:03     ;
+; sld_hub:auto_hub ; 00:00:03     ;
++------------------+--------------+
 
 
 +-------------------------------+
@@ -503,7 +640,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Mon Apr 12 20:55:16 2021
+    Info: Processing started: Tue Apr 13 15:25:20 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off demonstrate -c demonstrate
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file speed_select.v
@@ -543,35 +680,41 @@ Info (12130): Elaborated megafunction instantiation "switch_ctrl:i_switch_ctrl|A
 Info (12133): Instantiated megafunction "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component" with the following parameter:
     Info (12134): Parameter "add_ram_output_register" = "OFF"
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
-    Info (12134): Parameter "lpm_numwords" = "4096"
+    Info (12134): Parameter "lpm_numwords" = "32768"
     Info (12134): Parameter "lpm_showahead" = "OFF"
     Info (12134): Parameter "lpm_type" = "scfifo"
     Info (12134): Parameter "lpm_width" = "8"
-    Info (12134): Parameter "lpm_widthu" = "12"
+    Info (12134): Parameter "lpm_widthu" = "15"
     Info (12134): Parameter "overflow_checking" = "ON"
     Info (12134): Parameter "underflow_checking" = "ON"
     Info (12134): Parameter "use_eab" = "ON"
-Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_ep31.tdf
-    Info (12023): Found entity 1: scfifo_ep31
-Info (12128): Elaborating entity "scfifo_ep31" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated"
-Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_lv31.tdf
-    Info (12023): Found entity 1: a_dpfifo_lv31
-Info (12128): Elaborating entity "a_dpfifo_lv31" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo"
-Info (12021): Found 1 design units, including 1 entities, in source file db/a_fefifo_1bf.tdf
-    Info (12023): Found entity 1: a_fefifo_1bf
-Info (12128): Elaborating entity "a_fefifo_1bf" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|a_fefifo_1bf:fifo_state"
-Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_qp7.tdf
-    Info (12023): Found entity 1: cntr_qp7
-Info (12128): Elaborating entity "cntr_qp7" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|a_fefifo_1bf:fifo_state|cntr_qp7:count_usedw"
-Info (12021): Found 1 design units, including 1 entities, in source file db/dpram_f811.tdf
-    Info (12023): Found entity 1: dpram_f811
-Info (12128): Elaborating entity "dpram_f811" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|dpram_f811:FIFOram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_g3k1.tdf
-    Info (12023): Found entity 1: altsyncram_g3k1
-Info (12128): Elaborating entity "altsyncram_g3k1" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|dpram_f811:FIFOram|altsyncram_g3k1:altsyncram1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_epb.tdf
-    Info (12023): Found entity 1: cntr_epb
-Info (12128): Elaborating entity "cntr_epb" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|cntr_epb:rd_ptr_count"
+Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_9r31.tdf
+    Info (12023): Found entity 1: scfifo_9r31
+Info (12128): Elaborating entity "scfifo_9r31" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_g141.tdf
+    Info (12023): Found entity 1: a_dpfifo_g141
+Info (12128): Elaborating entity "a_dpfifo_g141" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo"
+Info (12021): Found 1 design units, including 1 entities, in source file db/a_fefifo_scf.tdf
+    Info (12023): Found entity 1: a_fefifo_scf
+Info (12128): Elaborating entity "a_fefifo_scf" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|a_fefifo_scf:fifo_state"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_tp7.tdf
+    Info (12023): Found entity 1: cntr_tp7
+Info (12128): Elaborating entity "cntr_tp7" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|a_fefifo_scf:fifo_state|cntr_tp7:count_usedw"
+Info (12021): Found 1 design units, including 1 entities, in source file db/dpram_i811.tdf
+    Info (12023): Found entity 1: dpram_i811
+Info (12128): Elaborating entity "dpram_i811" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|dpram_i811:FIFOram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_m3k1.tdf
+    Info (12023): Found entity 1: altsyncram_m3k1
+Info (12128): Elaborating entity "altsyncram_m3k1" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|dpram_i811:FIFOram|altsyncram_m3k1:altsyncram1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_d87.tdf
+    Info (12023): Found entity 1: decode_d87
+Info (12128): Elaborating entity "decode_d87" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|dpram_i811:FIFOram|altsyncram_m3k1:altsyncram1|decode_d87:decode3"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_t28.tdf
+    Info (12023): Found entity 1: mux_t28
+Info (12128): Elaborating entity "mux_t28" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|dpram_i811:FIFOram|altsyncram_m3k1:altsyncram1|mux_t28:mux4"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_hpb.tdf
+    Info (12023): Found entity 1: cntr_hpb
+Info (12128): Elaborating entity "cntr_hpb" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_9r31:auto_generated|a_dpfifo_g141:dpfifo|cntr_hpb:rd_ptr_count"
 Info (12128): Elaborating entity "speed_select" for hierarchy "speed_select:i_speed_select"
 Warning (10230): Verilog HDL assignment warning at speed_select.v(25): truncated value with size 32 to match size of target (14)
 Critical Warning (10237): Verilog HDL warning at speed_select.v(25): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead
@@ -605,36 +748,44 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_ngc
 Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
 Info (12206): 2 design partitions require synthesis
-    Info (12213): Partition "sld_hub:auto_hub" requires synthesis because the project database does not contain a post-synthesis netlist for this partition
-    Info (12213): Partition "sld_signaltap:auto_signaltap_0" requires synthesis because the project database does not contain a post-synthesis netlist for this partition
+    Info (12211): Partition "Top" requires synthesis because there were changes to its dependent source files
+    Info (12217): Partition "sld_hub:auto_hub" requires synthesis because there were changes made to the parameters on the partition's root instance
 Info (12207): 1 design partition does not require synthesis
-    Info (12229): Partition "Top" does not require synthesis because there were no relevant design changes
+    Info (12229): Partition "sld_signaltap:auto_signaltap_0" does not require synthesis because there were no relevant design changes
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (281037): Using 4 processors to synthesize 2 partitions in parallel
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Mon Apr 12 20:55:21 2021
-Info: Command: quartus_map --parallel=1 --helper=1 --helper_type=user_partition --partition=sld_signaltap:auto_signaltap_0 demonstrate -c demonstrate
-Info (281019): Starting Logic Optimization and Technology Mapping for Partition sld_signaltap:auto_signaltap_0
+    Info: Processing started: Tue Apr 13 15:25:26 2021
+Info: Command: quartus_map --parallel=1 --helper=0 --helper_type=user_partition --partition=Top demonstrate -c demonstrate
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "max1452_top:max1452|Ram0" is uninferred due to inappropriate RAM size
+Info (281020): Starting Logic Optimization and Technology Mapping for Top Partition
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Warning (18057): The assignment to disallow NOT gate push-back on register "sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|trigger_out_mode_ff" is ignored
-Info (286031): Timing-Driven Synthesis is running on partition "sld_signaltap:auto_signaltap_0"
-Info (21057): Implemented 887 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 107 input pins
-    Info (21059): Implemented 60 output pins
-    Info (21061): Implemented 696 logic cells
-    Info (21064): Implemented 24 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 546 megabytes
-    Info: Processing ended: Mon Apr 12 20:55:23 2021
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "F2_8ADD_C" is stuck at GND
+    Warning (13410): Pin "F3_8ADD_A" is stuck at GND
+    Warning (13410): Pin "F3_8ADD_B" is stuck at GND
+    Warning (13410): Pin "F3_8ADD_C" is stuck at GND
+    Warning (13410): Pin "unlock" is stuck at VCC
+Info (286031): Timing-Driven Synthesis is running on partition "Top"
+Info (17049): 10 registers lost all their fanouts during netlist optimizations.
+Info (21057): Implemented 462 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 412 logic cells
+    Info (21064): Implemented 32 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 541 megabytes
+    Info: Processing ended: Tue Apr 13 15:25:28 2021
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:03
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Mon Apr 12 20:55:21 2021
+    Info: Processing started: Tue Apr 13 15:25:26 2021
 Info: Command: quartus_map --parallel=1 --helper=2 --helper_type=user_partition --partition=sld_hub:auto_hub demonstrate -c demonstrate
 Info (281019): Starting Logic Optimization and Technology Mapping for Partition sld_hub:auto_hub
 Info (13000): Registers with preset signals will power-up high
@@ -642,20 +793,20 @@ Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal 
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
 Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
-Info (21057): Implemented 210 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 211 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 39 output pins
-    Info (21061): Implemented 150 logic cells
+    Info (21061): Implemented 151 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 539 megabytes
-    Info: Processing ended: Mon Apr 12 20:55:22 2021
+    Info: Peak virtual memory: 541 megabytes
+    Info: Processing ended: Tue Apr 13 15:25:27 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:03
 Info (281038): Finished parallel synthesis of all partitions
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 627 megabytes
-    Info: Processing ended: Mon Apr 12 20:55:24 2021
-    Info: Elapsed time: 00:00:08
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 24 warnings
+    Info: Peak virtual memory: 631 megabytes
+    Info: Processing ended: Tue Apr 13 15:25:29 2021
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:08
 
 

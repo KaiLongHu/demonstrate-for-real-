@@ -141,7 +141,7 @@ if(state==s_start&& address==5'd25 )
 			else 
 				times<=times;				
 			
-//FIFO 8bit 4096深度		
+//FIFO 8bit 32768深度		
 
 wire [15:0] usedw;	
 AD_FIFO	AD_FIFO_i (
