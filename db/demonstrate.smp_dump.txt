@@ -1,0 +1,30 @@
+
+State Machine - |demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx|state
+Name state.101 state.100 state.011 state.010 state.001 state.000 
+state.000 0 0 0 0 0 0 
+state.001 0 0 0 0 1 1 
+state.010 0 0 0 1 0 1 
+state.011 0 0 1 0 0 1 
+state.100 0 1 0 0 0 1 
+state.101 1 0 0 0 0 1 
+
+State Machine - |demonstrate|my_uart_tx:i_my_uart_tx|state
+Name state.101 state.100 state.011 state.010 state.001 state.000 
+state.000 0 0 0 0 0 0 
+state.001 0 0 0 0 1 1 
+state.010 0 0 0 1 0 1 
+state.011 0 0 1 0 0 1 
+state.100 0 1 0 0 0 1 
+state.101 1 0 0 0 0 1 
+
+State Machine - |demonstrate|switch_ctrl:i_switch_ctrl|state
+Name state.s_wr_0a state.s_wr_0d state.s_end state.s_next state.s_getAD state.s_delay state.s_start state.00000 state.s_addressadd 
+state.00000 0 0 0 0 0 0 0 0 0 
+state.s_start 0 0 0 0 0 0 1 1 0 
+state.s_delay 0 0 0 0 0 1 0 1 0 
+state.s_getAD 0 0 0 0 1 0 0 1 0 
+state.s_next 0 0 0 1 0 0 0 1 0 
+state.s_end 0 0 1 0 0 0 0 1 0 
+state.s_wr_0d 0 1 0 0 0 0 0 1 0 
+state.s_wr_0a 1 0 0 0 0 0 0 1 0 
+state.s_addressadd 0 0 0 0 0 0 0 1 1 

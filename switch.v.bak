@@ -1,0 +1,72 @@
+module switch(
+input clk,//时钟
+input [4:0] addr,//地址
+output  F1_8ADD_A,				//底层八选一
+output 	F1_8ADD_B,
+output 	F1_8ADD_C,
+
+output 	F2_8ADD_A,				//中层八选一
+output 	F2_8ADD_B,
+output 	F2_8ADD_C,
+
+output  F2_4ADD_A,				//顶层四选一
+output  F2_4ADD_B
+);
+
+reg [2:0] F1_8ADD;
+reg [2:0] F2_8ADD;
+reg [1:0] F2_4ADD;
+
+assign F1_8ADD_A=F1_8ADD[0];
+assign F1_8ADD_B=F1_8ADD[1];
+assign F1_8ADD_C=F1_8ADD[2];
+
+assign F2_8ADD_A=F2_8ADD[0];
+assign F2_8ADD_B=F2_8ADD[1];
+assign F2_8ADD_C=F2_8ADD[2];
+
+assign F2_4ADD_A=F2_4ADD[0];
+assign F2_4ADD_B=F2_4ADD[1];
+
+always@(posedge clk)
+	case(addr)
+		5'd0:begin F1_8ADD<=3'd0; F2_8ADD<=3'd2; F2_4ADD<=2'd0; end
+		5'd1:begin F1_8ADD<=3'd1; F2_8ADD<=3'd2; F2_4ADD<=2'd0; end
+		5'd2:begin F1_8ADD<=3'd2; F2_8ADD<=3'd2; F2_4ADD<=2'd0; end
+		5'd3:begin F1_8ADD<=3'd3; F2_8ADD<=3'd2; F2_4ADD<=2'd0; end
+		5'd4:begin F1_8ADD<=3'd4; F2_8ADD<=3'd2; F2_4ADD<=2'd0; end
+		5'd5:begin F1_8ADD<=3'd5; F2_8ADD<=3'd2; F2_4ADD<=2'd0; end
+		5'd6:begin F1_8ADD<=3'd6; F2_8ADD<=3'd2; F2_4ADD<=2'd0; end
+		5'd7:begin F1_8ADD<=3'd7; F2_8ADD<=3'd2; F2_4ADD<=2'd0; end
+		
+		5'd8: begin F1_8ADD<=3'd0; F2_8ADD<=3'd7; F2_4ADD<=2'd0; end
+		5'd9: begin F1_8ADD<=3'd1; F2_8ADD<=3'd7; F2_4ADD<=2'd0; end
+		5'd10:begin F1_8ADD<=3'd2; F2_8ADD<=3'd7; F2_4ADD<=2'd0; end
+		5'd11:begin F1_8ADD<=3'd3; F2_8ADD<=3'd7; F2_4ADD<=2'd0; end
+		5'd12:begin F1_8ADD<=3'd4; F2_8ADD<=3'd7; F2_4ADD<=2'd0; end
+		5'd13:begin F1_8ADD<=3'd5; F2_8ADD<=3'd7; F2_4ADD<=2'd0; end
+		5'd14:begin F1_8ADD<=3'd6; F2_8ADD<=3'd7; F2_4ADD<=2'd0; end
+		5'd15:begin F1_8ADD<=3'd7; F2_8ADD<=3'd7; F2_4ADD<=2'd0; end		
+		
+		5'd16:begin F1_8ADD<=3'd0; F2_8ADD<=3'd4; F2_4ADD<=2'd1; end
+		5'd17:begin F1_8ADD<=3'd1; F2_8ADD<=3'd4; F2_4ADD<=2'd1; end
+		5'd18:begin F1_8ADD<=3'd2; F2_8ADD<=3'd4; F2_4ADD<=2'd1; end
+		5'd19:begin F1_8ADD<=3'd3; F2_8ADD<=3'd4; F2_4ADD<=2'd1; end
+		5'd20:begin F1_8ADD<=3'd4; F2_8ADD<=3'd4; F2_4ADD<=2'd1; end
+		5'd21:begin F1_8ADD<=3'd5; F2_8ADD<=3'd4; F2_4ADD<=2'd1; end
+		5'd22:begin F1_8ADD<=3'd6; F2_8ADD<=3'd4; F2_4ADD<=2'd1; end
+		5'd23:begin F1_8ADD<=3'd7; F2_8ADD<=3'd4; F2_4ADD<=2'd1; end	
+
+		5'd24:begin F1_8ADD<=3'd0; F2_8ADD<=3'd4; F2_4ADD<=2'd3; end
+		5'd25:begin F1_8ADD<=3'd1; F2_8ADD<=3'd4; F2_4ADD<=2'd3; end
+		5'd26:begin F1_8ADD<=3'd2; F2_8ADD<=3'd4; F2_4ADD<=2'd3; end
+		5'd27:begin F1_8ADD<=3'd3; F2_8ADD<=3'd4; F2_4ADD<=2'd3; end
+		5'd28:begin F1_8ADD<=3'd4; F2_8ADD<=3'd4; F2_4ADD<=2'd3; end
+		5'd29:begin F1_8ADD<=3'd5; F2_8ADD<=3'd4; F2_4ADD<=2'd3; end
+		5'd30:begin F1_8ADD<=3'd6; F2_8ADD<=3'd4; F2_4ADD<=2'd3; end
+		5'd31:begin F1_8ADD<=3'd7; F2_8ADD<=3'd4; F2_4ADD<=2'd3; end
+		default:;
+	endcase
+
+
+endmodule

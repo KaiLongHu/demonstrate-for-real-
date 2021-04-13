@@ -1,0 +1,47 @@
+
+`timescale 1 ns/ 1 ps
+module switch_ctrl_vlg_tst();
+reg clk;
+reg [7:0] data_out;
+reg flag;
+reg reset_n;
+// wires                                               
+wire [4:0]  addr;
+
+// assign statements (if any)                          
+switch_ctrl i1 (
+// port map - connection between master ports and signals/registers   
+	.addr(addr),
+	.clk(clk),
+	.data_out(data_out),
+	.flag(flag),
+	.reset_n(reset_n)
+);
+initial                                                
+begin  
+data_out=8'd0;                                                
+reset_n=0;
+flag=0;
+#100;
+reset_n=1;
+#100;
+flag=1;
+#100;
+flag=0;                       
+end  
+
+always                                                                 
+begin                                                  
+data_out=data_out+1;
+#200;                                             
+end
+                                                  
+always                                                                 
+begin                                                  
+clk=0;
+#10;
+clk=1;
+#10;                                             
+end                                                    
+endmodule
+

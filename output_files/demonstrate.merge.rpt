@@ -1,0 +1,359 @@
+Partition Merge report for demonstrate
+Mon Apr 12 20:55:26 2021
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Connections to In-System Debugging Instance "auto_signaltap_0"
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Partition Pin Processing
+  7. Partition Merge Resource Usage Summary
+  8. Partition Merge RAM Summary
+  9. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Partition Merge Summary                                                          ;
++------------------------------------+---------------------------------------------+
+; Partition Merge Status             ; Successful - Mon Apr 12 20:55:26 2021       ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                      ; demonstrate                                 ;
+; Top-level Entity Name              ; demonstrate                                 ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 1,207 / 10,320 ( 12 % )                     ;
+;     Total combinational functions  ; 828 / 10,320 ( 8 % )                        ;
+;     Dedicated logic registers      ; 908 / 10,320 ( 9 % )                        ;
+; Total registers                    ; 908                                         ;
+; Total pins                         ; 18 / 92 ( 20 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 35,840 / 423,936 ( 8 % )                    ;
+; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Post-Fit          ; Post-Fit               ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                                                                                                                       ;
++--------------------------------+--------------+-----------+----------------+-------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Name                           ; Type         ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection             ; Details                                                                                                                                                                             ;
++--------------------------------+--------------+-----------+----------------+-------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; LTC231512:lt1|data[0]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[0]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[0]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[0]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[10]         ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; LTC231512:lt1|data[10]         ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; LTC231512:lt1|data[11]         ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; LTC231512:lt1|data[11]         ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; LTC231512:lt1|data[1]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[1]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[1]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[1]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[2]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[2]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[2]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[2]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[3]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[3]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[3]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[3]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[4]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[4]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[4]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[4]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[5]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[5]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[5]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[5]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[6]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[6]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[6]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[6]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[7]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[7]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[7]          ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data[7]         ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data[8]          ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; LTC231512:lt1|data[8]          ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; LTC231512:lt1|data[9]          ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; LTC231512:lt1|data[9]          ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; LTC231512:lt1|data_out_buf[0]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[0] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[0]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[0] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[10] ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; LTC231512:lt1|data_out_buf[10] ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; LTC231512:lt1|data_out_buf[11] ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; LTC231512:lt1|data_out_buf[11] ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; LTC231512:lt1|data_out_buf[1]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[1] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[1]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[1] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[2]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[2] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[2]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[2] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[3]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[3] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[3]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[3] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[4]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[4] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[4]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[4] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[5]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[5] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[5]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[5] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[6]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[6] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[6]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[6] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[7]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[7] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[7]  ; post-fitting ; connected ; Top            ; post-fit          ; LTC231512:lt1|data_out_buf[7] ; N/A                                                                                                                                                                                 ;
+; LTC231512:lt1|data_out_buf[8]  ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; LTC231512:lt1|data_out_buf[8]  ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; LTC231512:lt1|data_out_buf[9]  ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; LTC231512:lt1|data_out_buf[9]  ; post-fitting ; missing   ; Top            ; post-fit          ; GND                           ; The name was present in your design during Analysis & Elaboration but was optimized away earlier in the flow.  You should tap it as a pre-synthesis node or preserve it explicitly. ;
+; clk                            ; post-fitting ; connected ; Top            ; post-fit          ; clk~input                     ; N/A                                                                                                                                                                                 ;
++--------------------------------+--------------+-----------+----------------+-------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                                       ;
++---------------------------------------------+---------------------+----------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top                 ; sld_hub:auto_hub     ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+---------------------+----------------------+--------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 374 / 10320 ( 4 % ) ; 147 / 10320 ( 1 % )  ; 687 / 10320 ( 7 % )            ; 0 / 10320 ( 0 % )              ;
+;                                             ;                     ;                      ;                                ;                                ;
+; Total combinational functions               ; 349                 ; 121                  ; 358                            ; 0                              ;
+; Logic element usage by number of LUT inputs ;                     ;                      ;                                ;                                ;
+;     -- 4 input functions                    ; 115                 ; 53                   ; 160                            ; 0                              ;
+;     -- 3 input functions                    ; 42                  ; 31                   ; 102                            ; 0                              ;
+;     -- <=2 input functions                  ; 192                 ; 37                   ; 96                             ; 0                              ;
+;                                             ;                     ;                      ;                                ;                                ;
+; Logic elements by mode                      ;                     ;                      ;                                ;                                ;
+;     -- normal mode                          ; 189                 ; 113                  ; 292                            ; 0                              ;
+;     -- arithmetic mode                      ; 160                 ; 8                    ; 66                             ; 0                              ;
+;                                             ;                     ;                      ;                                ;                                ;
+; Total registers                             ; 258                 ; 90                   ; 560                            ; 0                              ;
+;     -- Dedicated logic registers            ; 258 / 10320 ( 3 % ) ; 90 / 10320 ( < 1 % ) ; 560 / 10320 ( 5 % )            ; 0 / 10320 ( 0 % )              ;
+;     -- I/O registers                        ; 0                   ; 0                    ; 0                              ; 0                              ;
+;                                             ;                     ;                      ;                                ;                                ;
+; Virtual pins                                ; 0                   ; 0                    ; 0                              ; 0                              ;
+; I/O pins                                    ; 18                  ; 0                    ; 0                              ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0 / 46 ( 0 % )      ; 0 / 46 ( 0 % )       ; 0 / 46 ( 0 % )                 ; 0 / 46 ( 0 % )                 ;
+; Total memory bits                           ; 32768               ; 0                    ; 3072                           ; 0                              ;
+; Total RAM block bits                        ; 36864               ; 0                    ; 9216                           ; 0                              ;
+; JTAG                                        ; 1 / 1 ( 100 % )     ; 0 / 1 ( 0 % )        ; 0 / 1 ( 0 % )                  ; 0 / 1 ( 0 % )                  ;
+; M9K                                         ; 4 / 46 ( 8 % )      ; 0 / 46 ( 0 % )       ; 1 / 46 ( 2 % )                 ; 0 / 46 ( 0 % )                 ;
+;                                             ;                     ;                      ;                                ;                                ;
+; Connections                                 ;                     ;                      ;                                ;                                ;
+;     -- Input Connections                    ; 1                   ; 133                  ; 820                            ; 0                              ;
+;     -- Registered Input Connections         ; 0                   ; 101                  ; 627                            ; 0                              ;
+;     -- Output Connections                   ; 784                 ; 169                  ; 1                              ; 0                              ;
+;     -- Registered Output Connections        ; 32                  ; 168                  ; 0                              ; 0                              ;
+;                                             ;                     ;                      ;                                ;                                ;
+; Internal Connections                        ;                     ;                      ;                                ;                                ;
+;     -- Total Connections                    ; 2890                ; 837                  ; 3322                           ; 0                              ;
+;     -- Registered Connections               ; 947                 ; 615                  ; 2141                           ; 0                              ;
+;                                             ;                     ;                      ;                                ;                                ;
+; External Connections                        ;                     ;                      ;                                ;                                ;
+;     -- Top                                  ; 0                   ; 123                  ; 662                            ; 0                              ;
+;     -- sld_hub:auto_hub                     ; 123                 ; 20                   ; 159                            ; 0                              ;
+;     -- sld_signaltap:auto_signaltap_0       ; 662                 ; 159                  ; 0                              ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0                   ; 0                    ; 0                              ; 0                              ;
+;                                             ;                     ;                      ;                                ;                                ;
+; Partition Interface                         ;                     ;                      ;                                ;                                ;
+;     -- Input Ports                          ; 7                   ; 21                   ; 107                            ; 0                              ;
+;     -- Output Ports                         ; 15                  ; 39                   ; 60                             ; 0                              ;
+;     -- Bidir Ports                          ; 0                   ; 0                    ; 0                              ; 0                              ;
+;                                             ;                     ;                      ;                                ;                                ;
+; Registered Ports                            ;                     ;                      ;                                ;                                ;
+;     -- Registered Input Ports               ; 0                   ; 4                    ; 53                             ; 0                              ;
+;     -- Registered Output Ports              ; 0                   ; 28                   ; 49                             ; 0                              ;
+;                                             ;                     ;                      ;                                ;                                ;
+; Port Connectivity                           ;                     ;                      ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0                   ; 1                    ; 16                             ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                   ; 1                    ; 0                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                   ; 0                    ; 0                              ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                   ; 0                    ; 0                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0                   ; 1                    ; 35                             ; 0                              ;
+;     -- Output Ports with no Source          ; 0                   ; 0                    ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                   ; 2                    ; 40                             ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0                   ; 15                   ; 49                             ; 0                              ;
++---------------------------------------------+---------------------+----------------------+--------------------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                                                                         ;
++-----------------------------------+-----------+---------------+--------------------+---------------------------------------------+
+; Name                              ; Partition ; Type          ; Location           ; Status                                      ;
++-----------------------------------+-----------+---------------+--------------------+---------------------------------------------+
+; CS_n                              ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- CS_n                       ; Top       ; Output Pad    ; IOPAD_X34_Y9_N0    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- CS_n~output                ; Top       ; Output Buffer ; IOOBUF_X34_Y9_N2   ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; F1_8ADD_A                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- F1_8ADD_A                  ; Top       ; Output Pad    ; IOPAD_X28_Y24_N0   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- F1_8ADD_A~output           ; Top       ; Output Buffer ; IOOBUF_X28_Y24_N2  ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; F1_8ADD_B                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- F1_8ADD_B                  ; Top       ; Output Pad    ; IOPAD_X30_Y24_N21  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- F1_8ADD_B~output           ; Top       ; Output Buffer ; IOOBUF_X30_Y24_N23 ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; F1_8ADD_C                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- F1_8ADD_C                  ; Top       ; Output Pad    ; IOPAD_X30_Y24_N0   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- F1_8ADD_C~output           ; Top       ; Output Buffer ; IOOBUF_X30_Y24_N2  ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; F2_8ADD_A                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- F2_8ADD_A                  ; Top       ; Output Pad    ; IOPAD_X1_Y24_N7    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- F2_8ADD_A~output           ; Top       ; Output Buffer ; IOOBUF_X1_Y24_N9   ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; F2_8ADD_B                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- F2_8ADD_B                  ; Top       ; Output Pad    ; IOPAD_X1_Y24_N0    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- F2_8ADD_B~output           ; Top       ; Output Buffer ; IOOBUF_X1_Y24_N2   ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; F2_8ADD_C                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- F2_8ADD_C                  ; Top       ; Output Pad    ; IOPAD_X3_Y24_N21   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- F2_8ADD_C~output           ; Top       ; Output Buffer ; IOOBUF_X3_Y24_N23  ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; F3_8ADD_A                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- F3_8ADD_A                  ; Top       ; Output Pad    ; IOPAD_X16_Y24_N14  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- F3_8ADD_A~output           ; Top       ; Output Buffer ; IOOBUF_X16_Y24_N16 ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; F3_8ADD_B                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- F3_8ADD_B                  ; Top       ; Output Pad    ; IOPAD_X16_Y24_N7   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- F3_8ADD_B~output           ; Top       ; Output Buffer ; IOOBUF_X16_Y24_N9  ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; F3_8ADD_C                         ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- F3_8ADD_C                  ; Top       ; Output Pad    ; IOPAD_X16_Y24_N0   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- F3_8ADD_C~output           ; Top       ; Output Buffer ; IOOBUF_X16_Y24_N2  ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; SCK                               ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- SCK                        ; Top       ; Output Pad    ; IOPAD_X34_Y9_N7    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SCK~output                 ; Top       ; Output Buffer ; IOOBUF_X34_Y9_N9   ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; SDO                               ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- SDO                        ; Top       ; Input Pad     ; IOPAD_X34_Y10_N7   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SDO~input                  ; Top       ; Input Buffer  ; IOIBUF_X34_Y10_N8  ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; altera_reserved_tck               ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- altera_reserved_tck        ; Top       ; Input Pad     ; Unplaced           ; Synthesized                                 ;
+;     -- altera_reserved_tck~input  ; Top       ; Input Buffer  ; Unplaced           ; Synthesized                                 ;
+;                                   ;           ;               ;                    ;                                             ;
+; altera_reserved_tdi               ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- altera_reserved_tdi        ; Top       ; Input Pad     ; Unplaced           ; Synthesized                                 ;
+;     -- altera_reserved_tdi~input  ; Top       ; Input Buffer  ; Unplaced           ; Synthesized                                 ;
+;                                   ;           ;               ;                    ;                                             ;
+; altera_reserved_tdo               ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- altera_reserved_tdo        ; Top       ; Output Pad    ; Unplaced           ; Synthesized                                 ;
+;     -- altera_reserved_tdo~output ; Top       ; Output Buffer ; Unplaced           ; Synthesized                                 ;
+;                                   ;           ;               ;                    ;                                             ;
+; altera_reserved_tms               ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- altera_reserved_tms        ; Top       ; Input Pad     ; Unplaced           ; Synthesized                                 ;
+;     -- altera_reserved_tms~input  ; Top       ; Input Buffer  ; Unplaced           ; Synthesized                                 ;
+;                                   ;           ;               ;                    ;                                             ;
+; clk                               ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- clk                        ; Top       ; Input Pad     ; IOPAD_X0_Y11_N7    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- clk~input                  ; Top       ; Input Buffer  ; IOIBUF_X0_Y11_N8   ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; flag                              ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- flag                       ; Top       ; Input Pad     ; IOPAD_X0_Y23_N14   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- flag~input                 ; Top       ; Input Buffer  ; IOIBUF_X0_Y23_N15  ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; reset_n                           ; Top       ; Input Port    ; n/a                ;                                             ;
+;     -- reset_n                    ; Top       ; Input Pad     ; IOPAD_X0_Y23_N7    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- reset_n~input              ; Top       ; Input Buffer  ; IOIBUF_X0_Y23_N8   ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; rs_tx                             ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- rs_tx                      ; Top       ; Output Pad    ; IOPAD_X0_Y18_N21   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- rs_tx~output               ; Top       ; Output Buffer ; IOOBUF_X0_Y18_N23  ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; tx_1452                           ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- tx_1452                    ; Top       ; Output Pad    ; IOPAD_X32_Y0_N21   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- tx_1452~output             ; Top       ; Output Buffer ; IOOBUF_X32_Y0_N23  ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
+; unlock                            ; Top       ; Output Port   ; n/a                ;                                             ;
+;     -- unlock                     ; Top       ; Output Pad    ; IOPAD_X30_Y0_N0    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- unlock~output              ; Top       ; Output Buffer ; IOOBUF_X30_Y0_N2   ; Preserved from Post-Fit or Imported Netlist ;
+;                                   ;           ;               ;                    ;                                             ;
++-----------------------------------+-----------+---------------+--------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                                 ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimated Total logic elements              ; 1,207 / 10,320 ( 11 % )  ;
+;                                             ;                          ;
+; Total combinational functions               ; 828                      ;
+; Logic element usage by number of LUT inputs ;                          ;
+;     -- 4 input functions                    ; 328                      ;
+;     -- 3 input functions                    ; 175                      ;
+;     -- <=2 input functions                  ; 325                      ;
+;                                             ;                          ;
+; Logic elements by mode                      ;                          ;
+;     -- normal mode                          ; 594                      ;
+;     -- arithmetic mode                      ; 234                      ;
+;                                             ;                          ;
+; Total registers                             ; 908                      ;
+;     -- Dedicated logic registers            ; 908                      ;
+;     -- I/O registers                        ; 0                        ;
+;                                             ;                          ;
+; I/O pins                                    ; 18                       ;
+; Total memory bits                           ; 35840                    ;
+; Embedded Multiplier 9-bit elements          ; 0                        ;
+; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
+; Maximum fan-out                             ; 407                      ;
+; Total fan-out                               ; 6059                     ;
+; Average fan-out                             ; 3.32                     ;
++---------------------------------------------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                                ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF  ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_cu14:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 128          ; 24           ; 128          ; 24           ; 3072  ; None ;
+; switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|dpram_f811:FIFOram|altsyncram_g3k1:altsyncram1|ALTSYNCRAM                         ; AUTO ; Simple Dual Port ; 4096         ; 8            ; 4096         ; 8            ; 32768 ; None ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Partition Merge
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Processing started: Mon Apr 12 20:55:25 2021
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off demonstrate -c demonstrate --merge=on
+Info (35006): Using previously generated Fitter netlist for partition "Top"
+Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
+Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 33 of its 49 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 16 missing sources or connections.
+Info (35002): Resolved and merged 3 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1272 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 15 output pins
+    Info (21061): Implemented 1220 logic cells
+    Info (21064): Implemented 28 RAM segments
+Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 587 megabytes
+    Info: Processing ended: Mon Apr 12 20:55:26 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

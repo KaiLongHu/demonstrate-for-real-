@@ -1,0 +1,6 @@
+module Debounce(
+input 			clk,					//时钟50M
+input 			reset_n,	
+input 			key,
+output  			debkey
+);

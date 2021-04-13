@@ -1,0 +1,55 @@
+module  demonstrate (
+							input 			clk,					//时钟50M
+							input 			reset_n,					//复位，低电平有效
+							input SDO,//AD_SDO
+							output reg CS_n,//AD_CS
+							output SCK,//AD_SCK
+
+							input 			flag,						//启动flag
+												
+							output  	 		F1_8ADD_A,				//底层八选一
+							output 			F1_8ADD_B,
+							output 			F1_8ADD_C,
+								
+							output 			F2_8ADD_A,				//中层八选一
+							output 			F2_8ADD_B,
+							output 			F2_8ADD_C,
+							
+							output    	   F2_4ADD_A,				//顶层四选一
+							output  			F2_4ADD_B,
+							
+							output 	reg		unlock					//MAX1452锁信号,正常工作模式配置为低电平
+			
+							);
+
+wire [11:0] data_out;//AD量化值输出
+always@(*)
+	unlock <= 1'b0;			//unlock 在MAX1452正常工作配置低电平				
+//******************************************************************************************************************************************************
+//AD转换模块
+LTC231512 lt1(
+				 
+				 .clk_50M		(clk),// 分频器输出
+				 .reset_n		(reset_n),
+				 .SDO				(SDO),
+				 
+				 .CS_n			(CS_n),
+				 .SCK				(SCK),
+				 .data_out		(data_out)
+				);
+
+//轮询模块
+
+
+
+
+
+
+
+
+
+
+
+
+
+endmodule 

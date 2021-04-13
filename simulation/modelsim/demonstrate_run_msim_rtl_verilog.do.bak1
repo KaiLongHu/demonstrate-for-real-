@@ -1,0 +1,13 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate {D:/altera/project/513PROJECT/demonstrate/demonstrate.v}
+vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate {D:/altera/project/513PROJECT/demonstrate/max4781.v}
+vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate {D:/altera/project/513PROJECT/demonstrate/max4734.v}
+vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate {D:/altera/project/513PROJECT/demonstrate/max_control.v}
+vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate {D:/altera/project/513PROJECT/demonstrate/LTC231512.v}
+
