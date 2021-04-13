@@ -14,7 +14,7 @@ output	[7:0]  q//读数据
 
 //轮询间隔时间和次数可以设置
 
-parameter delay_time=32'd5_00_000;//time=delay_time*10ns,5_00_000= 5ms
+parameter delay_time=32'd5_000_000;//time=delay_time*10ns,5_00_000= 5ms
 parameter cycle_times=8'd1;
 
 
@@ -65,7 +65,7 @@ always@(posedge clk or negedge reset_n)
 					
 			s_next://轮询下一地址
 				if(address==5'd31&& times<cycle_times)//如果cycle大于1要不地址重置0
-				state<=s_addressadd;//地址重置0
+				state<=s_addressadd;//地址重置0，并且使得times+1
 				else
 				state<=s_start;
 				
@@ -131,10 +131,9 @@ always@(posedge clk or negedge reset_n)
 always@(posedge clk or negedge reset_n)
 	if(reset_n==0)//复位，低电平有效
 		times<=8'd0;
-	else				
-//		if(state==s_start && address==5'd31)		
-if(state==s_start&& address==5'd25 )
-			times<=times+8'd1;//轮询次数累加
+	else						
+if(state==s_start&& address==5'd31)
+			times<=times+8'd1;//轮询次数累加1
 		else
 			if(state==s_idle)
 				times<=8'd0;
