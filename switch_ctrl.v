@@ -55,7 +55,7 @@ always@(posedge clk or negedge reset_n)
 				else
 					state<=s_delay;//延迟
 			s_getAD://取AD值
-				if(address>addressnum && times>=cycle_times)	//address在这里是要取的值所以是大于号
+				if(times>=cycle_times)	//address在这里是要取的值所以是大于号
 					state<=s_end;
 				else 
 					if(address>addressnum	&&	times<cycle_times)
@@ -113,23 +113,20 @@ always@(posedge clk or negedge reset_n)
 always@(posedge clk or negedge reset_n)
 	if(reset_n==0)//复位，低电平有效
 		address<=5'd0;
-	else				
-		if(state==s_next	&& address<=addressnum)	//取完一次AD地址自加1	
+		else if(state==s_next	&& address<=addressnum)	//取完一次AD地址自加1	
 			address<=address+5'd1;//地址累加
-		else
-			if(state==s_nextcycle)//下一个循环地址清0
+		else if(state==s_nextcycle)//下一个循环地址清0
 				address<=5'd0;
-			else
-				address<=address;			
+	else
+		address<=address;			
 			
 always@(posedge clk or negedge reset_n)
 	if(reset_n==0)//复位，低电平有效
 		times<=8'd0;
-	else	
-		if(state==s_nextcycle)		
-			times<=times+8'd1;//轮询次数累加
-		else
-			times<=times;				
+	else if(state==s_nextcycle)		
+		times<=times+8'd1;//轮询次数累加
+	else
+		times<=times;				
 			
 //FIFO 8bit 4096深度		
 
