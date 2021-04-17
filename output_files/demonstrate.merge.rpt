@@ -1,5 +1,5 @@
 Partition Merge report for demonstrate
-Sat Apr 17 19:36:27 2021
+Sat Apr 17 20:20:07 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,13 +40,13 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Partition Merge Summary                                                          ;
 +------------------------------------+---------------------------------------------+
-; Partition Merge Status             ; Successful - Sat Apr 17 19:36:27 2021       ;
+; Partition Merge Status             ; Successful - Sat Apr 17 20:20:07 2021       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; demonstrate                                 ;
 ; Top-level Entity Name              ; demonstrate                                 ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,212                                       ;
-;     Total combinational functions  ; 826                                         ;
+; Total logic elements               ; 1,209                                       ;
+;     Total combinational functions  ; 823                                         ;
 ;     Dedicated logic registers      ; 914                                         ;
 ; Total registers                    ; 914                                         ;
 ; Total pins                         ; 18                                          ;
@@ -131,16 +131,16 @@ applicable agreement for further details.
 +---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
 ; Statistic                                   ; Top   ; sld_hub:auto_hub ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
 +---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
-; Estimated Total logic elements              ; 378   ; 148              ; 687                            ; 0                              ;
+; Estimated Total logic elements              ; 377   ; 146              ; 687                            ; 0                              ;
 ;                                             ;       ;                  ;                                ;                                ;
-; Total combinational functions               ; 346   ; 122              ; 358                            ; 0                              ;
+; Total combinational functions               ; 345   ; 120              ; 358                            ; 0                              ;
 ; Logic element usage by number of LUT inputs ;       ;                  ;                                ;                                ;
-;     -- 4 input functions                    ; 111   ; 51               ; 160                            ; 0                              ;
-;     -- 3 input functions                    ; 45    ; 33               ; 102                            ; 0                              ;
-;     -- <=2 input functions                  ; 190   ; 38               ; 96                             ; 0                              ;
+;     -- 4 input functions                    ; 110   ; 52               ; 160                            ; 0                              ;
+;     -- 3 input functions                    ; 46    ; 32               ; 102                            ; 0                              ;
+;     -- <=2 input functions                  ; 189   ; 36               ; 96                             ; 0                              ;
 ;                                             ;       ;                  ;                                ;                                ;
 ; Logic elements by mode                      ;       ;                  ;                                ;                                ;
-;     -- normal mode                          ; 188   ; 114              ; 292                            ; 0                              ;
+;     -- normal mode                          ; 187   ; 112              ; 292                            ; 0                              ;
 ;     -- arithmetic mode                      ; 158   ; 8                ; 66                             ; 0                              ;
 ;                                             ;       ;                  ;                                ;                                ;
 ; Total registers                             ; 264   ; 90               ; 560                            ; 0                              ;
@@ -161,8 +161,8 @@ applicable agreement for further details.
 ;     -- Registered Output Connections        ; 32    ; 168              ; 0                              ; 0                              ;
 ;                                             ;       ;                  ;                                ;                                ;
 ; Internal Connections                        ;       ;                  ;                                ;                                ;
-;     -- Total Connections                    ; 2980  ; 837              ; 3322                           ; 0                              ;
-;     -- Registered Connections               ; 1035  ; 611              ; 2141                           ; 0                              ;
+;     -- Total Connections                    ; 2977  ; 834              ; 3322                           ; 0                              ;
+;     -- Registered Connections               ; 1036  ; 612              ; 2141                           ; 0                              ;
 ;                                             ;       ;                  ;                                ;                                ;
 ; External Connections                        ;       ;                  ;                                ;                                ;
 ;     -- Top                                  ; 0     ; 123              ; 662                            ; 0                              ;
@@ -293,16 +293,16 @@ Note: Resource usage numbers presented for Partitions containing post-synthesis 
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 1,212     ;
+; Estimated Total logic elements              ; 1,209     ;
 ;                                             ;           ;
-; Total combinational functions               ; 826       ;
+; Total combinational functions               ; 823       ;
 ; Logic element usage by number of LUT inputs ;           ;
 ;     -- 4 input functions                    ; 322       ;
 ;     -- 3 input functions                    ; 180       ;
-;     -- <=2 input functions                  ; 324       ;
+;     -- <=2 input functions                  ; 321       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 594       ;
+;     -- normal mode                          ; 591       ;
 ;     -- arithmetic mode                      ; 232       ;
 ;                                             ;           ;
 ; Total registers                             ; 914       ;
@@ -314,7 +314,7 @@ Note: Resource usage numbers presented for Partitions containing post-synthesis 
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 588       ;
-; Total fan-out                               ; 6142      ;
+; Total fan-out                               ; 6136      ;
 ; Average fan-out                             ; 3.38      ;
 +---------------------------------------------+-----------+
 
@@ -335,7 +335,7 @@ Note: Resource usage numbers presented for Partitions containing post-synthesis 
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Partition Merge
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sat Apr 17 19:36:26 2021
+    Info: Processing started: Sat Apr 17 20:20:06 2021
 Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off demonstrate -c demonstrate --merge=on
 Warning (35010): Previously generated Fitter netlist for partition "Top" is older than current Synthesis netlist -- using the current Synthesis netlist instead to ensure that the latest source changes are included
     Info (35011): Set the option to Ignore source file changes to force the Quartus II software to always use a previously generated Fitter netlist
@@ -346,15 +346,15 @@ Critical Warning (35025): Partially connected in-system debug instance "auto_sig
 Info (35002): Resolved and merged 3 partition(s)
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1282 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1279 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 15 output pins
-    Info (21061): Implemented 1227 logic cells
+    Info (21061): Implemented 1224 logic cells
     Info (21064): Implemented 32 RAM segments
 Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 586 megabytes
-    Info: Processing ended: Sat Apr 17 19:36:27 2021
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Sat Apr 17 20:20:08 2021
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
