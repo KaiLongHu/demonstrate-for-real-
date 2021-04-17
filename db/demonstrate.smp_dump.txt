@@ -17,13 +17,19 @@ state.011 0 0 1 0 0 1
 state.100 0 1 0 0 0 1 
 state.101 1 0 0 0 0 1 
 
-State Machine - |demonstrate|switch_ctrl:i_switch_ctrl|state
-Name state.s_wr_0a state.s_wr_0d state.s_end state.s_next state.s_getAD state.s_delay state.s_start state.0000 
-state.0000 0 0 0 0 0 0 0 0 
-state.s_start 0 0 0 0 0 0 1 1 
-state.s_delay 0 0 0 0 0 1 0 1 
-state.s_getAD 0 0 0 0 1 0 0 1 
-state.s_next 0 0 0 1 0 0 0 1 
-state.s_end 0 0 1 0 0 0 0 1 
-state.s_wr_0d 0 1 0 0 0 0 0 1 
-state.s_wr_0a 1 0 0 0 0 0 0 1 
+State Machine - |demonstrate|switch_ctrl:i_switch_ctrl|CS
+Name CS.s_judge2 CS.s_wr0a CS.s_wr0d CS.s_nextaddr CS.s_endflag CS.s_nextcyc CS.s_judge1 CS.s_judge1w CS.s_cyclepp CS.s_addrpp CS.s_getAD CS.s_delay CS.s_start CS.IDLE 
+CS.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+CS.s_start 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+CS.s_delay 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+CS.s_getAD 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+CS.s_addrpp 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+CS.s_cyclepp 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+CS.s_judge1w 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+CS.s_judge1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+CS.s_nextcyc 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+CS.s_endflag 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+CS.s_nextaddr 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+CS.s_wr0d 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+CS.s_wr0a 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+CS.s_judge2 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
