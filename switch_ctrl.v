@@ -1,10 +1,10 @@
 //轮询控制
 module switch_ctrl(
-input 	clk,//时钟100M
+input 	clk,//时钟50M
 input 	reset_n,//复位，低电平有效
 input 	flag,//启动flag，高电平有效
 input [7:0] data_out,//AD量化值输出，取高8位
-output [5:0] addr,//地址			
+output [4:0] addr,//地址			
 
 input	  rdreq,//读使能
 output  empty,//空
@@ -13,28 +13,28 @@ output	[7:0]  q//读数据
 );
 
 //轮询间隔时间和次数可以设置
+//parameter delay_time=32'd5_000_000;//time=delay_time*20ns
+parameter 	delay_time	=32'd5_000_000;//time=delay_time*20ns
+parameter 	cycle_times	=8'd1;//轮询5次
+parameter 	addressnum	=5'd31;
 
-parameter delay_time=32'd5_000_000;//time=delay_time*10ns,5_00_000= 5ms
-parameter cycle_times=8'd1;
 
-
-reg [7:0] times=8'd0;//轮询次数
-reg [31:0] delay_cnt=32'd0;//间隔时间计数
-reg [5:0] address=5'd0;
+reg [7:0] 	times=8'd0;//轮询次数
+reg [31:0]	delay_cnt=32'd0;//间隔时间计数
+reg [4:0] 	address=5'd0;
 
 assign addr=address;
 
-reg [4:0] state=5'd0;
-parameter s_idle=5'd0;
-parameter s_start=5'd1;
-parameter s_delay=5'd2;
-parameter s_getAD=5'd3;
-parameter s_next=5'd4;
-parameter s_end=5'd5;
-parameter s_wr_0d=5'd6;
-parameter s_wr_0a=5'd7;
-parameter s_addressadd=5'd8;
-
+reg [3:0] state=4'd0;
+parameter s_idle=4'd0;
+parameter s_start=4'd1;
+parameter s_delay=4'd2;
+parameter s_getAD=4'd3;
+parameter s_next=4'd4;
+parameter s_end=4'd5;
+parameter s_wr_0d=4'd6;
+parameter s_wr_0a=4'd7;
+parameter s_nextcycle=4'd8;	
 
 
 always@(posedge clk or negedge reset_n)
@@ -43,37 +43,25 @@ always@(posedge clk or negedge reset_n)
 	else
 		case(state)
 			s_idle:
-				if(flag==0)//启动flag //
+				if(flag==0)//启动flag，高电平有效
 					state<=s_start;
-				else  
+				else
 					state<=s_idle;
-					
 			s_start://开始轮询
 				state<=s_delay;//延迟
-				
 			s_delay:
 				if(delay_cnt>=delay_time)//延迟
 					state<=s_getAD;
 				else
 					state<=s_delay;//延迟
-					
 			s_getAD://取AD值
-				if(address==5'd31 && times>=cycle_times)
+				if(address==addressnum && times>=cycle_times)
 					state<=s_end;
-					else
+				else 
+					if(address==addressnum	&&	times<=cycle_times)
 					state<=s_next;
-					
 			s_next://轮询下一地址
-				if(address==5'd31&& times<cycle_times)//如果cycle大于1要不地址重置0
-				state<=s_addressadd;//地址重置0，并且使得times+1
-				else
 				state<=s_start;
-				
-			s_addressadd:
-				state<=s_start;
-				
-				
-	
 			s_end:
 				state<=s_wr_0d;//写0d
 			s_wr_0d:
@@ -122,23 +110,17 @@ always@(posedge clk or negedge reset_n)
 	else				
 		if(state==s_next)		
 			address<=address+5'd1;//地址累加
-		else 
-			if(state==s_addressadd)
-			address<=32'd0;
-			else 
-			address<=address;
+		else
+			address<=address;			
 			
 always@(posedge clk or negedge reset_n)
 	if(reset_n==0)//复位，低电平有效
 		times<=8'd0;
-	else						
-if(state==s_start&& address==5'd31)
-			times<=times+8'd1;//轮询次数累加1
+	else				
+		if(state==s_start && address==addressnum+5'd1)		
+			times<=times+8'd1;//轮询次数累加
 		else
-			if(state==s_idle)
-				times<=8'd0;
-			else 
-				times<=times;				
+			times<=times;				
 			
 //FIFO 8bit 4096深度		
 

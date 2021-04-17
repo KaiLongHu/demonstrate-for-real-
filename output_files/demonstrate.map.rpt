@@ -1,5 +1,5 @@
 Analysis & Synthesis report for demonstrate
-Tue Apr 13 16:10:42 2021
+Sat Apr 17 18:43:37 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 13 16:10:42 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 17 18:43:37 2021       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; demonstrate                                 ;
 ; Top-level Entity Name              ; demonstrate                                 ;
@@ -171,12 +171,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.50        ;
+; Average used               ; 1.40        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  50.0%      ;
+;     Processor 2            ;  40.0%      ;
 ;     Processors 3-8         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -283,7 +283,7 @@ applicable agreement for further details.
 +---------------------------+---------------+-------------------+----------+----------------------------------+----------------------------------+
 ; Hierarchy                 ; File Name     ; Relative Location ; Change   ; Old                              ; New                              ;
 +---------------------------+---------------+-------------------+----------+----------------------------------+----------------------------------+
-; switch_ctrl:i_switch_ctrl ; switch_ctrl.v ; Project Directory ; Checksum ; ae0a614a848bafc4acd8e067c1af8f8a ; 3e3be181c7680da4f0b9ab5893b75d80 ;
+; switch_ctrl:i_switch_ctrl ; switch_ctrl.v ; Project Directory ; Checksum ; 3e3be181c7680da4f0b9ab5893b75d80 ; df9ab6fc63b1c9ccd917c5e5a4fcc161 ;
 +---------------------------+---------------+-------------------+----------+----------------------------------+----------------------------------+
 
 
@@ -292,14 +292,14 @@ applicable agreement for further details.
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                             ; Library Name ;
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |demonstrate                                       ; 355 (2)           ; 266 (0)      ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate                                                                                                                                                                    ; work         ;
+; |demonstrate                                       ; 349 (2)           ; 264 (0)      ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate                                                                                                                                                                    ; work         ;
 ;    |LTC231512:lt1|                                 ; 33 (33)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|LTC231512:lt1                                                                                                                                                      ; work         ;
 ;    |max1452_top:max1452|                           ; 113 (25)          ; 82 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|max1452_top:max1452                                                                                                                                                ; work         ;
 ;       |my_uart_tx:my_uart_tx|                      ; 66 (66)           ; 53 (53)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx                                                                                                                          ; work         ;
 ;       |speed_select:speed_select|                  ; 22 (22)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|max1452_top:max1452|speed_select:speed_select                                                                                                                      ; work         ;
 ;    |my_uart_tx:i_my_uart_tx|                       ; 66 (66)           ; 53 (53)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|my_uart_tx:i_my_uart_tx                                                                                                                                            ; work         ;
-;    |switch:i_switch|                               ; 10 (10)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch:i_switch                                                                                                                                                    ; work         ;
-;    |switch_ctrl:i_switch_ctrl|                     ; 131 (82)          ; 102 (64)     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl                                                                                                                                          ; work         ;
+;    |switch:i_switch|                               ; 9 (9)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch:i_switch                                                                                                                                                    ; work         ;
+;    |switch_ctrl:i_switch_ctrl|                     ; 126 (77)          ; 100 (62)     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl                                                                                                                                          ; work         ;
 ;       |AD_FIFO:AD_FIFO_i|                          ; 49 (0)            ; 38 (0)       ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i                                                                                                                        ; work         ;
 ;          |scfifo:scfifo_component|                 ; 49 (0)            ; 38 (0)       ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component                                                                                                ; work         ;
 ;             |scfifo_ep31:auto_generated|           ; 49 (0)            ; 38 (0)       ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated                                                                     ; work         ;
@@ -345,21 +345,20 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |demonstrate|switch_ctrl:i_switch_ctrl|state                                                                                                       ;
-+--------------------+---------------+---------------+-------------+--------------+---------------+---------------+---------------+-------------+--------------------+
-; Name               ; state.s_wr_0a ; state.s_wr_0d ; state.s_end ; state.s_next ; state.s_getAD ; state.s_delay ; state.s_start ; state.00000 ; state.s_addressadd ;
-+--------------------+---------------+---------------+-------------+--------------+---------------+---------------+---------------+-------------+--------------------+
-; state.00000        ; 0             ; 0             ; 0           ; 0            ; 0             ; 0             ; 0             ; 0           ; 0                  ;
-; state.s_start      ; 0             ; 0             ; 0           ; 0            ; 0             ; 0             ; 1             ; 1           ; 0                  ;
-; state.s_delay      ; 0             ; 0             ; 0           ; 0            ; 0             ; 1             ; 0             ; 1           ; 0                  ;
-; state.s_getAD      ; 0             ; 0             ; 0           ; 0            ; 1             ; 0             ; 0             ; 1           ; 0                  ;
-; state.s_next       ; 0             ; 0             ; 0           ; 1            ; 0             ; 0             ; 0             ; 1           ; 0                  ;
-; state.s_end        ; 0             ; 0             ; 1           ; 0            ; 0             ; 0             ; 0             ; 1           ; 0                  ;
-; state.s_wr_0d      ; 0             ; 1             ; 0           ; 0            ; 0             ; 0             ; 0             ; 1           ; 0                  ;
-; state.s_wr_0a      ; 1             ; 0             ; 0           ; 0            ; 0             ; 0             ; 0             ; 1           ; 0                  ;
-; state.s_addressadd ; 0             ; 0             ; 0           ; 0            ; 0             ; 0             ; 0             ; 1           ; 1                  ;
-+--------------------+---------------+---------------+-------------+--------------+---------------+---------------+---------------+-------------+--------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |demonstrate|switch_ctrl:i_switch_ctrl|state                                                                            ;
++---------------+---------------+---------------+-------------+--------------+---------------+---------------+---------------+------------+
+; Name          ; state.s_wr_0a ; state.s_wr_0d ; state.s_end ; state.s_next ; state.s_getAD ; state.s_delay ; state.s_start ; state.0000 ;
++---------------+---------------+---------------+-------------+--------------+---------------+---------------+---------------+------------+
+; state.0000    ; 0             ; 0             ; 0           ; 0            ; 0             ; 0             ; 0             ; 0          ;
+; state.s_start ; 0             ; 0             ; 0           ; 0            ; 0             ; 0             ; 1             ; 1          ;
+; state.s_delay ; 0             ; 0             ; 0           ; 0            ; 0             ; 1             ; 0             ; 1          ;
+; state.s_getAD ; 0             ; 0             ; 0           ; 0            ; 1             ; 0             ; 0             ; 1          ;
+; state.s_next  ; 0             ; 0             ; 0           ; 1            ; 0             ; 0             ; 0             ; 1          ;
+; state.s_end   ; 0             ; 0             ; 1           ; 0            ; 0             ; 0             ; 0             ; 1          ;
+; state.s_wr_0d ; 0             ; 1             ; 0           ; 0            ; 0             ; 0             ; 0             ; 1          ;
+; state.s_wr_0a ; 1             ; 0             ; 0           ; 0            ; 0             ; 0             ; 0             ; 1          ;
++---------------+---------------+---------------+-------------+--------------+---------------+---------------+---------------+------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
@@ -390,10 +389,10 @@ Encoding Type:  One-Hot
 ; my_uart_tx:i_my_uart_tx|state~4                   ; Lost fanout                                                         ;
 ; my_uart_tx:i_my_uart_tx|state~5                   ; Lost fanout                                                         ;
 ; my_uart_tx:i_my_uart_tx|state~6                   ; Lost fanout                                                         ;
-; switch_ctrl:i_switch_ctrl|state~4                 ; Lost fanout                                                         ;
-; switch_ctrl:i_switch_ctrl|state~5                 ; Lost fanout                                                         ;
-; switch_ctrl:i_switch_ctrl|state~6                 ; Lost fanout                                                         ;
-; switch_ctrl:i_switch_ctrl|state~8                 ; Lost fanout                                                         ;
+; switch_ctrl:i_switch_ctrl|state~12                ; Lost fanout                                                         ;
+; switch_ctrl:i_switch_ctrl|state~13                ; Lost fanout                                                         ;
+; switch_ctrl:i_switch_ctrl|state~14                ; Lost fanout                                                         ;
+; switch_ctrl:i_switch_ctrl|state~15                ; Lost fanout                                                         ;
 ; Total Number of Removed Registers = 29            ;                                                                     ;
 +---------------------------------------------------+---------------------------------------------------------------------+
 
@@ -403,12 +402,11 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|times[0]               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|address[2]             ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx|num[1] ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |demonstrate|my_uart_tx:i_my_uart_tx|num[3]                   ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|FIFO_data[0]           ;
-; 64:1               ; 4 bits    ; 168 LEs       ; 40 LEs               ; 128 LEs                ; Yes        ; |demonstrate|switch:i_switch|F2_8ADD[1]                       ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx|num[3] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |demonstrate|my_uart_tx:i_my_uart_tx|num[2]                   ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|FIFO_data[7]           ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |demonstrate|switch_ctrl:i_switch_ctrl|state                  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |demonstrate|switch_ctrl:i_switch_ctrl|state                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 
 
@@ -428,15 +426,16 @@ Encoding Type:  One-Hot
 +----------------+----------------------------------+--------------------+
 ; delay_time     ; 00000000010011000100101101000000 ; Unsigned Binary    ;
 ; cycle_times    ; 00000001                         ; Unsigned Binary    ;
-; s_idle         ; 00000                            ; Unsigned Binary    ;
-; s_start        ; 00001                            ; Unsigned Binary    ;
-; s_delay        ; 00010                            ; Unsigned Binary    ;
-; s_getAD        ; 00011                            ; Unsigned Binary    ;
-; s_next         ; 00100                            ; Unsigned Binary    ;
-; s_end          ; 00101                            ; Unsigned Binary    ;
-; s_wr_0d        ; 00110                            ; Unsigned Binary    ;
-; s_wr_0a        ; 00111                            ; Unsigned Binary    ;
-; s_addressadd   ; 01000                            ; Unsigned Binary    ;
+; addressnum     ; 11111                            ; Unsigned Binary    ;
+; s_idle         ; 0000                             ; Unsigned Binary    ;
+; s_start        ; 0001                             ; Unsigned Binary    ;
+; s_delay        ; 0010                             ; Unsigned Binary    ;
+; s_getAD        ; 0011                             ; Unsigned Binary    ;
+; s_next         ; 0100                             ; Unsigned Binary    ;
+; s_end          ; 0101                             ; Unsigned Binary    ;
+; s_wr_0d        ; 0110                             ; Unsigned Binary    ;
+; s_wr_0a        ; 0111                             ; Unsigned Binary    ;
+; s_nextcycle    ; 1000                             ; Unsigned Binary    ;
 +----------------+----------------------------------+--------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -527,7 +526,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; my_uart_tx.v                           ; Project Directory  ; work    ; e925eac45dc897ad327692f0f0a781ee ;
 ; speed_select.v                         ; Project Directory  ; work    ; 0cbeb8ecd6ddaceec62078fc1c760005 ;
 ; switch.v                               ; Project Directory  ; work    ; 22284443a2fbc80a689d15030238526d ;
-; switch_ctrl.v                          ; Project Directory  ; work    ; 3e3be181c7680da4f0b9ab5893b75d80 ;
+; switch_ctrl.v                          ; Project Directory  ; work    ; df9ab6fc63b1c9ccd917c5e5a4fcc161 ;
 +----------------------------------------+--------------------+---------+----------------------------------+
 
 
@@ -601,13 +600,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "switch_ctrl:i_switch_ctrl"                                                          ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; full ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "switch_ctrl:i_switch_ctrl"                                                                                                                                            ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; addr ; Output ; Warning  ; Output or bidir port (5 bits) is smaller than the port expression (6 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
+; full ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                   ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -633,8 +633,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------+--------------+
 ; Partition Name   ; Elapsed Time ;
 +------------------+--------------+
-; Top              ; 00:00:02     ;
-; sld_hub:auto_hub ; 00:00:02     ;
+; Top              ; 00:00:03     ;
+; sld_hub:auto_hub ; 00:00:03     ;
 +------------------+--------------+
 
 
@@ -644,7 +644,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Tue Apr 13 16:10:36 2021
+    Info: Processing started: Sat Apr 17 18:43:27 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off demonstrate -c demonstrate
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file speed_select.v
@@ -677,7 +677,7 @@ Info (12127): Elaborating entity "demonstrate" for the top level hierarchy
 Info (12128): Elaborating entity "LTC231512" for hierarchy "LTC231512:lt1"
 Info (12128): Elaborating entity "switch" for hierarchy "switch:i_switch"
 Info (12128): Elaborating entity "switch_ctrl" for hierarchy "switch_ctrl:i_switch_ctrl"
-Warning (10230): Verilog HDL assignment warning at switch_ctrl.v(127): truncated value with size 32 to match size of target (6)
+Warning (10259): Verilog HDL error at switch_ctrl.v(120): constant value overflow
 Info (12128): Elaborating entity "AD_FIFO" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i"
 Info (12128): Elaborating entity "scfifo" for hierarchy "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component"
 Info (12130): Elaborated megafunction instantiation "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component"
@@ -724,6 +724,10 @@ Warning (10036): Verilog HDL or VHDL warning at max1452_top.v(23): object "unloc
 Warning (10230): Verilog HDL assignment warning at max1452_top.v(53): truncated value with size 32 to match size of target (5)
 Warning (10230): Verilog HDL assignment warning at max1452_top.v(55): truncated value with size 32 to match size of target (5)
 Critical Warning (10237): Verilog HDL warning at max1452_top.v(83): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "addr[5]" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "addr[5]" is missing source, defaulting to GND
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_cu14.tdf
     Info (12023): Found entity 1: altsyncram_cu14
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_ssc.tdf
@@ -750,12 +754,12 @@ Info (12206): 2 design partitions require synthesis
     Info (12217): Partition "sld_hub:auto_hub" requires synthesis because there were changes made to the parameters on the partition's root instance
 Info (12207): 1 design partition does not require synthesis
     Info (12229): Partition "sld_signaltap:auto_signaltap_0" does not require synthesis because there were no relevant design changes
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (281037): Using 4 processors to synthesize 2 partitions in parallel
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Tue Apr 13 16:10:39 2021
+    Info: Processing started: Sat Apr 17 18:43:34 2021
 Info: Command: quartus_map --parallel=1 --helper=0 --helper_type=user_partition --partition=Top demonstrate -c demonstrate
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276004): RAM logic "max1452_top:max1452|Ram0" is uninferred due to inappropriate RAM size
@@ -770,20 +774,20 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "unlock" is stuck at VCC
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 10 registers lost all their fanouts during netlist optimizations.
-Info (21057): Implemented 414 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 408 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 388 logic cells
+    Info (21061): Implemented 382 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 539 megabytes
-    Info: Processing ended: Tue Apr 13 16:10:41 2021
+    Info: Processing ended: Sat Apr 17 18:43:36 2021
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:03
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Tue Apr 13 16:10:39 2021
+    Info: Processing started: Sat Apr 17 18:43:34 2021
 Info: Command: quartus_map --parallel=1 --helper=2 --helper_type=user_partition --partition=sld_hub:auto_hub demonstrate -c demonstrate
 Info (281019): Starting Logic Optimization and Technology Mapping for Partition sld_hub:auto_hub
 Info (13000): Registers with preset signals will power-up high
@@ -791,20 +795,20 @@ Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal 
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
 Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
-Info (21057): Implemented 211 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 210 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 39 output pins
-    Info (21061): Implemented 151 logic cells
+    Info (21061): Implemented 150 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 539 megabytes
-    Info: Processing ended: Tue Apr 13 16:10:41 2021
+    Info: Peak virtual memory: 541 megabytes
+    Info: Processing ended: Sat Apr 17 18:43:36 2021
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:03
 Info (281038): Finished parallel synthesis of all partitions
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 623 megabytes
-    Info: Processing ended: Tue Apr 13 16:10:42 2021
-    Info: Elapsed time: 00:00:06
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 28 warnings
+    Info: Peak virtual memory: 631 megabytes
+    Info: Processing ended: Sat Apr 17 18:43:37 2021
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:08
 
 
