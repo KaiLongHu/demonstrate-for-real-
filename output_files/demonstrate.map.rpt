@@ -1,5 +1,5 @@
 Analysis & Synthesis report for demonstrate
-Sun Apr 18 15:38:24 2021
+Sun Apr 18 15:53:16 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -13,29 +13,21 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis IP Cores Summary
   7. Partition Status Summary
-  8. Dependent File Changes for Partition Top
-  9. Partition for Top-Level Resource Utilization by Entity
- 10. State Machine - |demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx|state
- 11. State Machine - |demonstrate|my_uart_tx:i_my_uart_tx|state
- 12. State Machine - |demonstrate|switch_ctrl:i_switch_ctrl|CS
- 13. User-Specified and Inferred Latches
- 14. Registers Removed During Synthesis
- 15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Source assignments for switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|dpram_f811:FIFOram|altsyncram_g3k1:altsyncram1
- 17. Parameter Settings for User Entity Instance: switch_ctrl:i_switch_ctrl
- 18. Parameter Settings for User Entity Instance: switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component
- 19. Parameter Settings for User Entity Instance: speed_select:i_speed_select
- 20. Parameter Settings for User Entity Instance: max1452_top:max1452
- 21. Parameter Settings for User Entity Instance: max1452_top:max1452|speed_select:speed_select
- 22. Partition Dependent Files
- 23. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 24. Port Connectivity Checks: "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i"
- 25. Port Connectivity Checks: "switch_ctrl:i_switch_ctrl"
- 26. Port Connectivity Checks: "LTC231512:lt1"
- 27. SignalTap II Logic Analyzer Settings
- 28. Elapsed Time Per Partition
- 29. Analysis & Synthesis Messages
- 30. Analysis & Synthesis Suppressed Messages
+  8. Source assignments for switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|dpram_f811:FIFOram|altsyncram_g3k1:altsyncram1
+  9. Parameter Settings for User Entity Instance: switch_ctrl:i_switch_ctrl
+ 10. Parameter Settings for User Entity Instance: switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component
+ 11. Parameter Settings for User Entity Instance: speed_select:i_speed_select
+ 12. Parameter Settings for User Entity Instance: max1452_top:max1452
+ 13. Parameter Settings for User Entity Instance: max1452_top:max1452|speed_select:speed_select
+ 14. Partition Dependent Files
+ 15. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 16. Port Connectivity Checks: "switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i"
+ 17. Port Connectivity Checks: "switch_ctrl:i_switch_ctrl"
+ 18. Port Connectivity Checks: "LTC231512:lt1"
+ 19. SignalTap II Logic Analyzer Settings
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+ 22. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -61,7 +53,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Apr 18 15:38:24 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr 18 15:53:16 2021       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; demonstrate                                 ;
 ; Top-level Entity Name              ; demonstrate                                 ;
@@ -173,12 +165,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.60        ;
+; Average used               ; 1.57        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  60.0%      ;
+;     Processor 2            ;  57.1%      ;
 ;     Processors 3-8         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -227,7 +219,7 @@ applicable agreement for further details.
 ; altrom.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altrom.inc                              ;         ;
 ; altram.inc                       ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altram.inc                              ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc                            ;         ;
-; db/altsyncram_cu14.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/altsyncram_cu14.tdf ;         ;
+; db/altsyncram_ku14.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/altsyncram_ku14.tdf ;         ;
 ; altdpram.tdf                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/altdpram.tdf                            ;         ;
 ; memmodes.inc                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/others/maxplus2/memmodes.inc                          ;         ;
 ; a_hdffe.inc                      ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/a_hdffe.inc                             ;         ;
@@ -247,8 +239,8 @@ applicable agreement for further details.
 ; cmpconst.inc                     ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/cmpconst.inc                            ;         ;
 ; lpm_counter.inc                  ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_counter.inc                         ;         ;
 ; alt_counter_stratix.inc          ; yes             ; Megafunction                 ; d:/altera/13.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                 ;         ;
-; db/cntr_fgi.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/cntr_fgi.tdf        ;         ;
-; db/cmpr_rgc.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/cmpr_rgc.tdf        ;         ;
+; db/cntr_kgi.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/cntr_kgi.tdf        ;         ;
+; db/cmpr_sgc.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/cmpr_sgc.tdf        ;         ;
 ; db/cntr_i6j.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/cntr_i6j.tdf        ;         ;
 ; db/cntr_egi.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/cntr_egi.tdf        ;         ;
 ; db/cmpr_qgc.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/db/cmpr_qgc.tdf        ;         ;
@@ -274,162 +266,10 @@ applicable agreement for further details.
 +--------------------------------+-------------+-------------------------+
 ; Partition Name                 ; Synthesized ; Reason                  ;
 +--------------------------------+-------------+-------------------------+
-; Top                            ; yes         ; Dependent files changed ;
+; Top                            ; no          ; No relevant changes     ;
+; sld_signaltap:auto_signaltap_0 ; yes         ; Dependent files changed ;
 ; sld_hub:auto_hub               ; yes         ; Parameters changed      ;
-; sld_signaltap:auto_signaltap_0 ; no          ; No relevant changes     ;
 +--------------------------------+-------------+-------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Dependent File Changes for Partition Top                                                                                                       ;
-+---------------------------+---------------+-------------------+----------+----------------------------------+----------------------------------+
-; Hierarchy                 ; File Name     ; Relative Location ; Change   ; Old                              ; New                              ;
-+---------------------------+---------------+-------------------+----------+----------------------------------+----------------------------------+
-; switch:i_switch           ; switch.v      ; Project Directory ; Checksum ; 22284443a2fbc80a689d15030238526d ; 8e88ce0d82c8e542152678e61a49e334 ;
-; switch_ctrl:i_switch_ctrl ; switch_ctrl.v ; Project Directory ; Checksum ; 29f9a7ca775b71304f5d63ed9372812d ; eda8c588da9ef9a3a3f2c25cf8012e57 ;
-+---------------------------+---------------+-------------------+----------+----------------------------------+----------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Partition for Top-Level Resource Utilization by Entity                                                                                                                                                                                                                                                                                                          ;
-+----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                             ; Library Name ;
-+----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |demonstrate                                       ; 279 (2)           ; 218 (0)      ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate                                                                                                                                                                    ; work         ;
-;    |LTC231512:lt1|                                 ; 33 (33)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|LTC231512:lt1                                                                                                                                                      ; work         ;
-;    |max1452_top:max1452|                           ; 113 (25)          ; 82 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|max1452_top:max1452                                                                                                                                                ; work         ;
-;       |my_uart_tx:my_uart_tx|                      ; 66 (66)           ; 53 (53)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx                                                                                                                          ; work         ;
-;       |speed_select:speed_select|                  ; 22 (22)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|max1452_top:max1452|speed_select:speed_select                                                                                                                      ; work         ;
-;    |my_uart_tx:i_my_uart_tx|                       ; 66 (66)           ; 53 (53)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|my_uart_tx:i_my_uart_tx                                                                                                                                            ; work         ;
-;    |switch_ctrl:i_switch_ctrl|                     ; 65 (16)           ; 59 (21)      ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl                                                                                                                                          ; work         ;
-;       |AD_FIFO:AD_FIFO_i|                          ; 49 (0)            ; 38 (0)       ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i                                                                                                                        ; work         ;
-;          |scfifo:scfifo_component|                 ; 49 (0)            ; 38 (0)       ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component                                                                                                ; work         ;
-;             |scfifo_ep31:auto_generated|           ; 49 (0)            ; 38 (0)       ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated                                                                     ; work         ;
-;                |a_dpfifo_lv31:dpfifo|              ; 49 (2)            ; 38 (0)       ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo                                                ; work         ;
-;                   |a_fefifo_1bf:fifo_state|        ; 23 (11)           ; 14 (2)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|a_fefifo_1bf:fifo_state                        ; work         ;
-;                      |cntr_qp7:count_usedw|        ; 12 (12)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|a_fefifo_1bf:fifo_state|cntr_qp7:count_usedw   ; work         ;
-;                   |cntr_epb:rd_ptr_count|          ; 12 (12)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|cntr_epb:rd_ptr_count                          ; work         ;
-;                   |cntr_epb:wr_ptr|                ; 12 (12)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|cntr_epb:wr_ptr                                ; work         ;
-;                   |dpram_f811:FIFOram|             ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|dpram_f811:FIFOram                             ; work         ;
-;                      |altsyncram_g3k1:altsyncram1| ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|dpram_f811:FIFOram|altsyncram_g3k1:altsyncram1 ; work         ;
-+----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+-----------------------------------------------------------------------------------+
-; State Machine - |demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx|state      ;
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-; Name      ; state.101 ; state.100 ; state.011 ; state.010 ; state.001 ; state.000 ;
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-; state.000 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ;
-; state.001 ; 0         ; 0         ; 0         ; 0         ; 1         ; 1         ;
-; state.010 ; 0         ; 0         ; 0         ; 1         ; 0         ; 1         ;
-; state.011 ; 0         ; 0         ; 1         ; 0         ; 0         ; 1         ;
-; state.100 ; 0         ; 1         ; 0         ; 0         ; 0         ; 1         ;
-; state.101 ; 1         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-
-
-Encoding Type:  One-Hot
-+-----------------------------------------------------------------------------------+
-; State Machine - |demonstrate|my_uart_tx:i_my_uart_tx|state                        ;
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-; Name      ; state.101 ; state.100 ; state.011 ; state.010 ; state.001 ; state.000 ;
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-; state.000 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ;
-; state.001 ; 0         ; 0         ; 0         ; 0         ; 1         ; 1         ;
-; state.010 ; 0         ; 0         ; 0         ; 1         ; 0         ; 1         ;
-; state.011 ; 0         ; 0         ; 1         ; 0         ; 0         ; 1         ;
-; state.100 ; 0         ; 1         ; 0         ; 0         ; 0         ; 1         ;
-; state.101 ; 1         ; 0         ; 0         ; 0         ; 0         ; 1         ;
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
-
-
-Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |demonstrate|switch_ctrl:i_switch_ctrl|CS                                                                                                                                                    ;
-+---------------+-------------+-----------+-----------+---------------+--------------+--------------+-------------+--------------+--------------+-------------+------------+------------+------------+---------+
-; Name          ; CS.s_judge2 ; CS.s_wr0a ; CS.s_wr0d ; CS.s_nextaddr ; CS.s_endflag ; CS.s_nextcyc ; CS.s_judge1 ; CS.s_judge1w ; CS.s_cyclepp ; CS.s_addrpp ; CS.s_getAD ; CS.s_delay ; CS.s_start ; CS.IDLE ;
-+---------------+-------------+-----------+-----------+---------------+--------------+--------------+-------------+--------------+--------------+-------------+------------+------------+------------+---------+
-; CS.IDLE       ; 0           ; 0         ; 0         ; 0             ; 0            ; 0            ; 0           ; 0            ; 0            ; 0           ; 0          ; 0          ; 0          ; 0       ;
-; CS.s_start    ; 0           ; 0         ; 0         ; 0             ; 0            ; 0            ; 0           ; 0            ; 0            ; 0           ; 0          ; 0          ; 1          ; 1       ;
-; CS.s_delay    ; 0           ; 0         ; 0         ; 0             ; 0            ; 0            ; 0           ; 0            ; 0            ; 0           ; 0          ; 1          ; 0          ; 1       ;
-; CS.s_getAD    ; 0           ; 0         ; 0         ; 0             ; 0            ; 0            ; 0           ; 0            ; 0            ; 0           ; 1          ; 0          ; 0          ; 1       ;
-; CS.s_addrpp   ; 0           ; 0         ; 0         ; 0             ; 0            ; 0            ; 0           ; 0            ; 0            ; 1           ; 0          ; 0          ; 0          ; 1       ;
-; CS.s_cyclepp  ; 0           ; 0         ; 0         ; 0             ; 0            ; 0            ; 0           ; 0            ; 1            ; 0           ; 0          ; 0          ; 0          ; 1       ;
-; CS.s_judge1w  ; 0           ; 0         ; 0         ; 0             ; 0            ; 0            ; 0           ; 1            ; 0            ; 0           ; 0          ; 0          ; 0          ; 1       ;
-; CS.s_judge1   ; 0           ; 0         ; 0         ; 0             ; 0            ; 0            ; 1           ; 0            ; 0            ; 0           ; 0          ; 0          ; 0          ; 1       ;
-; CS.s_nextcyc  ; 0           ; 0         ; 0         ; 0             ; 0            ; 1            ; 0           ; 0            ; 0            ; 0           ; 0          ; 0          ; 0          ; 1       ;
-; CS.s_endflag  ; 0           ; 0         ; 0         ; 0             ; 1            ; 0            ; 0           ; 0            ; 0            ; 0           ; 0          ; 0          ; 0          ; 1       ;
-; CS.s_nextaddr ; 0           ; 0         ; 0         ; 1             ; 0            ; 0            ; 0           ; 0            ; 0            ; 0           ; 0          ; 0          ; 0          ; 1       ;
-; CS.s_wr0d     ; 0           ; 0         ; 1         ; 0             ; 0            ; 0            ; 0           ; 0            ; 0            ; 0           ; 0          ; 0          ; 0          ; 1       ;
-; CS.s_wr0a     ; 0           ; 1         ; 0         ; 0             ; 0            ; 0            ; 0           ; 0            ; 0            ; 0           ; 0          ; 0          ; 0          ; 1       ;
-; CS.s_judge2   ; 1           ; 0         ; 0         ; 0             ; 0            ; 0            ; 0           ; 0            ; 0            ; 0           ; 0          ; 0          ; 0          ; 1       ;
-+---------------+-------------+-----------+-----------+---------------+--------------+--------------+-------------+--------------+--------------+-------------+------------+------------+------------+---------+
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                               ;
-+----------------------------------------------------+-------------------------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal                 ; Free of Timing Hazards ;
-+----------------------------------------------------+-------------------------------------+------------------------+
-; switch_ctrl:i_switch_ctrl|flag_j1.01_430           ; switch_ctrl:i_switch_ctrl|Selector3 ; yes                    ;
-; Number of user-specified and inferred latches = 1  ;                                     ;                        ;
-+----------------------------------------------------+-------------------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
-+-------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                      ;
-+---------------------------------------------------+---------------------------------------------------------------------+
-; Register name                                     ; Reason for Removal                                                  ;
-+---------------------------------------------------+---------------------------------------------------------------------+
-; switch:i_switch|F3_8ADD[0..2]                     ; Stuck at GND due to stuck port data_in                              ;
-; switch:i_switch|F2_8ADD[0,1]                      ; Stuck at VCC due to stuck port data_in                              ;
-; switch:i_switch|F2_8ADD[2]                        ; Stuck at GND due to stuck port data_in                              ;
-; switch:i_switch|F1_8ADD[0]                        ; Stuck at GND due to stuck port data_in                              ;
-; switch:i_switch|F1_8ADD[1,2]                      ; Stuck at VCC due to stuck port data_in                              ;
-; speed_select:i_speed_select|clk_bps_r             ; Merged with max1452_top:max1452|speed_select:speed_select|clk_bps_r ;
-; speed_select:i_speed_select|cnt[12]               ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[12]   ;
-; speed_select:i_speed_select|cnt[10]               ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[10]   ;
-; speed_select:i_speed_select|cnt[6]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[6]    ;
-; speed_select:i_speed_select|cnt[4]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[4]    ;
-; speed_select:i_speed_select|cnt[3]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[3]    ;
-; speed_select:i_speed_select|cnt[13]               ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[13]   ;
-; speed_select:i_speed_select|cnt[11]               ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[11]   ;
-; speed_select:i_speed_select|cnt[9]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[9]    ;
-; speed_select:i_speed_select|cnt[8]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[8]    ;
-; speed_select:i_speed_select|cnt[7]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[7]    ;
-; speed_select:i_speed_select|cnt[5]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[5]    ;
-; speed_select:i_speed_select|cnt[2]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[2]    ;
-; speed_select:i_speed_select|cnt[1]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[1]    ;
-; speed_select:i_speed_select|cnt[0]                ; Merged with max1452_top:max1452|speed_select:speed_select|cnt[0]    ;
-; max1452_top:max1452|my_uart_tx:my_uart_tx|state~4 ; Lost fanout                                                         ;
-; max1452_top:max1452|my_uart_tx:my_uart_tx|state~5 ; Lost fanout                                                         ;
-; max1452_top:max1452|my_uart_tx:my_uart_tx|state~6 ; Lost fanout                                                         ;
-; my_uart_tx:i_my_uart_tx|state~4                   ; Lost fanout                                                         ;
-; my_uart_tx:i_my_uart_tx|state~5                   ; Lost fanout                                                         ;
-; my_uart_tx:i_my_uart_tx|state~6                   ; Lost fanout                                                         ;
-; switch_ctrl:i_switch_ctrl|CS~4                    ; Lost fanout                                                         ;
-; switch_ctrl:i_switch_ctrl|CS~5                    ; Lost fanout                                                         ;
-; switch_ctrl:i_switch_ctrl|CS~6                    ; Lost fanout                                                         ;
-; switch_ctrl:i_switch_ctrl|CS~7                    ; Lost fanout                                                         ;
-; switch_ctrl:i_switch_ctrl|CS.s_judge1w            ; Stuck at GND due to stuck port data_in                              ;
-; switch_ctrl:i_switch_ctrl|CS.s_nextcyc            ; Stuck at GND due to stuck port data_in                              ;
-; Total Number of Removed Registers = 36            ;                                                                     ;
-+---------------------------------------------------+---------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx|num[2] ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |demonstrate|my_uart_tx:i_my_uart_tx|num[2]                   ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|FIFO_data[7]           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -446,9 +286,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+----------------------------------+--------------------+
 ; Parameter Name ; Value                            ; Type               ;
 +----------------+----------------------------------+--------------------+
-; delay_time     ; 00000000010011000100101101000000 ; Unsigned Binary    ;
-; cycle_times    ; 00000001                         ; Unsigned Binary    ;
-; addressnum     ; 11111                            ; Unsigned Binary    ;
+; delay_time     ; 00000000000001111010000100100000 ; Unsigned Binary    ;
+; cycle_times    ; 00000010                         ; Unsigned Binary    ;
+; addressnum     ; 10100                            ; Unsigned Binary    ;
 +----------------+----------------------------------+--------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -538,68 +378,68 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; max1452_top.v                          ; Project Directory  ; work    ; c1e2ec0629e97c91d2f24d9b532f8685 ;
 ; my_uart_tx.v                           ; Project Directory  ; work    ; e925eac45dc897ad327692f0f0a781ee ;
 ; speed_select.v                         ; Project Directory  ; work    ; 0cbeb8ecd6ddaceec62078fc1c760005 ;
-; switch.v                               ; Project Directory  ; work    ; 8e88ce0d82c8e542152678e61a49e334 ;
-; switch_ctrl.v                          ; Project Directory  ; work    ; eda8c588da9ef9a3a3f2c25cf8012e57 ;
+; switch.v                               ; Project Directory  ; work    ; 22284443a2fbc80a689d15030238526d ;
+; switch_ctrl.v                          ; Project Directory  ; work    ; b6bdf8c1bf5515acc545a093c62b56c2 ;
 +----------------------------------------+--------------------+---------+----------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0                                                                                  ;
-+-------------------------------------------------+-----------------------------------------------------------------------------------------------+----------------+
-; Parameter Name                                  ; Value                                                                                         ; Type           ;
-+-------------------------------------------------+-----------------------------------------------------------------------------------------------+----------------+
-; lpm_type                                        ; sld_signaltap                                                                                 ; String         ;
-; sld_node_info                                   ; 805334528                                                                                     ; Untyped        ;
-; SLD_IP_VERSION                                  ; 6                                                                                             ; Signed Integer ;
-; SLD_IP_MINOR_VERSION                            ; 0                                                                                             ; Signed Integer ;
-; SLD_COMMON_IP_VERSION                           ; 0                                                                                             ; Signed Integer ;
-; sld_data_bits                                   ; 24                                                                                            ; Untyped        ;
-; sld_trigger_bits                                ; 24                                                                                            ; Untyped        ;
-; SLD_NODE_CRC_BITS                               ; 32                                                                                            ; Signed Integer ;
-; sld_node_crc_hiword                             ; 15478                                                                                         ; Untyped        ;
-; sld_node_crc_loword                             ; 22808                                                                                         ; Untyped        ;
-; SLD_INCREMENTAL_ROUTING                         ; 0                                                                                             ; Signed Integer ;
-; sld_sample_depth                                ; 128                                                                                           ; Untyped        ;
-; sld_segment_size                                ; 128                                                                                           ; Untyped        ;
-; sld_ram_block_type                              ; AUTO                                                                                          ; Untyped        ;
-; sld_state_bits                                  ; 11                                                                                            ; Untyped        ;
-; sld_buffer_full_stop                            ; 1                                                                                             ; Untyped        ;
-; SLD_MEM_ADDRESS_BITS                            ; 7                                                                                             ; Signed Integer ;
-; SLD_DATA_BIT_CNTR_BITS                          ; 4                                                                                             ; Signed Integer ;
-; sld_trigger_level                               ; 1                                                                                             ; Untyped        ;
-; sld_trigger_in_enabled                          ; 0                                                                                             ; Untyped        ;
-; SLD_HPS_TRIGGER_IN_ENABLED                      ; 0                                                                                             ; Signed Integer ;
-; SLD_HPS_TRIGGER_OUT_ENABLED                     ; 0                                                                                             ; Signed Integer ;
-; SLD_HPS_EVENT_ENABLED                           ; 0                                                                                             ; Signed Integer ;
-; SLD_HPS_EVENT_ID                                ; 0                                                                                             ; Signed Integer ;
-; sld_advanced_trigger_entity                     ; basic,1,                                                                                      ; Untyped        ;
-; sld_trigger_level_pipeline                      ; 1                                                                                             ; Untyped        ;
-; sld_enable_advanced_trigger                     ; 0                                                                                             ; Untyped        ;
-; SLD_ADVANCED_TRIGGER_1                          ; NONE                                                                                          ; String         ;
-; SLD_ADVANCED_TRIGGER_2                          ; NONE                                                                                          ; String         ;
-; SLD_ADVANCED_TRIGGER_3                          ; NONE                                                                                          ; String         ;
-; SLD_ADVANCED_TRIGGER_4                          ; NONE                                                                                          ; String         ;
-; SLD_ADVANCED_TRIGGER_5                          ; NONE                                                                                          ; String         ;
-; SLD_ADVANCED_TRIGGER_6                          ; NONE                                                                                          ; String         ;
-; SLD_ADVANCED_TRIGGER_7                          ; NONE                                                                                          ; String         ;
-; SLD_ADVANCED_TRIGGER_8                          ; NONE                                                                                          ; String         ;
-; SLD_ADVANCED_TRIGGER_9                          ; NONE                                                                                          ; String         ;
-; SLD_ADVANCED_TRIGGER_10                         ; NONE                                                                                          ; String         ;
-; sld_inversion_mask_length                       ; 93                                                                                            ; Untyped        ;
-; sld_inversion_mask                              ; 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 ; Untyped        ;
-; sld_power_up_trigger                            ; 0                                                                                             ; Untyped        ;
-; SLD_STATE_FLOW_MGR_ENTITY                       ; state_flow_mgr_entity.vhd                                                                     ; String         ;
-; sld_state_flow_use_generated                    ; 0                                                                                             ; Untyped        ;
-; sld_current_resource_width                      ; 1                                                                                             ; Untyped        ;
-; sld_attribute_mem_mode                          ; OFF                                                                                           ; Untyped        ;
-; SLD_STORAGE_QUALIFIER_BITS                      ; 1                                                                                             ; Signed Integer ;
-; SLD_STORAGE_QUALIFIER_GAP_RECORD                ; 0                                                                                             ; Signed Integer ;
-; SLD_STORAGE_QUALIFIER_MODE                      ; OFF                                                                                           ; String         ;
-; SLD_STORAGE_QUALIFIER_ENABLE_ADVANCED_CONDITION ; 0                                                                                             ; Signed Integer ;
-; sld_storage_qualifier_inversion_mask_length     ; 0                                                                                             ; Untyped        ;
-; SLD_STORAGE_QUALIFIER_ADVANCED_CONDITION_ENTITY ; basic                                                                                         ; String         ;
-; SLD_STORAGE_QUALIFIER_PIPELINE                  ; 0                                                                                             ; Signed Integer ;
-+-------------------------------------------------+-----------------------------------------------------------------------------------------------+----------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0                                                                                                                                                    ;
++-------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
+; Parameter Name                                  ; Value                                                                                                                                                           ; Type           ;
++-------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
+; lpm_type                                        ; sld_signaltap                                                                                                                                                   ; String         ;
+; sld_node_info                                   ; 805334528                                                                                                                                                       ; Untyped        ;
+; SLD_IP_VERSION                                  ; 6                                                                                                                                                               ; Signed Integer ;
+; SLD_IP_MINOR_VERSION                            ; 0                                                                                                                                                               ; Signed Integer ;
+; SLD_COMMON_IP_VERSION                           ; 0                                                                                                                                                               ; Signed Integer ;
+; sld_data_bits                                   ; 46                                                                                                                                                              ; Untyped        ;
+; sld_trigger_bits                                ; 46                                                                                                                                                              ; Untyped        ;
+; SLD_NODE_CRC_BITS                               ; 32                                                                                                                                                              ; Signed Integer ;
+; sld_node_crc_hiword                             ; 47125                                                                                                                                                           ; Untyped        ;
+; sld_node_crc_loword                             ; 26640                                                                                                                                                           ; Untyped        ;
+; SLD_INCREMENTAL_ROUTING                         ; 0                                                                                                                                                               ; Signed Integer ;
+; sld_sample_depth                                ; 128                                                                                                                                                             ; Untyped        ;
+; sld_segment_size                                ; 128                                                                                                                                                             ; Untyped        ;
+; sld_ram_block_type                              ; AUTO                                                                                                                                                            ; Untyped        ;
+; sld_state_bits                                  ; 11                                                                                                                                                              ; Untyped        ;
+; sld_buffer_full_stop                            ; 1                                                                                                                                                               ; Untyped        ;
+; SLD_MEM_ADDRESS_BITS                            ; 7                                                                                                                                                               ; Signed Integer ;
+; SLD_DATA_BIT_CNTR_BITS                          ; 4                                                                                                                                                               ; Signed Integer ;
+; sld_trigger_level                               ; 1                                                                                                                                                               ; Untyped        ;
+; sld_trigger_in_enabled                          ; 0                                                                                                                                                               ; Untyped        ;
+; SLD_HPS_TRIGGER_IN_ENABLED                      ; 0                                                                                                                                                               ; Signed Integer ;
+; SLD_HPS_TRIGGER_OUT_ENABLED                     ; 0                                                                                                                                                               ; Signed Integer ;
+; SLD_HPS_EVENT_ENABLED                           ; 0                                                                                                                                                               ; Signed Integer ;
+; SLD_HPS_EVENT_ID                                ; 0                                                                                                                                                               ; Signed Integer ;
+; sld_advanced_trigger_entity                     ; basic,1,                                                                                                                                                        ; Untyped        ;
+; sld_trigger_level_pipeline                      ; 1                                                                                                                                                               ; Untyped        ;
+; sld_enable_advanced_trigger                     ; 0                                                                                                                                                               ; Untyped        ;
+; SLD_ADVANCED_TRIGGER_1                          ; NONE                                                                                                                                                            ; String         ;
+; SLD_ADVANCED_TRIGGER_2                          ; NONE                                                                                                                                                            ; String         ;
+; SLD_ADVANCED_TRIGGER_3                          ; NONE                                                                                                                                                            ; String         ;
+; SLD_ADVANCED_TRIGGER_4                          ; NONE                                                                                                                                                            ; String         ;
+; SLD_ADVANCED_TRIGGER_5                          ; NONE                                                                                                                                                            ; String         ;
+; SLD_ADVANCED_TRIGGER_6                          ; NONE                                                                                                                                                            ; String         ;
+; SLD_ADVANCED_TRIGGER_7                          ; NONE                                                                                                                                                            ; String         ;
+; SLD_ADVANCED_TRIGGER_8                          ; NONE                                                                                                                                                            ; String         ;
+; SLD_ADVANCED_TRIGGER_9                          ; NONE                                                                                                                                                            ; String         ;
+; SLD_ADVANCED_TRIGGER_10                         ; NONE                                                                                                                                                            ; String         ;
+; sld_inversion_mask_length                       ; 159                                                                                                                                                             ; Untyped        ;
+; sld_inversion_mask                              ; 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 ; Untyped        ;
+; sld_power_up_trigger                            ; 0                                                                                                                                                               ; Untyped        ;
+; SLD_STATE_FLOW_MGR_ENTITY                       ; state_flow_mgr_entity.vhd                                                                                                                                       ; String         ;
+; sld_state_flow_use_generated                    ; 0                                                                                                                                                               ; Untyped        ;
+; sld_current_resource_width                      ; 1                                                                                                                                                               ; Untyped        ;
+; sld_attribute_mem_mode                          ; OFF                                                                                                                                                             ; Untyped        ;
+; SLD_STORAGE_QUALIFIER_BITS                      ; 1                                                                                                                                                               ; Signed Integer ;
+; SLD_STORAGE_QUALIFIER_GAP_RECORD                ; 0                                                                                                                                                               ; Signed Integer ;
+; SLD_STORAGE_QUALIFIER_MODE                      ; OFF                                                                                                                                                             ; String         ;
+; SLD_STORAGE_QUALIFIER_ENABLE_ADVANCED_CONDITION ; 0                                                                                                                                                               ; Signed Integer ;
+; sld_storage_qualifier_inversion_mask_length     ; 0                                                                                                                                                               ; Untyped        ;
+; SLD_STORAGE_QUALIFIER_ADVANCED_CONDITION_ENTITY ; basic                                                                                                                                                           ; String         ;
+; SLD_STORAGE_QUALIFIER_PIPELINE                  ; 0                                                                                                                                                               ; Signed Integer ;
++-------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -637,18 +477,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
 ; Instance Index ; Instance Name    ; Trigger Input Width ; Data Input Width ; Sample Depth ; Segments ; Storage Qualifier Type ; Trigger Flow Control ; Trigger Conditions ; Advanced Trigger Conditions ; Trigger In Used ; Trigger Out Used ; Power-Up Trigger Enabled ;
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
-; 0              ; auto_signaltap_0 ; 24                  ; 24               ; 128          ; 1        ; continuous             ; sequential           ; 1                  ; 0                           ; no              ; no               ; no                       ;
+; 0              ; auto_signaltap_0 ; 46                  ; 46               ; 128          ; 1        ; continuous             ; sequential           ; 1                  ; 0                           ; no              ; no               ; no                       ;
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
 
 
-+---------------------------------+
-; Elapsed Time Per Partition      ;
-+------------------+--------------+
-; Partition Name   ; Elapsed Time ;
-+------------------+--------------+
-; Top              ; 00:00:02     ;
-; sld_hub:auto_hub ; 00:00:02     ;
-+------------------+--------------+
++-----------------------------------------------+
+; Elapsed Time Per Partition                    ;
++--------------------------------+--------------+
+; Partition Name                 ; Elapsed Time ;
++--------------------------------+--------------+
+; sld_signaltap:auto_signaltap_0 ; 00:00:03     ;
+; sld_hub:auto_hub               ; 00:00:03     ;
++--------------------------------+--------------+
 
 
 +-------------------------------+
@@ -657,13 +497,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sun Apr 18 15:38:18 2021
+    Info: Processing started: Sun Apr 18 15:53:08 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off demonstrate -c demonstrate
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file speed_select.v
     Info (12023): Found entity 1: speed_select
 Info (12021): Found 1 design units, including 1 entities, in source file my_uart_tx.v
     Info (12023): Found entity 1: my_uart_tx
+Warning (10229): Verilog HDL Expression warning at switch.v(80): truncated literal to match 2 bits
+Warning (10229): Verilog HDL Expression warning at switch.v(81): truncated literal to match 2 bits
+Warning (10229): Verilog HDL Expression warning at switch.v(82): truncated literal to match 2 bits
+Warning (10229): Verilog HDL Expression warning at switch.v(83): truncated literal to match 2 bits
+Warning (10229): Verilog HDL Expression warning at switch.v(84): truncated literal to match 2 bits
 Info (12021): Found 1 design units, including 1 entities, in source file switch.v
     Info (12023): Found entity 1: switch
 Warning (10275): Verilog HDL Module Instantiation warning at demonstrate.v(109): ignored dangling comma in List of Port Connections
@@ -685,6 +530,7 @@ Info (12127): Elaborating entity "demonstrate" for the top level hierarchy
 Info (12128): Elaborating entity "LTC231512" for hierarchy "LTC231512:lt1"
 Info (12128): Elaborating entity "switch" for hierarchy "switch:i_switch"
 Info (12128): Elaborating entity "switch_ctrl" for hierarchy "switch_ctrl:i_switch_ctrl"
+Warning (10230): Verilog HDL assignment warning at switch_ctrl.v(30): truncated value with size 6 to match size of target (5)
 Info (10264): Verilog HDL Case Statement information at switch_ctrl.v(132): all case item expressions in this case statement are onehot
 Warning (10270): Verilog HDL Case Statement warning at switch_ctrl.v(143): incomplete case statement has no default case item
 Info (10264): Verilog HDL Case Statement information at switch_ctrl.v(143): all case item expressions in this case statement are onehot
@@ -754,16 +600,16 @@ Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "addr[5]" is missing source, defaulting to GND
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "addr[5]" is missing source, defaulting to GND
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_cu14.tdf
-    Info (12023): Found entity 1: altsyncram_cu14
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ku14.tdf
+    Info (12023): Found entity 1: altsyncram_ku14
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_ssc.tdf
     Info (12023): Found entity 1: mux_ssc
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_dvf.tdf
     Info (12023): Found entity 1: decode_dvf
-Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_fgi.tdf
-    Info (12023): Found entity 1: cntr_fgi
-Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_rgc.tdf
-    Info (12023): Found entity 1: cmpr_rgc
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_kgi.tdf
+    Info (12023): Found entity 1: cntr_kgi
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_sgc.tdf
+    Info (12023): Found entity 1: cmpr_sgc
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_i6j.tdf
     Info (12023): Found entity 1: cntr_i6j
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_egi.tdf
@@ -776,51 +622,36 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_ngc
 Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
 Info (12206): 2 design partitions require synthesis
-    Info (12211): Partition "Top" requires synthesis because there were changes to its dependent source files
+    Info (12211): Partition "sld_signaltap:auto_signaltap_0" requires synthesis because there were changes to its dependent source files
     Info (12217): Partition "sld_hub:auto_hub" requires synthesis because there were changes made to the parameters on the partition's root instance
 Info (12207): 1 design partition does not require synthesis
-    Info (12229): Partition "sld_signaltap:auto_signaltap_0" does not require synthesis because there were no relevant design changes
+    Info (12229): Partition "Top" does not require synthesis because there were no relevant design changes
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (281037): Using 4 processors to synthesize 2 partitions in parallel
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sun Apr 18 15:38:22 2021
-Info: Command: quartus_map --parallel=1 --helper=0 --helper_type=user_partition --partition=Top demonstrate -c demonstrate
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "max1452_top:max1452|Ram0" is uninferred due to inappropriate RAM size
-Info (281020): Starting Logic Optimization and Technology Mapping for Top Partition
-Warning (13012): Latch switch_ctrl:i_switch_ctrl|flag_j1.01_430 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal switch_ctrl:i_switch_ctrl|CS.s_judge1
+    Info: Processing started: Sun Apr 18 15:53:13 2021
+Info: Command: quartus_map --parallel=1 --helper=1 --helper_type=user_partition --partition=sld_signaltap:auto_signaltap_0 demonstrate -c demonstrate
+Info (281019): Starting Logic Optimization and Technology Mapping for Partition sld_signaltap:auto_signaltap_0
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "F1_8ADD_A" is stuck at GND
-    Warning (13410): Pin "F1_8ADD_B" is stuck at VCC
-    Warning (13410): Pin "F1_8ADD_C" is stuck at VCC
-    Warning (13410): Pin "F2_8ADD_A" is stuck at VCC
-    Warning (13410): Pin "F2_8ADD_B" is stuck at VCC
-    Warning (13410): Pin "F2_8ADD_C" is stuck at GND
-    Warning (13410): Pin "F3_8ADD_A" is stuck at GND
-    Warning (13410): Pin "F3_8ADD_B" is stuck at GND
-    Warning (13410): Pin "F3_8ADD_C" is stuck at GND
-    Warning (13410): Pin "unlock" is stuck at VCC
-Info (286031): Timing-Driven Synthesis is running on partition "Top"
-Info (17049): 10 registers lost all their fanouts during netlist optimizations.
-Info (21057): Implemented 343 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 317 logic cells
-    Info (21064): Implemented 8 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 539 megabytes
-    Info: Processing ended: Sun Apr 18 15:38:23 2021
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:03
+Warning (18057): The assignment to disallow NOT gate push-back on register "sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|trigger_out_mode_ff" is ignored
+Info (286031): Timing-Driven Synthesis is running on partition "sld_signaltap:auto_signaltap_0"
+Info (21057): Implemented 1290 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 151 input pins
+    Info (21059): Implemented 104 output pins
+    Info (21061): Implemented 989 logic cells
+    Info (21064): Implemented 46 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 551 megabytes
+    Info: Processing ended: Sun Apr 18 15:53:15 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:04
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sun Apr 18 15:38:22 2021
+    Info: Processing started: Sun Apr 18 15:53:13 2021
 Info: Command: quartus_map --parallel=1 --helper=2 --helper_type=user_partition --partition=sld_hub:auto_hub demonstrate -c demonstrate
 Info (281019): Starting Logic Optimization and Technology Mapping for Partition sld_hub:auto_hub
 Info (13000): Registers with preset signals will power-up high
@@ -828,22 +659,22 @@ Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal 
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
 Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
-Info (21057): Implemented 208 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 211 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 39 output pins
-    Info (21061): Implemented 148 logic cells
+    Info (21061): Implemented 151 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 539 megabytes
-    Info: Processing ended: Sun Apr 18 15:38:23 2021
+    Info: Processing ended: Sun Apr 18 15:53:14 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:03
 Info (281038): Finished parallel synthesis of all partitions
 Info (144001): Generated suppressed messages file D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/output_files/demonstrate.map.smsg
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 629 megabytes
-    Info: Processing ended: Sun Apr 18 15:38:24 2021
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:08
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
+    Info: Peak virtual memory: 624 megabytes
+    Info: Processing ended: Sun Apr 18 15:53:16 2021
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:09
 
 
 +------------------------------------------+

@@ -15,14 +15,14 @@ output	[7:0]  q//读数据
 //轮询间隔时间和次数可以设置
 //parameter delay_time=32'd5_000_000;//time=delay_time*20ns
 
-parameter 	delay_time	=	32'd5_000_000;//time=delay_time*20ns
-parameter 	cycle_times	=	8'd1;//轮询cycle_times次
-parameter 	addressnum	=	5'd31;//address total number
+parameter 	delay_time	=	32'd5_00_000;//time=delay_time*20ns
+parameter 	cycle_times	=	8'd2;//轮询cycle_times次
+parameter 	addressnum	=	5'd20;//address total number
 	
 	
 reg [31:0]	delay_cnt	=	32'd0;	//间隔时间计数	
 reg [7:0] 	cyc_cnt		=	8'd0;		//轮询次数
-reg [4:0] 	addr_cnt	=	5'd0;		//地址
+reg [5:0] 	addr_cnt	=	6'd0;		//地址
 reg [1:0]	flag_j1		=	1'd0;		//jugde1的标识
 reg [3:0]	NS,CS;	
 
