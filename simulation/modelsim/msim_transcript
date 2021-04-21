@@ -59,36 +59,13 @@
 # Top level modules:
 # 	max1452_top
 # 
-# vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim {D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch.vt}
+# vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim {D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch_ctrl.vt}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module switch_vlg_tst
+# ** Error: (vlog-7) Failed to open design unit file "D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch_ctrl.vt" in read mode.
 # 
-# Top level modules:
-# 	switch_vlg_tst
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  switch_vlg_tst
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps switch_vlg_tst 
-# Loading work.switch_vlg_tst
-# Loading work.switch
-# ** Warning: (vsim-3017) D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch.vt(31): [TFMPC] - Too few port connections. Expected 11, found 10.
-# 
-#         Region: /switch_vlg_tst/i1
-# ** Error: (vsim-3063) D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch.vt(31): Port 'F2_4ADD_A' not found in the connected module (4th connection).
-# 
-#         Region: /switch_vlg_tst/i1
-# ** Error: (vsim-3063) D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch.vt(31): Port 'F2_4ADD_B' not found in the connected module (5th connection).
-# 
-#         Region: /switch_vlg_tst/i1
-# ** Warning: (vsim-3015) D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch.vt(31): [PCDPC] - Port size (6 or 6) does not match connection size (5) for port 'addr'. The port definition is at: D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch.v(3).
-# 
-#         Region: /switch_vlg_tst/i1
-# ** Warning: (vsim-3722) D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch.vt(31): [TFMPC] - Missing connection for port 'F3_8ADD_A'.
-# 
-# ** Warning: (vsim-3722) D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch.vt(31): [TFMPC] - Missing connection for port 'F3_8ADD_B'.
-# 
-# ** Warning: (vsim-3722) D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch.vt(31): [TFMPC] - Missing connection for port 'F3_8ADD_C'.
-# 
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./demonstrate_run_msim_rtl_verilog.do PAUSED at line 19
+# No such file or directory. (errno = ENOENT)
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./demonstrate_run_msim_rtl_verilog.do line 17
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim {D:/altera/project/513PROJEC..."

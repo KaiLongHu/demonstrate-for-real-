@@ -20,7 +20,7 @@ n@a@d_@f@i@f@o
 !i10b 1
 !s100 ]3Y@Vhee:QPWP;NIbhMlL0
 !s85 0
-!s108 1618980213.345000
+!s108 1618982378.263000
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v|
 !s101 -O0
@@ -40,7 +40,7 @@ R4
 !i10b 1
 !s100 1X4RjPj0iKK0[IG4_JX=80
 !s85 0
-!s108 1618980212.615000
+!s108 1618982377.382000
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/demonstrate.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/demonstrate.v|
 !s101 -O0
@@ -61,11 +61,13 @@ n@l@t@c231512
 !i10b 1
 !s100 EiVB]Bz5eC`zm_oR_Z2K>1
 !s85 0
-!s108 1618980212.865000
+!s108 1618982377.772000
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/LTC231512.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/LTC231512.v|
 !s101 -O0
 vmax1452_top
+!i10b 1
+!s100 PaHEDH>C?NXa^LI<UkKJK1
 I^oWBEVfKXfj77Jk7>cKFo1
 V64mU@7`jkXbWGfdKNi8Zb2
 R1
@@ -75,16 +77,14 @@ FD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/max1452_top.v
 L0 1
 R2
 r1
-31
-R3
-R4
-!i10b 1
-!s100 PaHEDH>C?NXa^LI<UkKJK1
 !s85 0
-!s108 1618980213.575000
+31
+!s108 1618982378.463000
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/max1452_top.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/max1452_top.v|
 !s101 -O0
+R3
+R4
 vmy_uart_tx
 IOm=BPDTJRXP4Bj36mT9m;0
 Vd22n`4jbzeR13RnUfJ[3:3
@@ -101,7 +101,7 @@ R4
 !i10b 1
 !s100 UaU@BD6<4ih4DFZa7o1Nb2
 !s85 0
-!s108 1618980212.165000
+!s108 1618982376.932000
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/my_uart_tx.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/my_uart_tx.v|
 !s101 -O0
@@ -121,7 +121,7 @@ R4
 !i10b 1
 !s100 DjTj^C`:zLE;NTEkfeYmD3
 !s85 0
-!s108 1618980211.885000
+!s108 1618982376.612000
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/speed_select.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/speed_select.v|
 !s101 -O0
@@ -141,15 +141,15 @@ R4
 !i10b 1
 !s100 `BzA262;nhN0696XnE?NR0
 !s85 0
-!s108 1618980212.335000
+!s108 1618982377.112000
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch.v|
 !s101 -O0
 vswitch_ctrl
-Ih9J6`:SMme>NzozHR9jE00
-V7Z@n@WMe>cTbcHR1TeP[I0
+I2<TgU][n`baL@9cH]X>L?0
+VN5h]W5NhhMRFdgQD;hNkP3
 R1
-w1618979807
+w1618981407
 8D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v
 FD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v
 L0 2
@@ -159,29 +159,9 @@ r1
 R3
 R4
 !i10b 1
-!s100 PKggf?Hno1hLWCmX7gY`61
+!s100 @6[_I0>N6M7;?c^cc43nM1
 !s85 0
-!s108 1618980213.085000
+!s108 1618982378.042000
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v|
 !s101 -O0
-vswitch_vlg_tst
-!i10b 1
-!s100 VGd?eM^Jf6MfF?DeQ]K>n1
-IhZE`RBVmXWeG@l@8KbLO22
-VbNa8@oEh=KaLJJNEENP1A1
-R1
-w1606358550
-8D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch.vt
-FD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch.vt
-L0 3
-R2
-r1
-!s85 0
-31
-!s108 1618980213.805000
-!s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch.vt|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch.vt|
-!s101 -O0
-R3
-!s92 -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim -O0

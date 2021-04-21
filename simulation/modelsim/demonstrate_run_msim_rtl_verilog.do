@@ -14,9 +14,9 @@ vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V
 vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset {D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v}
 vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset {D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/max1452_top.v}
 
-vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim {D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch.vt}
+vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim {D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch_ctrl.vt}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  switch_vlg_tst
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  switch_ctrl_vlg_tst
 
 add wave *
 view structure

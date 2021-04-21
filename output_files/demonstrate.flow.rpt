@@ -1,5 +1,5 @@
 Flow report for demonstrate
-Wed Apr 21 13:03:53 2021
+Wed Apr 21 13:12:15 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Apr 21 13:03:53 2021       ;
+; Flow Status                        ; Successful - Wed Apr 21 13:12:15 2021       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; demonstrate                                 ;
 ; Top-level Entity Name              ; demonstrate                                 ;
@@ -177,7 +177,8 @@ applicable agreement for further details.
 ; Assembler                 ; 00:00:00     ; 1.0                     ; 521 MB              ; 00:00:01                           ;
 ; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 611 MB              ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 494 MB              ; 00:00:02                           ;
-; Total                     ; 00:01:50     ; --                      ; --                  ; 00:02:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 484 MB              ; 00:00:00                           ;
+; Total                     ; 00:01:51     ; --                      ; --                  ; 00:02:03                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -219,6 +220,7 @@ applicable agreement for further details.
 ; Assembler                 ; 7BMV0F92WLAYJZ1  ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; 7BMV0F92WLAYJZ1  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; 7BMV0F92WLAYJZ1  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; 7BMV0F92WLAYJZ1  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -258,6 +260,7 @@ quartus_fit --read_settings_files=off --write_settings_files=off demonstrate -c 
 quartus_asm --read_settings_files=off --write_settings_files=off demonstrate -c demonstrate
 quartus_sta demonstrate -c demonstrate
 quartus_eda --read_settings_files=off --write_settings_files=off demonstrate -c demonstrate
+quartus_eda --read_settings_files=on --write_settings_files=off demonstrate -c demonstrate --gen_testbench
 
 
 
