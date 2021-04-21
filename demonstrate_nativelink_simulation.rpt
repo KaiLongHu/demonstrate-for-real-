@@ -7,7 +7,7 @@ Sim Mode              :  RTL
 Family                :  cycloneive
 Quartus root          :  d:/altera/13.1/quartus/bin64/
 Quartus sim root      :  d:/altera/13.1/quartus/eda/sim_lib
-Simulation Tool       :  modelsim-altera
+Simulation Tool       :  questasim
 Simulation Language   :  verilog
 Simulation Mode       :  GUI
 Sim Output File       :  
@@ -16,6 +16,7 @@ Sim dir               :  simulation\modelsim
 
 =======================================================
 
-Info: Starting NativeLink simulation with ModelSim-Altera software
+Info: Starting NativeLink simulation with Questasim software
 Sourced NativeLink script d:/altera/13.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Info: Spawning ModelSim-Altera Simulation software 
+Warning: File demonstrate_run_msim_rtl_verilog.do already exists - backing up current file as demonstrate_run_msim_rtl_verilog.do.bak1
+Info: Spawning QuestaSim Simulation software 

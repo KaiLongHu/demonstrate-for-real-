@@ -1,167 +1,219 @@
 m255
-K3
+K4
+z2
 13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
 cModel Technology
-Z0 dD:\altera\project\513PROJECT\demonstrate_V009_debounce_keyreset\simulation\modelsim
+Z0 dD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim
+T_opt
+!s110 1618982885
+Vl_^k_nC67eXBPJ=f_Jl450
+04 19 4 work switch_ctrl_vlg_tst fast 0
+=1-d0509943308e-607fb7e4-317-26c4
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
 vAD_FIFO
-IGTQ3nYcdeR8fU<LMSSiC00
-VB?RnUjk^eQ8TZ1EJGnK^h3
-Z1 dD:\altera\project\513PROJECT\demonstrate_V009_debounce_keyreset\simulation\modelsim
+Z2 !s110 1618982884
+!i10b 1
+!s100 IQG6:]L9=2jaPTY]ib@ki2
+Ik6IZ5E]IahJHk8CG8FXWl1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
 w1618300086
 8D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v
 FD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v
 L0 39
-Z2 OV;L;10.1d;51
+Z4 OL;L;10.6c;65
 r1
-31
-Z3 o-vlog01compat -work work -O0
-Z4 !s92 -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset -O0
-n@a@d_@f@i@f@o
-!i10b 1
-!s100 ]3Y@Vhee:QPWP;NIbhMlL0
 !s85 0
-!s108 1618982378.263000
+31
+Z5 !s108 1618982884.000000
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v|
-!s101 -O0
-vdemonstrate
-IGYR]`CKa:Y9>mi?bMJf393
-VcUO0RAI<`:Xi8hN`g8Ohz2
+!i113 0
+Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
+n@a@d_@f@i@f@o
+vdemonstrate
+Z8 !s110 1618982883
+!i10b 1
+!s100 F=SFXGThElNoLCC[>]bFP1
+I?OKiUCm>kJE[Pb7h:9a]B2
+R3
+R0
 w1618980049
 8D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/demonstrate.v
 FD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/demonstrate.v
 L0 1
-R2
-r1
-31
-R3
 R4
-!i10b 1
-!s100 1X4RjPj0iKK0[IG4_JX=80
+r1
 !s85 0
-!s108 1618982377.382000
+31
+Z9 !s108 1618982883.000000
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/demonstrate.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/demonstrate.v|
-!s101 -O0
-vLTC231512
-IF1;5cgiE1:L>nScBeS8AK2
-VkJ[Z9B_caL71c`lYz5Fa<1
+!i113 0
+R6
+R7
 R1
+vLTC231512
+R8
+!i10b 1
+!s100 SKLOO1bTQh?V7`GI?7def1
+IXb2oWG:Z`;Z=88gBfBANS3
+R3
+R0
 w1606297881
 8D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/LTC231512.v
 FD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/LTC231512.v
 L0 1
-R2
-r1
-31
-R3
 R4
-n@l@t@c231512
-!i10b 1
-!s100 EiVB]Bz5eC`zm_oR_Z2K>1
+r1
 !s85 0
-!s108 1618982377.772000
+31
+R9
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/LTC231512.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/LTC231512.v|
-!s101 -O0
-vmax1452_top
-!i10b 1
-!s100 PaHEDH>C?NXa^LI<UkKJK1
-I^oWBEVfKXfj77Jk7>cKFo1
-V64mU@7`jkXbWGfdKNi8Zb2
+!i113 0
+R6
+R7
 R1
+n@l@t@c231512
+vmax1452_top
+R2
+!i10b 1
+!s100 ?]]24Qe0o>^S]SL>XSN8?1
+IWa5XAZ_5M4XIzIC_X[]hm3
+R3
+R0
 w1618980181
 8D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/max1452_top.v
 FD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/max1452_top.v
 L0 1
-R2
+R4
 r1
 !s85 0
 31
-!s108 1618982378.463000
+R5
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/max1452_top.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/max1452_top.v|
-!s101 -O0
-R3
-R4
-vmy_uart_tx
-IOm=BPDTJRXP4Bj36mT9m;0
-Vd22n`4jbzeR13RnUfJ[3:3
+!i113 0
+R6
+R7
 R1
+vmy_uart_tx
+R8
+!i10b 1
+!s100 o51KKJGzGVTSMW3lge1;J1
+I0EFmCo:2Jdz4@f1hG8lG92
+R3
+R0
 w1606552759
 8D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/my_uart_tx.v
 FD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/my_uart_tx.v
 L0 1
-R2
-r1
-31
-R3
 R4
-!i10b 1
-!s100 UaU@BD6<4ih4DFZa7o1Nb2
+r1
 !s85 0
-!s108 1618982376.932000
+31
+R9
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/my_uart_tx.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/my_uart_tx.v|
-!s101 -O0
-vspeed_select
-IG9]HVmTBIJI6CA0WBBD>f0
-VKljB:4HDacG]=Ta<F8IUX0
+!i113 0
+R6
+R7
 R1
+vspeed_select
+R8
+!i10b 1
+!s100 QjY]c^:QDVbW1KIB[Q4LE0
+Iejf]a<A9bQh`O@AEFEl0J3
+R3
+R0
 w1603875957
 8D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/speed_select.v
 FD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/speed_select.v
 L0 1
-R2
-r1
-31
-R3
 R4
-!i10b 1
-!s100 DjTj^C`:zLE;NTEkfeYmD3
+r1
 !s85 0
-!s108 1618982376.612000
+31
+R9
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/speed_select.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/speed_select.v|
-!s101 -O0
-vswitch
-IdJCXzh4]ic=^W]MacmJoi3
-VOTTn?cj`WO8cLEVLOVlRi0
+!i113 0
+R6
+R7
 R1
+vswitch
+R8
+!i10b 1
+!s100 S3^R@JR_Va=aP<2z8h75<0
+IW[8VmhQ6_a<jd^XcT]V>M2
+R3
+R0
 w1618732260
 8D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch.v
 FD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch.v
 L0 1
-R2
-r1
-31
-R3
 R4
-!i10b 1
-!s100 `BzA262;nhN0696XnE?NR0
+r1
 !s85 0
-!s108 1618982377.112000
+31
+R9
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch.v|
-!s101 -O0
-vswitch_ctrl
-I2<TgU][n`baL@9cH]X>L?0
-VN5h]W5NhhMRFdgQD;hNkP3
+!i113 0
+R6
+R7
 R1
+vswitch_ctrl
+R8
+!i10b 1
+!s100 W:QeFKG]>bZnXJYTTYoz;1
+INJDW<zF_?6PC7?Ne@H0Bl3
+R3
+R0
 w1618981407
 8D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v
 FD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v
 L0 2
-R2
-r1
-31
-R3
 R4
-!i10b 1
-!s100 @6[_I0>N6M7;?c^cc43nM1
+r1
 !s85 0
-!s108 1618982378.042000
+31
+R9
 !s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v|
-!s101 -O0
+!i113 0
+R6
+R7
+R1
+vswitch_ctrl_vlg_tst
+R2
+!i10b 1
+!s100 ZOdE9ECkA;D70^F53Rz;o0
+IhR]kU^i4H9:GWEDVN06kn0
+R3
+R0
+w1618982756
+8D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl_vlg_tst.vt
+FD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl_vlg_tst.vt
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl_vlg_tst.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl_vlg_tst.vt|
+!i113 0
+R6
+R7
+R1

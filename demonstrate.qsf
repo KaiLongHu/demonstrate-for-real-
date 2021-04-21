@@ -46,7 +46,7 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_SIMULATION_TOOL "QuestaSim (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_87 -to SDO
@@ -71,18 +71,12 @@ set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -sectio
 set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH switch_ctrl_vlg_tst -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name EDA_TEST_BENCH_NAME switch_vlg_tst -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id switch_vlg_tst
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME switch_vlg_tst -section_id switch_vlg_tst
 set_global_assignment -name EDA_TEST_BENCH_NAME switch_ctrl_vlg_tst -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id switch_ctrl_vlg_tst
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME switch_ctrl_vlg_tst -section_id switch_ctrl_vlg_tst
 set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name EDA_TEST_BENCH_NAME demonstrate_vlg_tst -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id demonstrate_vlg_tst
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME demonstrate_vlg_tst -section_id demonstrate_vlg_tst
 set_location_assignment PIN_11 -to rs_tx
 set_location_assignment PIN_86 -to CS_n
 set_location_assignment PIN_85 -to SCK
@@ -239,9 +233,7 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=00
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=159" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=26640" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=47125" -section_id auto_signaltap_0
-set_global_assignment -name VERILOG_FILE switch_ctrl_vlg_tst.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/switch.vt -section_id switch_vlg_tst
-set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/switch_ctrl.vt -section_id switch_ctrl_vlg_tst
-set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/demonstrate.vt -section_id demonstrate_vlg_tst
+set_global_assignment -name VERILOG_TEST_BENCH_FILE switch_ctrl_vlg_tst.vt
+set_global_assignment -name EDA_TEST_BENCH_FILE switch_ctrl_vlg_tst.vt -section_id switch_ctrl_vlg_tst
 set_global_assignment -name SLD_FILE db/stp4_auto_stripped.stp
