@@ -105,7 +105,7 @@ my_uart_tx i_my_uart_tx(
 							. clk(clk),
 							. rst_n(reset_n),
 							. rs_tx(tx_1452),
-							. unlock(unlock),// unlock send complete turn to low!!!!!!!!!!																		
+							. unlock(unlock)// unlock send complete turn to low!!!!!!!!!!																		
 							);
 
 

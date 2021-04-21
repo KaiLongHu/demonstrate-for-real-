@@ -5,13 +5,10 @@ module max1452_top(
 							output 	reg   unlock						
 							);
 							
-												
-
-			
-
-							
-							
-
+																										
+//----------------------------------------------------
+parameter casenum		= 	5'd25;//send data case数量		
+//----------------------------------------------------	
 
 //----------------------------------------------------
 wire clk_bps;		// clk_bps的高电平为接收或者发送数据位，每个波特周期的中间 
@@ -107,9 +104,7 @@ always@(posedge clk or negedge rst_n)
 //	if(unlock_cnt<=casenum+2)
 //		unlock<=1'b0;
 
-//----------------------------------------------------
-parameter casenum		= 	5'd25;//send data case数量		
-//----------------------------------------------------	
+
 always@(posedge clk or negedge rst_n)
 if(!rst_n)
 	rd_data<=8'h00;

@@ -9,6 +9,6 @@ entity AD_FIFO is
         empty           : out    vl_logic;
         full            : out    vl_logic;
         q               : out    vl_logic_vector(7 downto 0);
-        usedw           : out    vl_logic_vector(15 downto 0)
+        usedw           : out    vl_logic_vector(11 downto 0)
     );
 end AD_FIFO;

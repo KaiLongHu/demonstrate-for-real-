@@ -2,7 +2,7 @@ library verilog;
 use verilog.vl_types.all;
 entity switch_ctrl is
     generic(
-        delay_time      : integer := 100;
+        delay_time      : integer := 500000;
         cycle_times     : vl_logic_vector(0 to 7) := (Hi0, Hi0, Hi0, Hi0, Hi0, Hi1, Hi0, Hi1);
         s_idle          : vl_logic_vector(0 to 3) := (Hi0, Hi0, Hi0, Hi0);
         s_start         : vl_logic_vector(0 to 3) := (Hi0, Hi0, Hi0, Hi1);
