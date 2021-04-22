@@ -5,7 +5,7 @@ z0
 cModel Technology
 dC:\B\xia_program\QUARTUS_program\huludao_1125\file\V007\demonstrate\simulation\modelsim
 vio_buf_opdrn
-Z0 !s110 1619100235
+Z0 !s110 1619102930
 !i10b 1
 !s100 =^<AH`I:TA`[9YUe=h1;_1
 Ii<XTDROG@]H@LIB`]=N`20
@@ -19,7 +19,7 @@ Z6 OL;L;10.6c;65
 r1
 !s85 0
 31
-Z7 !s108 1619100235.000000
+Z7 !s108 1619102930.000000
 !s107 d:/altera/13.1/quartus/eda/sim_lib/sgate.v|
 Z8 !s90 -reportprogress|300|-vlog01compat|-work|sgate_ver|d:/altera/13.1/quartus/eda/sim_lib/sgate.v|
 !i113 0

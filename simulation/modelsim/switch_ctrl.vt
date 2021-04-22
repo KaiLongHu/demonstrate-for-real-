@@ -40,7 +40,7 @@ begin
  reset_n=0;//复位
 #100;
  reset_n=1; 
- repeat(3)begin//重复3次
+ repeat(300)begin//重复3次
  #1000;
  flag=0;//启动
  #100;

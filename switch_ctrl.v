@@ -14,7 +14,7 @@ output	[7:0]  q//读数据
 
 //轮询间隔时间和次数可以设置
 parameter delay_time=32'd5_00_000;//time=delay_time*10ns,5_00_000= 5ms
-parameter cycle_times=8'd8;
+parameter cycle_times=8'd1;
 
 
 reg [7:0] times=8'd0;//轮询次数

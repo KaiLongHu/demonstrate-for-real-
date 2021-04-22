@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Apr 22 22:03:30 2021
+Fitter Status : Successful - Thu Apr 22 22:39:42 2021
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : demonstrate
 Top-level Entity Name : switch_ctrl
 Family : Cyclone IV E
 Device : EP4CE10E22C8
 Timing Models : Final
-Total logic elements : 928 / 10,320 ( 9 % )
-    Total combinational functions : 612 / 10,320 ( 6 % )
+Total logic elements : 927 / 10,320 ( 9 % )
+    Total combinational functions : 610 / 10,320 ( 6 % )
     Dedicated logic registers : 752 / 10,320 ( 7 % )
 Total registers : 752
 Total pins : 28 / 92 ( 30 % )

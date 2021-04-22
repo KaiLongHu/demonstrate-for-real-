@@ -27,7 +27,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {d:/altera/13.1/quartus/eda/sim_lib/altera_primitives.v}
 # QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
-# Start time: 22:03:53 on Apr 22,2021
+# Start time: 22:48:49 on Apr 22,2021
 # vlog -reportprogress 300 -vlog01compat -work altera_ver d:/altera/13.1/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -105,7 +105,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 22:03:53 on Apr 22,2021, Elapsed time: 0:00:00
+# End time: 22:48:49 on Apr 22,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -116,7 +116,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {d:/altera/13.1/quartus/eda/sim_lib/220model.v}
 # QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
-# Start time: 22:03:54 on Apr 22,2021
+# Start time: 22:48:50 on Apr 22,2021
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver d:/altera/13.1/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -180,7 +180,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 22:03:54 on Apr 22,2021, Elapsed time: 0:00:00
+# End time: 22:48:50 on Apr 22,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -191,7 +191,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {d:/altera/13.1/quartus/eda/sim_lib/sgate.v}
 # QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
-# Start time: 22:03:55 on Apr 22,2021
+# Start time: 22:48:50 on Apr 22,2021
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver d:/altera/13.1/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -233,7 +233,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 22:03:55 on Apr 22,2021, Elapsed time: 0:00:00
+# End time: 22:48:50 on Apr 22,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -244,7 +244,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {d:/altera/13.1/quartus/eda/sim_lib/altera_mf.v}
 # QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
-# Start time: 22:03:55 on Apr 22,2021
+# Start time: 22:48:51 on Apr 22,2021
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver d:/altera/13.1/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -369,7 +369,7 @@
 # 	altserial_flash_loader
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 22:03:56 on Apr 22,2021, Elapsed time: 0:00:01
+# End time: 22:48:51 on Apr 22,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -380,7 +380,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {d:/altera/13.1/quartus/eda/sim_lib/altera_lnsim.sv}
 # QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
-# Start time: 22:03:56 on Apr 22,2021
+# Start time: 22:48:52 on Apr 22,2021
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver d:/altera/13.1/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -1873,7 +1873,7 @@
 # 	altera_pll_reconfig_tasks
 # 	altera_syncram
 # 	altera_pll
-# End time: 22:04:05 on Apr 22,2021, Elapsed time: 0:00:09
+# End time: 22:49:01 on Apr 22,2021, Elapsed time: 0:00:09
 # Errors: 0, Warnings: 1430
 # 
 # vlib verilog_libs/cycloneive_ver
@@ -1884,7 +1884,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cycloneive_ver {d:/altera/13.1/quartus/eda/sim_lib/cycloneive_atoms.v}
 # QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
-# Start time: 22:04:05 on Apr 22,2021
+# Start time: 22:49:02 on Apr 22,2021
 # vlog -reportprogress 300 -vlog01compat -work cycloneive_ver d:/altera/13.1/quartus/eda/sim_lib/cycloneive_atoms.v 
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFE
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS
@@ -1960,7 +1960,7 @@
 # 	cycloneive_jtag
 # 	cycloneive_crcblock
 # 	cycloneive_oscillator
-# End time: 22:04:05 on Apr 22,2021, Elapsed time: 0:00:00
+# End time: 22:49:02 on Apr 22,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -1974,39 +1974,39 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset {D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v}
 # QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
-# Start time: 22:04:06 on Apr 22,2021
+# Start time: 22:49:02 on Apr 22,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset" D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v 
 # -- Compiling module switch_ctrl
 # 
 # Top level modules:
 # 	switch_ctrl
-# End time: 22:04:06 on Apr 22,2021, Elapsed time: 0:00:00
+# End time: 22:49:02 on Apr 22,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset {D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v}
 # QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
-# Start time: 22:04:06 on Apr 22,2021
+# Start time: 22:49:02 on Apr 22,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset" D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v 
 # -- Compiling module AD_FIFO
 # 
 # Top level modules:
 # 	AD_FIFO
-# End time: 22:04:06 on Apr 22,2021, Elapsed time: 0:00:00
+# End time: 22:49:02 on Apr 22,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim {D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch_ctrl.vt}
 # QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
-# Start time: 22:04:06 on Apr 22,2021
+# Start time: 22:49:03 on Apr 22,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim" D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch_ctrl.vt 
 # -- Compiling module switch_ctrl_vlg_tst
 # 
 # Top level modules:
 # 	switch_ctrl_vlg_tst
-# End time: 22:04:06 on Apr 22,2021, Elapsed time: 0:00:00
+# End time: 22:49:03 on Apr 22,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  switch_ctrl_vlg_tst
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" switch_ctrl_vlg_tst 
-# Start time: 22:04:06 on Apr 22,2021
+# Start time: 22:49:03 on Apr 22,2021
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vopt-143) Recognized 1 FSM in module "switch_ctrl(fast)".
 # Loading work.switch_ctrl_vlg_tst(fast)
@@ -2014,7 +2014,7 @@
 # Loading work.AD_FIFO(fast)
 # Loading altera_mf_ver.scfifo(fast)
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
-# ** Warning: (vsim-3015) D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v(147): [PCDPC] - Port size (12) does not match connection size (16) for port 'usedw'. The port definition is at: D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v(47).
+# ** Warning: (vsim-3015) D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v(146): [PCDPC] - Port size (12) does not match connection size (16) for port 'usedw'. The port definition is at: D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v(47).
 #    Time: 0 ps  Iteration: 0  Instance: /switch_ctrl_vlg_tst/i1/AD_FIFO_i File: D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v
 # 
 # add wave *
@@ -2023,5 +2023,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 22:14:57 on Apr 22,2021, Elapsed time: 0:10:51
+# End time: 22:50:49 on Apr 22,2021, Elapsed time: 0:01:46
 # Errors: 0, Warnings: 1

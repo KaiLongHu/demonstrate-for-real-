@@ -5,7 +5,7 @@ z0
 cModel Technology
 dC:\B\xia_program\QUARTUS_program\huludao_1125\file\V007\demonstrate\simulation\modelsim
 vcycloneive_and1
-Z0 !s110 1619100245
+Z0 !s110 1619102942
 !i10b 1
 !s100 oT]7FkABD[F088N@X^z8]0
 I1L`D>JOfmRAHR[HWFE@eU1
@@ -19,7 +19,7 @@ Z6 OL;L;10.6c;65
 r1
 !s85 0
 31
-Z7 !s108 1619100245.000000
+Z7 !s108 1619102942.000000
 !s107 d:/altera/13.1/quartus/eda/sim_lib/cycloneive_atoms.v|
 Z8 !s90 -reportprogress|300|-vlog01compat|-work|cycloneive_ver|d:/altera/13.1/quartus/eda/sim_lib/cycloneive_atoms.v|
 !i113 0

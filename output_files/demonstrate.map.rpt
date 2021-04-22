@@ -1,5 +1,5 @@
 Analysis & Synthesis report for demonstrate
-Thu Apr 22 22:29:17 2021
+Thu Apr 22 22:39:32 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -52,7 +52,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 22 22:29:17 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 22 22:39:32 2021       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; demonstrate                                 ;
 ; Top-level Entity Name              ; switch_ctrl                                 ;
@@ -270,7 +270,7 @@ applicable agreement for further details.
 +-----------+---------------+-------------------+----------+----------------------------------+----------------------------------+
 ; Hierarchy ; File Name     ; Relative Location ; Change   ; Old                              ; New                              ;
 +-----------+---------------+-------------------+----------+----------------------------------+----------------------------------+
-; |         ; switch_ctrl.v ; Project Directory ; Checksum ; 962247e6ed3c3971a42ab292071866da ; b0d40a56dfbc9674b318339dc675de46 ;
+; |         ; switch_ctrl.v ; Project Directory ; Checksum ; b0d40a56dfbc9674b318339dc675de46 ; 084a6165c8acee0f32dc0222abf652ce ;
 +-----------+---------------+-------------------+----------+----------------------------------+----------------------------------+
 
 
@@ -279,7 +279,7 @@ applicable agreement for further details.
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                   ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |switch_ctrl                                    ; 129 (79)          ; 102 (64)     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |switch_ctrl                                                                                                                                          ; work         ;
+; |switch_ctrl                                    ; 130 (80)          ; 102 (64)     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |switch_ctrl                                                                                                                                          ; work         ;
 ;    |AD_FIFO:AD_FIFO_i|                          ; 50 (0)            ; 38 (0)       ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |switch_ctrl|AD_FIFO:AD_FIFO_i                                                                                                                        ; work         ;
 ;       |scfifo:scfifo_component|                 ; 50 (0)            ; 38 (0)       ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component                                                                                                ; work         ;
 ;          |scfifo_ep31:auto_generated|           ; 50 (0)            ; 38 (0)       ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated                                                                     ; work         ;
@@ -351,7 +351,7 @@ Encoding Type:  One-Hot
 ; Parameter Name ; Value                            ; Type                    ;
 +----------------+----------------------------------+-------------------------+
 ; delay_time     ; 00000000000001111010000100100000 ; Unsigned Binary         ;
-; cycle_times    ; 00001000                         ; Unsigned Binary         ;
+; cycle_times    ; 00000001                         ; Unsigned Binary         ;
 ; s_idle         ; 00000                            ; Unsigned Binary         ;
 ; s_start        ; 00001                            ; Unsigned Binary         ;
 ; s_delay        ; 00010                            ; Unsigned Binary         ;
@@ -413,7 +413,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; db/cntr_qp7.tdf                        ; Project Directory  ; work    ; 333e6ccd778b9d70221872064aa7bdb3 ;
 ; db/dpram_f811.tdf                      ; Project Directory  ; work    ; 537cfe3fbbe690fe94b1001c9afee2c0 ;
 ; db/scfifo_ep31.tdf                     ; Project Directory  ; work    ; 5cec37bcb7e1d5a7ed3d5560ea9a8a57 ;
-; switch_ctrl.v                          ; Project Directory  ; work    ; b0d40a56dfbc9674b318339dc675de46 ;
+; switch_ctrl.v                          ; Project Directory  ; work    ; 084a6165c8acee0f32dc0222abf652ce ;
 +----------------------------------------+--------------------+---------+----------------------------------+
 
 
@@ -501,8 +501,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------+--------------+
 ; Partition Name   ; Elapsed Time ;
 +------------------+--------------+
-; sld_hub:auto_hub ; 00:00:02     ;
-; Top              ; 00:00:02     ;
+; sld_hub:auto_hub ; 00:00:03     ;
+; Top              ; 00:00:03     ;
 +------------------+--------------+
 
 
@@ -512,7 +512,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Apr 22 22:29:11 2021
+    Info: Processing started: Thu Apr 22 22:39:26 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off demonstrate -c demonstrate
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file speed_select.v
@@ -609,25 +609,25 @@ Info (281037): Using 4 processors to synthesize 2 partitions in parallel
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Apr 22 22:29:15 2021
+    Info: Processing started: Thu Apr 22 22:39:30 2021
 Info: Command: quartus_map --parallel=1 --helper=0 --helper_type=user_partition --partition=Top demonstrate -c demonstrate
 Info (281020): Starting Logic Optimization and Technology Mapping for Top Partition
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 4 registers lost all their fanouts during netlist optimizations.
-Info (21057): Implemented 168 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 169 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 132 logic cells
+    Info (21061): Implemented 133 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 540 megabytes
-    Info: Processing ended: Thu Apr 22 22:29:16 2021
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 542 megabytes
+    Info: Processing ended: Thu Apr 22 22:39:32 2021
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:03
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Apr 22 22:29:15 2021
+    Info: Processing started: Thu Apr 22 22:39:30 2021
 Info: Command: quartus_map --parallel=1 --helper=2 --helper_type=user_partition --partition=sld_hub:auto_hub demonstrate -c demonstrate
 Info (281019): Starting Logic Optimization and Technology Mapping for Partition sld_hub:auto_hub
 Info (13000): Registers with preset signals will power-up high
@@ -641,14 +641,14 @@ Info (21057): Implemented 209 device resources after synthesis - the final resou
     Info (21061): Implemented 149 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 540 megabytes
-    Info: Processing ended: Thu Apr 22 22:29:17 2021
+    Info: Processing ended: Thu Apr 22 22:39:32 2021
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:03
 Info (281038): Finished parallel synthesis of all partitions
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 627 megabytes
-    Info: Processing ended: Thu Apr 22 22:29:17 2021
-    Info: Elapsed time: 00:00:06
+    Info: Peak virtual memory: 631 megabytes
+    Info: Processing ended: Thu Apr 22 22:39:33 2021
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:07
 
 
