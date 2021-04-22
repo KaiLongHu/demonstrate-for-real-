@@ -1,145 +1,4 @@
-|demonstrate
-clk => clk.IN6
-reset_n => reset_n.IN5
-SDO => SDO.IN1
-CS_n << LTC231512:lt1.CS_n
-SCK << LTC231512:lt1.SCK
-rs_tx << my_uart_tx:i_my_uart_tx.rs_tx
-tx_1452 << max1452_top:max1452.rs_tx
-flag => flag.IN1
-F1_8ADD_A << switch:i_switch.F1_8ADD_A
-F1_8ADD_B << switch:i_switch.F1_8ADD_B
-F1_8ADD_C << switch:i_switch.F1_8ADD_C
-F2_8ADD_A << switch:i_switch.F2_8ADD_A
-F2_8ADD_B << switch:i_switch.F2_8ADD_B
-F2_8ADD_C << switch:i_switch.F2_8ADD_C
-F3_8ADD_A << switch:i_switch.F3_8ADD_A
-F3_8ADD_B << switch:i_switch.F3_8ADD_B
-F3_8ADD_C << switch:i_switch.F3_8ADD_C
-unlock << max1452_top:max1452.unlock
-
-
-|demonstrate|LTC231512:lt1
-clk_50M => data_out_buf[0].CLK
-clk_50M => data_out_buf[1].CLK
-clk_50M => data_out_buf[2].CLK
-clk_50M => data_out_buf[3].CLK
-clk_50M => data_out_buf[4].CLK
-clk_50M => data_out_buf[5].CLK
-clk_50M => data_out_buf[6].CLK
-clk_50M => data_out_buf[7].CLK
-clk_50M => data_out_buf[8].CLK
-clk_50M => data_out_buf[9].CLK
-clk_50M => data_out_buf[10].CLK
-clk_50M => data_out_buf[11].CLK
-clk_50M => data[0].CLK
-clk_50M => data[1].CLK
-clk_50M => data[2].CLK
-clk_50M => data[3].CLK
-clk_50M => data[4].CLK
-clk_50M => data[5].CLK
-clk_50M => data[6].CLK
-clk_50M => data[7].CLK
-clk_50M => data[8].CLK
-clk_50M => data[9].CLK
-clk_50M => data[10].CLK
-clk_50M => data[11].CLK
-clk_50M => SCK_buf.CLK
-clk_50M => CS_n~reg0.CLK
-clk_50M => cnt[0].CLK
-clk_50M => cnt[1].CLK
-clk_50M => cnt[2].CLK
-clk_50M => cnt[3].CLK
-clk_50M => cnt[4].CLK
-clk_50M => cnt[5].CLK
-reset_n => data_out_buf[0].ACLR
-reset_n => data_out_buf[1].ACLR
-reset_n => data_out_buf[2].ACLR
-reset_n => data_out_buf[3].ACLR
-reset_n => data_out_buf[4].ACLR
-reset_n => data_out_buf[5].ACLR
-reset_n => data_out_buf[6].ACLR
-reset_n => data_out_buf[7].ACLR
-reset_n => data_out_buf[8].ACLR
-reset_n => data_out_buf[9].ACLR
-reset_n => data_out_buf[10].ACLR
-reset_n => data_out_buf[11].ACLR
-reset_n => CS_n~reg0.PRESET
-reset_n => SCK_buf.ACLR
-reset_n => cnt[0].ACLR
-reset_n => cnt[1].ACLR
-reset_n => cnt[2].ACLR
-reset_n => cnt[3].ACLR
-reset_n => cnt[4].ACLR
-reset_n => cnt[5].ACLR
-reset_n => data[0].ACLR
-reset_n => data[1].ACLR
-reset_n => data[2].ACLR
-reset_n => data[3].ACLR
-reset_n => data[4].ACLR
-reset_n => data[5].ACLR
-reset_n => data[6].ACLR
-reset_n => data[7].ACLR
-reset_n => data[8].ACLR
-reset_n => data[9].ACLR
-reset_n => data[10].ACLR
-reset_n => data[11].ACLR
-SDO => Selector0.IN4
-SDO => Selector1.IN4
-SDO => Selector2.IN4
-SDO => Selector3.IN4
-SDO => Selector4.IN4
-SDO => Selector5.IN4
-SDO => Selector6.IN4
-SDO => Selector7.IN4
-SDO => Selector8.IN4
-SDO => Selector9.IN4
-SDO => Selector10.IN4
-SDO => Selector11.IN4
-CS_n <= CS_n~reg0.DB_MAX_OUTPUT_PORT_TYPE
-SCK <= SCK_buf.DB_MAX_OUTPUT_PORT_TYPE
-data_out[0] <= data_out_buf[0].DB_MAX_OUTPUT_PORT_TYPE
-data_out[1] <= data_out_buf[1].DB_MAX_OUTPUT_PORT_TYPE
-data_out[2] <= data_out_buf[2].DB_MAX_OUTPUT_PORT_TYPE
-data_out[3] <= data_out_buf[3].DB_MAX_OUTPUT_PORT_TYPE
-data_out[4] <= data_out_buf[4].DB_MAX_OUTPUT_PORT_TYPE
-data_out[5] <= data_out_buf[5].DB_MAX_OUTPUT_PORT_TYPE
-data_out[6] <= data_out_buf[6].DB_MAX_OUTPUT_PORT_TYPE
-data_out[7] <= data_out_buf[7].DB_MAX_OUTPUT_PORT_TYPE
-data_out[8] <= data_out_buf[8].DB_MAX_OUTPUT_PORT_TYPE
-data_out[9] <= data_out_buf[9].DB_MAX_OUTPUT_PORT_TYPE
-data_out[10] <= data_out_buf[10].DB_MAX_OUTPUT_PORT_TYPE
-data_out[11] <= data_out_buf[11].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|demonstrate|switch:i_switch
-clk => F3_8ADD[0].CLK
-clk => F3_8ADD[1].CLK
-clk => F3_8ADD[2].CLK
-clk => F2_8ADD[0].CLK
-clk => F2_8ADD[1].CLK
-clk => F2_8ADD[2].CLK
-clk => F1_8ADD[0].CLK
-clk => F1_8ADD[1].CLK
-clk => F1_8ADD[2].CLK
-addr[0] => Decoder0.IN5
-addr[1] => Decoder0.IN4
-addr[2] => Decoder0.IN3
-addr[3] => Decoder0.IN2
-addr[4] => Decoder0.IN1
-addr[5] => Decoder0.IN0
-F1_8ADD_A <= F1_8ADD[0].DB_MAX_OUTPUT_PORT_TYPE
-F1_8ADD_B <= F1_8ADD[1].DB_MAX_OUTPUT_PORT_TYPE
-F1_8ADD_C <= F1_8ADD[2].DB_MAX_OUTPUT_PORT_TYPE
-F2_8ADD_A <= F2_8ADD[0].DB_MAX_OUTPUT_PORT_TYPE
-F2_8ADD_B <= F2_8ADD[1].DB_MAX_OUTPUT_PORT_TYPE
-F2_8ADD_C <= F2_8ADD[2].DB_MAX_OUTPUT_PORT_TYPE
-F3_8ADD_A <= F3_8ADD[0].DB_MAX_OUTPUT_PORT_TYPE
-F3_8ADD_B <= F3_8ADD[1].DB_MAX_OUTPUT_PORT_TYPE
-F3_8ADD_C <= F3_8ADD[2].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|demonstrate|switch_ctrl:i_switch_ctrl
+|switch_ctrl
 clk => clk.IN1
 reset_n => delay_cnt[0].ACLR
 reset_n => delay_cnt[1].ACLR
@@ -207,26 +66,26 @@ data_out[4] => FIFO_data.DATAB
 data_out[5] => FIFO_data.DATAB
 data_out[6] => FIFO_data.DATAB
 data_out[7] => FIFO_data.DATAB
-addr[0] <= address[0].DB_MAX_OUTPUT_PORT_TYPE
-addr[1] <= address[1].DB_MAX_OUTPUT_PORT_TYPE
-addr[2] <= address[2].DB_MAX_OUTPUT_PORT_TYPE
-addr[3] <= address[3].DB_MAX_OUTPUT_PORT_TYPE
-addr[4] <= address[4].DB_MAX_OUTPUT_PORT_TYPE
-addr[5] <= address[5].DB_MAX_OUTPUT_PORT_TYPE
+addr[0] << address[0].DB_MAX_OUTPUT_PORT_TYPE
+addr[1] << address[1].DB_MAX_OUTPUT_PORT_TYPE
+addr[2] << address[2].DB_MAX_OUTPUT_PORT_TYPE
+addr[3] << address[3].DB_MAX_OUTPUT_PORT_TYPE
+addr[4] << address[4].DB_MAX_OUTPUT_PORT_TYPE
+addr[5] << address[5].DB_MAX_OUTPUT_PORT_TYPE
 rdreq => rdreq.IN1
-empty <= AD_FIFO:AD_FIFO_i.empty
-full <= AD_FIFO:AD_FIFO_i.full
-q[0] <= AD_FIFO:AD_FIFO_i.q
-q[1] <= AD_FIFO:AD_FIFO_i.q
-q[2] <= AD_FIFO:AD_FIFO_i.q
-q[3] <= AD_FIFO:AD_FIFO_i.q
-q[4] <= AD_FIFO:AD_FIFO_i.q
-q[5] <= AD_FIFO:AD_FIFO_i.q
-q[6] <= AD_FIFO:AD_FIFO_i.q
-q[7] <= AD_FIFO:AD_FIFO_i.q
+empty << AD_FIFO:AD_FIFO_i.empty
+full << AD_FIFO:AD_FIFO_i.full
+q[0] << AD_FIFO:AD_FIFO_i.q
+q[1] << AD_FIFO:AD_FIFO_i.q
+q[2] << AD_FIFO:AD_FIFO_i.q
+q[3] << AD_FIFO:AD_FIFO_i.q
+q[4] << AD_FIFO:AD_FIFO_i.q
+q[5] << AD_FIFO:AD_FIFO_i.q
+q[6] << AD_FIFO:AD_FIFO_i.q
+q[7] << AD_FIFO:AD_FIFO_i.q
 
 
-|demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i
+|switch_ctrl|AD_FIFO:AD_FIFO_i
 clock => clock.IN1
 data[0] => data[0].IN1
 data[1] => data[1].IN1
@@ -262,7 +121,7 @@ usedw[10] <= scfifo:scfifo_component.usedw
 usedw[11] <= scfifo:scfifo_component.usedw
 
 
-|demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component
+|switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component
 data[0] => scfifo_ep31:auto_generated.data[0]
 data[1] => scfifo_ep31:auto_generated.data[1]
 data[2] => scfifo_ep31:auto_generated.data[2]
@@ -302,7 +161,7 @@ usedw[10] <= scfifo_ep31:auto_generated.usedw[10]
 usedw[11] <= scfifo_ep31:auto_generated.usedw[11]
 
 
-|demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated
+|switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated
 clock => a_dpfifo_lv31:dpfifo.clock
 data[0] => a_dpfifo_lv31:dpfifo.data[0]
 data[1] => a_dpfifo_lv31:dpfifo.data[1]
@@ -338,7 +197,7 @@ usedw[11] <= a_dpfifo_lv31:dpfifo.usedw[11]
 wrreq => a_dpfifo_lv31:dpfifo.wreq
 
 
-|demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo
+|switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo
 clock => a_fefifo_1bf:fifo_state.clock
 clock => dpram_f811:FIFOram.inclock
 clock => dpram_f811:FIFOram.outclock
@@ -385,7 +244,7 @@ wreq => a_fefifo_1bf:fifo_state.wreq
 wreq => valid_wreq.IN0
 
 
-|demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|a_fefifo_1bf:fifo_state
+|switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|a_fefifo_1bf:fifo_state
 aclr => b_full.IN0
 aclr => b_non_empty.IN0
 aclr => cntr_qp7:count_usedw.aclr
@@ -422,7 +281,7 @@ wreq => _.IN0
 wreq => valid_wreq.IN0
 
 
-|demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|a_fefifo_1bf:fifo_state|cntr_qp7:count_usedw
+|switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|a_fefifo_1bf:fifo_state|cntr_qp7:count_usedw
 aclr => counter_reg_bit[11].IN0
 clock => counter_reg_bit[11].CLK
 clock => counter_reg_bit[10].CLK
@@ -466,7 +325,7 @@ updown => counter_comb_bita10.DATAB
 updown => counter_comb_bita11.DATAB
 
 
-|demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|dpram_f811:FIFOram
+|switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|dpram_f811:FIFOram
 data[0] => altsyncram_g3k1:altsyncram1.data_a[0]
 data[1] => altsyncram_g3k1:altsyncram1.data_a[1]
 data[2] => altsyncram_g3k1:altsyncram1.data_a[2]
@@ -513,7 +372,7 @@ wraddress[11] => altsyncram_g3k1:altsyncram1.address_a[11]
 wren => altsyncram_g3k1:altsyncram1.wren_a
 
 
-|demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|dpram_f811:FIFOram|altsyncram_g3k1:altsyncram1
+|switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|dpram_f811:FIFOram|altsyncram_g3k1:altsyncram1
 address_a[0] => ram_block2a0.PORTAADDR
 address_a[0] => ram_block2a1.PORTAADDR
 address_a[0] => ram_block2a2.PORTAADDR
@@ -764,7 +623,7 @@ wren_a => ram_block2a7.PORTAWE
 wren_a => ram_block2a7.ENA0
 
 
-|demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|cntr_epb:rd_ptr_count
+|switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|cntr_epb:rd_ptr_count
 aclr => counter_reg_bit[11].IN0
 clock => counter_reg_bit[11].CLK
 clock => counter_reg_bit[10].CLK
@@ -796,7 +655,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|cntr_epb:wr_ptr
+|switch_ctrl|AD_FIFO:AD_FIFO_i|scfifo:scfifo_component|scfifo_ep31:auto_generated|a_dpfifo_lv31:dpfifo|cntr_epb:wr_ptr
 aclr => counter_reg_bit[11].IN0
 clock => counter_reg_bit[11].CLK
 clock => counter_reg_bit[10].CLK
@@ -826,310 +685,5 @@ q[11] <= counter_reg_bit[11].DB_MAX_OUTPUT_PORT_TYPE
 sclr => _.IN0
 sclr => _.IN0
 sclr => _.IN0
-
-
-|demonstrate|speed_select:i_speed_select
-clk => clk_bps_r.CLK
-clk => cnt[0].CLK
-clk => cnt[1].CLK
-clk => cnt[2].CLK
-clk => cnt[3].CLK
-clk => cnt[4].CLK
-clk => cnt[5].CLK
-clk => cnt[6].CLK
-clk => cnt[7].CLK
-clk => cnt[8].CLK
-clk => cnt[9].CLK
-clk => cnt[10].CLK
-clk => cnt[11].CLK
-clk => cnt[12].CLK
-clk => cnt[13].CLK
-rst_n => cnt[0].ACLR
-rst_n => cnt[1].ACLR
-rst_n => cnt[2].ACLR
-rst_n => cnt[3].ACLR
-rst_n => cnt[4].ACLR
-rst_n => cnt[5].ACLR
-rst_n => cnt[6].ACLR
-rst_n => cnt[7].ACLR
-rst_n => cnt[8].ACLR
-rst_n => cnt[9].ACLR
-rst_n => cnt[10].ACLR
-rst_n => cnt[11].ACLR
-rst_n => cnt[12].ACLR
-rst_n => cnt[13].ACLR
-rst_n => clk_bps_r.ACLR
-clk_bps <= clk_bps_r.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|demonstrate|my_uart_tx:i_my_uart_tx
-clk => rs232_tx_r.CLK
-clk => num[0].CLK
-clk => num[1].CLK
-clk => num[2].CLK
-clk => num[3].CLK
-clk => tx_en.CLK
-clk => tx_data[0].CLK
-clk => tx_data[1].CLK
-clk => tx_data[2].CLK
-clk => tx_data[3].CLK
-clk => tx_data[4].CLK
-clk => tx_data[5].CLK
-clk => tx_data[6].CLK
-clk => tx_data[7].CLK
-clk => rd_en~reg0.CLK
-clk => wait_cnt[0].CLK
-clk => wait_cnt[1].CLK
-clk => wait_cnt[2].CLK
-clk => wait_cnt[3].CLK
-clk => wait_cnt[4].CLK
-clk => wait_cnt[5].CLK
-clk => wait_cnt[6].CLK
-clk => wait_cnt[7].CLK
-clk => wait_cnt[8].CLK
-clk => wait_cnt[9].CLK
-clk => wait_cnt[10].CLK
-clk => wait_cnt[11].CLK
-clk => wait_cnt[12].CLK
-clk => wait_cnt[13].CLK
-clk => wait_cnt[14].CLK
-clk => wait_cnt[15].CLK
-clk => wait_cnt[16].CLK
-clk => wait_cnt[17].CLK
-clk => wait_cnt[18].CLK
-clk => wait_cnt[19].CLK
-clk => wait_cnt[20].CLK
-clk => wait_cnt[21].CLK
-clk => wait_cnt[22].CLK
-clk => wait_cnt[23].CLK
-clk => wait_cnt[24].CLK
-clk => wait_cnt[25].CLK
-clk => wait_cnt[26].CLK
-clk => wait_cnt[27].CLK
-clk => wait_cnt[28].CLK
-clk => wait_cnt[29].CLK
-clk => wait_cnt[30].CLK
-clk => wait_cnt[31].CLK
-clk => state~1.DATAIN
-rst_n => wait_cnt[0].ACLR
-rst_n => wait_cnt[1].ACLR
-rst_n => wait_cnt[2].ACLR
-rst_n => wait_cnt[3].ACLR
-rst_n => wait_cnt[4].ACLR
-rst_n => wait_cnt[5].ACLR
-rst_n => wait_cnt[6].ACLR
-rst_n => wait_cnt[7].ACLR
-rst_n => wait_cnt[8].ACLR
-rst_n => wait_cnt[9].ACLR
-rst_n => wait_cnt[10].ACLR
-rst_n => wait_cnt[11].ACLR
-rst_n => wait_cnt[12].ACLR
-rst_n => wait_cnt[13].ACLR
-rst_n => wait_cnt[14].ACLR
-rst_n => wait_cnt[15].ACLR
-rst_n => wait_cnt[16].ACLR
-rst_n => wait_cnt[17].ACLR
-rst_n => wait_cnt[18].ACLR
-rst_n => wait_cnt[19].ACLR
-rst_n => wait_cnt[20].ACLR
-rst_n => wait_cnt[21].ACLR
-rst_n => wait_cnt[22].ACLR
-rst_n => wait_cnt[23].ACLR
-rst_n => wait_cnt[24].ACLR
-rst_n => wait_cnt[25].ACLR
-rst_n => wait_cnt[26].ACLR
-rst_n => wait_cnt[27].ACLR
-rst_n => wait_cnt[28].ACLR
-rst_n => wait_cnt[29].ACLR
-rst_n => wait_cnt[30].ACLR
-rst_n => wait_cnt[31].ACLR
-rst_n => rs232_tx_r.PRESET
-rst_n => num[0].ACLR
-rst_n => num[1].ACLR
-rst_n => num[2].ACLR
-rst_n => num[3].ACLR
-rst_n => tx_data[0].ACLR
-rst_n => tx_data[1].ACLR
-rst_n => tx_data[2].ACLR
-rst_n => tx_data[3].ACLR
-rst_n => tx_data[4].ACLR
-rst_n => tx_data[5].ACLR
-rst_n => tx_data[6].ACLR
-rst_n => tx_data[7].ACLR
-rst_n => tx_en.ACLR
-rst_n => state~3.DATAIN
-clk_bps => num.OUTPUTSELECT
-clk_bps => num.OUTPUTSELECT
-clk_bps => num.OUTPUTSELECT
-clk_bps => num.OUTPUTSELECT
-clk_bps => rs232_tx_r.OUTPUTSELECT
-rd_data[0] => tx_data[0].DATAIN
-rd_data[1] => tx_data[1].DATAIN
-rd_data[2] => tx_data[2].DATAIN
-rd_data[3] => tx_data[3].DATAIN
-rd_data[4] => tx_data[4].DATAIN
-rd_data[5] => tx_data[5].DATAIN
-rd_data[6] => tx_data[6].DATAIN
-rd_data[7] => tx_data[7].DATAIN
-rd_en <= rd_en~reg0.DB_MAX_OUTPUT_PORT_TYPE
-empty => Selector0.IN3
-empty => state.DATAB
-rs_tx <= rs232_tx_r.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|demonstrate|max1452_top:max1452
-clk => clk.IN2
-rst_n => rst_n.IN2
-rs_tx <= my_uart_tx:my_uart_tx.rs_tx
-unlock <= <VCC>
-
-
-|demonstrate|max1452_top:max1452|speed_select:speed_select
-clk => clk_bps_r.CLK
-clk => cnt[0].CLK
-clk => cnt[1].CLK
-clk => cnt[2].CLK
-clk => cnt[3].CLK
-clk => cnt[4].CLK
-clk => cnt[5].CLK
-clk => cnt[6].CLK
-clk => cnt[7].CLK
-clk => cnt[8].CLK
-clk => cnt[9].CLK
-clk => cnt[10].CLK
-clk => cnt[11].CLK
-clk => cnt[12].CLK
-clk => cnt[13].CLK
-rst_n => cnt[0].ACLR
-rst_n => cnt[1].ACLR
-rst_n => cnt[2].ACLR
-rst_n => cnt[3].ACLR
-rst_n => cnt[4].ACLR
-rst_n => cnt[5].ACLR
-rst_n => cnt[6].ACLR
-rst_n => cnt[7].ACLR
-rst_n => cnt[8].ACLR
-rst_n => cnt[9].ACLR
-rst_n => cnt[10].ACLR
-rst_n => cnt[11].ACLR
-rst_n => cnt[12].ACLR
-rst_n => cnt[13].ACLR
-rst_n => clk_bps_r.ACLR
-clk_bps <= clk_bps_r.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx
-clk => rs232_tx_r.CLK
-clk => num[0].CLK
-clk => num[1].CLK
-clk => num[2].CLK
-clk => num[3].CLK
-clk => tx_en.CLK
-clk => tx_data[0].CLK
-clk => tx_data[1].CLK
-clk => tx_data[2].CLK
-clk => tx_data[3].CLK
-clk => tx_data[4].CLK
-clk => tx_data[5].CLK
-clk => tx_data[6].CLK
-clk => tx_data[7].CLK
-clk => rd_en~reg0.CLK
-clk => wait_cnt[0].CLK
-clk => wait_cnt[1].CLK
-clk => wait_cnt[2].CLK
-clk => wait_cnt[3].CLK
-clk => wait_cnt[4].CLK
-clk => wait_cnt[5].CLK
-clk => wait_cnt[6].CLK
-clk => wait_cnt[7].CLK
-clk => wait_cnt[8].CLK
-clk => wait_cnt[9].CLK
-clk => wait_cnt[10].CLK
-clk => wait_cnt[11].CLK
-clk => wait_cnt[12].CLK
-clk => wait_cnt[13].CLK
-clk => wait_cnt[14].CLK
-clk => wait_cnt[15].CLK
-clk => wait_cnt[16].CLK
-clk => wait_cnt[17].CLK
-clk => wait_cnt[18].CLK
-clk => wait_cnt[19].CLK
-clk => wait_cnt[20].CLK
-clk => wait_cnt[21].CLK
-clk => wait_cnt[22].CLK
-clk => wait_cnt[23].CLK
-clk => wait_cnt[24].CLK
-clk => wait_cnt[25].CLK
-clk => wait_cnt[26].CLK
-clk => wait_cnt[27].CLK
-clk => wait_cnt[28].CLK
-clk => wait_cnt[29].CLK
-clk => wait_cnt[30].CLK
-clk => wait_cnt[31].CLK
-clk => state~1.DATAIN
-rst_n => wait_cnt[0].ACLR
-rst_n => wait_cnt[1].ACLR
-rst_n => wait_cnt[2].ACLR
-rst_n => wait_cnt[3].ACLR
-rst_n => wait_cnt[4].ACLR
-rst_n => wait_cnt[5].ACLR
-rst_n => wait_cnt[6].ACLR
-rst_n => wait_cnt[7].ACLR
-rst_n => wait_cnt[8].ACLR
-rst_n => wait_cnt[9].ACLR
-rst_n => wait_cnt[10].ACLR
-rst_n => wait_cnt[11].ACLR
-rst_n => wait_cnt[12].ACLR
-rst_n => wait_cnt[13].ACLR
-rst_n => wait_cnt[14].ACLR
-rst_n => wait_cnt[15].ACLR
-rst_n => wait_cnt[16].ACLR
-rst_n => wait_cnt[17].ACLR
-rst_n => wait_cnt[18].ACLR
-rst_n => wait_cnt[19].ACLR
-rst_n => wait_cnt[20].ACLR
-rst_n => wait_cnt[21].ACLR
-rst_n => wait_cnt[22].ACLR
-rst_n => wait_cnt[23].ACLR
-rst_n => wait_cnt[24].ACLR
-rst_n => wait_cnt[25].ACLR
-rst_n => wait_cnt[26].ACLR
-rst_n => wait_cnt[27].ACLR
-rst_n => wait_cnt[28].ACLR
-rst_n => wait_cnt[29].ACLR
-rst_n => wait_cnt[30].ACLR
-rst_n => wait_cnt[31].ACLR
-rst_n => rs232_tx_r.PRESET
-rst_n => num[0].ACLR
-rst_n => num[1].ACLR
-rst_n => num[2].ACLR
-rst_n => num[3].ACLR
-rst_n => tx_data[0].ACLR
-rst_n => tx_data[1].ACLR
-rst_n => tx_data[2].ACLR
-rst_n => tx_data[3].ACLR
-rst_n => tx_data[4].ACLR
-rst_n => tx_data[5].ACLR
-rst_n => tx_data[6].ACLR
-rst_n => tx_data[7].ACLR
-rst_n => tx_en.ACLR
-rst_n => state~3.DATAIN
-clk_bps => num.OUTPUTSELECT
-clk_bps => num.OUTPUTSELECT
-clk_bps => num.OUTPUTSELECT
-clk_bps => num.OUTPUTSELECT
-clk_bps => rs232_tx_r.OUTPUTSELECT
-rd_data[0] => tx_data[0].DATAIN
-rd_data[1] => tx_data[1].DATAIN
-rd_data[2] => tx_data[2].DATAIN
-rd_data[3] => tx_data[3].DATAIN
-rd_data[4] => tx_data[4].DATAIN
-rd_data[5] => tx_data[5].DATAIN
-rd_data[6] => tx_data[6].DATAIN
-rd_data[7] => tx_data[7].DATAIN
-rd_en <= rd_en~reg0.DB_MAX_OUTPUT_PORT_TYPE
-empty => Selector0.IN3
-empty => state.DATAB
-rs_tx <= rs232_tx_r.DB_MAX_OUTPUT_PORT_TYPE
 
 
