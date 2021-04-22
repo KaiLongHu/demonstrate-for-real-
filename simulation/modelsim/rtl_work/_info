@@ -1,166 +1,86 @@
 m255
-K3
+K4
+z2
 13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
 cModel Technology
-Z0 dC:\B\xia_program\QUARTUS_program\huludao_1125\file\V007_3\demonstrate_V007\simulation\modelsim
+Z0 dD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim
 T_opt
-VLRQSheQnRhU4YTzh=IbT22
-04 19 4 work demonstrate_vlg_tst fast 0
-=1-74e50be09b68-5fbfb805-a2-1d90
+!s110 1619100247
+VNZ^<mol1[H7RmhQXMlR`B0
+04 19 4 work switch_ctrl_vlg_tst fast 0
+=1-d0509943308e-60818257-b-38e8
 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
 n@_opt
-OL;O;10.1c;51
+OL;O;10.6c;65
 vAD_FIFO
-IMMhdTNW5nmXPohkO48]L51
-V>>X_@g_ZgPIJfH>NM[iS73
-Z1 dC:\B\xia_program\QUARTUS_program\huludao_1125\file\V007_3\demonstrate_V007\simulation\modelsim
-w1606398249
-8C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/AD_FIFO.v
-FC:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/AD_FIFO.v
+Z2 !s110 1619100246
+!i10b 1
+!s100 IQG6:]L9=2jaPTY]ib@ki2
+Ik6IZ5E]IahJHk8CG8FXWl1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1618300086
+8D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v
+FD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v
 L0 39
-Z2 OL;L;10.1c;51
+Z4 OL;L;10.6c;65
 r1
+!s85 0
 31
-Z3 o-vlog01compat -work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-Z4 !s92 -vlog01compat -work work +incdir+C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007 -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z5 !s108 1619100246.000000
+!s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/AD_FIFO.v|
+!i113 0
+Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
 n@a@d_@f@i@f@o
-!i10b 1
-!s100 RgYTlHK:?;fNH@gR5c^W30
-!s85 0
-!s108 1606400004.430000
-!s107 C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/AD_FIFO.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007|C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/AD_FIFO.v|
-vdemonstrate
-IWejGRe`EmGS]7Wi;ZE@^A2
-Vg^k@zGh89P3124U3P1M^]1
-R1
-w1606399251
-8C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/demonstrate.v
-FC:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/demonstrate.v
-L0 1
-R2
-r1
-31
-R3
-R4
-!i10b 1
-!s100 7a7@@LBJbhQNfU3g2Ilaf2
-!s85 0
-!s108 1606400004.085000
-!s107 C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/demonstrate.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007|C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/demonstrate.v|
-vdemonstrate_vlg_tst
-IzzLK14CCZc8Tk?fTG_4A21
-VHV0:i>`[2Z<6YZkG9^dKm1
-R1
-w1606399604
-8C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/simulation/modelsim/demonstrate.vt
-FC:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/simulation/modelsim/demonstrate.vt
-L0 2
-R2
-r1
-31
-R3
-!i10b 1
-!s100 g<]SVe=^bBiMzWO2:OJm73
-!s85 0
-!s108 1606400004.784000
-!s107 C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/simulation/modelsim/demonstrate.vt|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/simulation/modelsim|C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/simulation/modelsim/demonstrate.vt|
-!s92 -vlog01compat -work work +incdir+C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/simulation/modelsim -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-vLTC231512
-Ig9K>QJ?FcMPHS`1AbAD>A0
-VkJ[Z9B_caL71c`lYz5Fa<1
-R1
-w1606297881
-8C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/LTC231512.v
-FC:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/LTC231512.v
-L0 1
-R2
-r1
-31
-R3
-R4
-n@l@t@c231512
-!i10b 1
-!s100 S4g1n^Y;G@3hgMaREQmnR0
-!s85 0
-!s108 1606400004.200000
-!s107 C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/LTC231512.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007|C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/LTC231512.v|
-vmy_uart_tx
-I1a<g^bVET::a2KmGH[m`Z0
-Vd22n`4jbzeR13RnUfJ[3:3
-R1
-w1603678532
-8C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/my_uart_tx.v
-FC:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/my_uart_tx.v
-L0 1
-R2
-r1
-31
-R3
-R4
-!i10b 1
-!s100 QIli0W4i>Jd[0372nJ<>82
-!s85 0
-!s108 1606400004.666000
-!s107 C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/my_uart_tx.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007|C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/my_uart_tx.v|
-vspeed_select
-IL]0IlKf[m]fLS;^X70Z_B3
-VKljB:4HDacG]=Ta<F8IUX0
-R1
-w1603875957
-8C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/speed_select.v
-FC:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/speed_select.v
-L0 1
-R2
-r1
-31
-R3
-R4
-!i10b 1
-!s100 J4WZ6iHd>9Blil31Ti2i[1
-!s85 0
-!s108 1606400004.549000
-!s107 C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/speed_select.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007|C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/speed_select.v|
-vswitch
-IkINPl1ZZU1OJZ^:HeXmUB3
-V[8@3?T?f2KK<He5Y`Ekg[3
-R1
-w1606299224
-8C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/switch.v
-FC:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/switch.v
-L0 1
-R2
-r1
-31
-R3
-R4
-!i10b 1
-!s100 U@GYcQ067P=S6kgP_8laO1
-!s85 0
-!s108 1606400003.967000
-!s107 C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/switch.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007|C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/switch.v|
 vswitch_ctrl
-I1B?02;fzkT5CaNBQCUaS@2
-VIkbYIQ[K]PDLb^U>cPzUb1
-R1
-w1606399190
-8C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/switch_ctrl.v
-FC:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/switch_ctrl.v
-L0 2
 R2
-r1
-31
-R3
-R4
 !i10b 1
-!s100 d:kNEmlQ8R>Pn=bYzfbaV2
+!s100 cG9K0Z1NV_:LBG9HM_eX82
+IeaK]`]Bn7nW9R:Y7balU02
+R3
+R0
+w1619099545
+8D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v
+FD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v
+L0 2
+R4
+r1
 !s85 0
-!s108 1606400004.316000
-!s107 C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/switch_ctrl.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007|C:/B/xia_program/QUARTUS_program/huludao_1125/file/V007_3/demonstrate_V007/switch_ctrl.v|
+31
+R5
+!s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/switch_ctrl.v|
+!i113 0
+R6
+R7
+R1
+vswitch_ctrl_vlg_tst
+R2
+!i10b 1
+!s100 YPUblFjSI21NZjL2c6=l43
+IKO;JLQ:X>UlKOaAD;e:5Z1
+R3
+R0
+w1619100196
+8D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch_ctrl.vt
+FD:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch_ctrl.vt
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch_ctrl.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim|D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim/switch_ctrl.vt|
+!i113 0
+R6
+!s92 -vlog01compat -work work +incdir+D:/altera/project/513PROJECT/demonstrate_V009_debounce_keyreset/simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1

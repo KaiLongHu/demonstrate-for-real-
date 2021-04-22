@@ -1,30 +1,4 @@
-// Copyright (C) 1991-2013 Altera Corporation
-// Your use of Altera Corporation's design tools, logic functions 
-// and other software and tools, and its AMPP partner logic 
-// functions, and any output files from any of the foregoing 
-// (including device programming or simulation files), and any 
-// associated documentation or information are expressly subject 
-// to the terms and conditions of the Altera Program License 
-// Subscription Agreement, Altera MegaCore Function License 
-// Agreement, or other applicable license agreement, including, 
-// without limitation, that your use is for the sole purpose of 
-// programming logic devices manufactured by Altera and sold by 
-// Altera or its authorized distributors.  Please refer to the 
-// applicable agreement for further details.
-
-// *****************************************************************************
-// This file contains a Verilog test bench template that is freely editable to  
-// suit user's needs .Comments are provided in each section to help the user    
-// fill out necessary details.                                                  
-// *****************************************************************************
-// Generated on "04/22/2021 21:40:18"
-                                                                                
-// Verilog Test Bench template for design : switch_ctrl
-// 
-// Simulation tool : ModelSim (Verilog)
-// 
-
-`timescale 1 ps/ 1 ps
+`timescale 1 ns/ 10 ps
 module switch_ctrl_vlg_tst();
 // constants                                           
 // general purpose registers
@@ -41,6 +15,10 @@ wire empty;
 wire full;
 wire [7:0]  q;
 
+parameter CLKTB_HALF_PERIOD=5;//100MHz
+
+
+
 // assign statements (if any)                          
 switch_ctrl i1 (
 // port map - connection between master ports and signals/registers   
@@ -56,21 +34,52 @@ switch_ctrl i1 (
 );
 initial                                                
 begin                                                  
-// code that executes only once                        
-// insert code here --> begin                          
-                                                       
-// --> end                                             
-$display("Running testbench");                       
-end                                                    
-always                                                 
-// optional sensitivity list                           
-// @(event1 or event2 or .... eventn)                  
+ data_out=8'd0;
+ flag=1;
+ rdreq=0;
+ reset_n=0;//复位
+#100;
+ reset_n=1; 
+ repeat(3)begin//重复3次
+ #1000;
+ flag=0;//启动
+ #100;
+ flag=1;
+ #1000000;
+ end
+end  
+
+
+initial 
+begin 
+
+end
+
+always@(posedge clk)  
+	if(i1.AD_wr_en==1)//AD使能
+	data_out<=data_out+1;//产生AD值
+	
+always@(posedge clk)  
+begin
+	if(i1.empty==0)//AD使能
+		begin
+		rdreq<=1;//读使能	
+		#20;
+		rdreq<=0;//读使能	
+		#3000;
+		end
+	else
+		rdreq<=0;
+end	
+	
+
+always                                                                  
 begin                                                  
-// code executes for every event on sensitivity list   
-// insert code here --> begin                          
-                                                       
-@eachvec;                                              
-// --> end                                             
+clk=0;
+#5;
+clk=1;
+#5;                                            
 end                                                    
 endmodule
+
 

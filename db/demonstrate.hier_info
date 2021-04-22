@@ -66,23 +66,23 @@ data_out[4] => FIFO_data.DATAB
 data_out[5] => FIFO_data.DATAB
 data_out[6] => FIFO_data.DATAB
 data_out[7] => FIFO_data.DATAB
-addr[0] << address[0].DB_MAX_OUTPUT_PORT_TYPE
-addr[1] << address[1].DB_MAX_OUTPUT_PORT_TYPE
-addr[2] << address[2].DB_MAX_OUTPUT_PORT_TYPE
-addr[3] << address[3].DB_MAX_OUTPUT_PORT_TYPE
-addr[4] << address[4].DB_MAX_OUTPUT_PORT_TYPE
-addr[5] << address[5].DB_MAX_OUTPUT_PORT_TYPE
+addr[0] <= address[0].DB_MAX_OUTPUT_PORT_TYPE
+addr[1] <= address[1].DB_MAX_OUTPUT_PORT_TYPE
+addr[2] <= address[2].DB_MAX_OUTPUT_PORT_TYPE
+addr[3] <= address[3].DB_MAX_OUTPUT_PORT_TYPE
+addr[4] <= address[4].DB_MAX_OUTPUT_PORT_TYPE
+addr[5] <= address[5].DB_MAX_OUTPUT_PORT_TYPE
 rdreq => rdreq.IN1
-empty << AD_FIFO:AD_FIFO_i.empty
-full << AD_FIFO:AD_FIFO_i.full
-q[0] << AD_FIFO:AD_FIFO_i.q
-q[1] << AD_FIFO:AD_FIFO_i.q
-q[2] << AD_FIFO:AD_FIFO_i.q
-q[3] << AD_FIFO:AD_FIFO_i.q
-q[4] << AD_FIFO:AD_FIFO_i.q
-q[5] << AD_FIFO:AD_FIFO_i.q
-q[6] << AD_FIFO:AD_FIFO_i.q
-q[7] << AD_FIFO:AD_FIFO_i.q
+empty <= AD_FIFO:AD_FIFO_i.empty
+full <= AD_FIFO:AD_FIFO_i.full
+q[0] <= AD_FIFO:AD_FIFO_i.q
+q[1] <= AD_FIFO:AD_FIFO_i.q
+q[2] <= AD_FIFO:AD_FIFO_i.q
+q[3] <= AD_FIFO:AD_FIFO_i.q
+q[4] <= AD_FIFO:AD_FIFO_i.q
+q[5] <= AD_FIFO:AD_FIFO_i.q
+q[6] <= AD_FIFO:AD_FIFO_i.q
+q[7] <= AD_FIFO:AD_FIFO_i.q
 
 
 |switch_ctrl|AD_FIFO:AD_FIFO_i
