@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Thu Apr 22 22:39:32 2021
+Analysis & Synthesis Status : Successful - Fri Apr 23 16:31:53 2021
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : demonstrate
-Top-level Entity Name : switch_ctrl
+Top-level Entity Name : demonstrate
 Family : Cyclone IV E
 Total logic elements : N/A until Partition Merge
     Total combinational functions : N/A until Partition Merge
