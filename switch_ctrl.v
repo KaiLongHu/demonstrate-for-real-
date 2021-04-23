@@ -17,9 +17,9 @@ output [3:0]SS_state/*synthesis noprune*/
 );
 
 //轮询间隔时间和次数可以设置
-parameter delay_time=32'd1_0_000_000;//time=delay_time*10ns
+parameter delay_time=32'd1_0_000_0;//time=delay_time*10ns
 //parameter delay_time=32'd5_0;//time=delay_time*20ns-----仿真减小延迟
-parameter cycle_times=8'd3;//轮询5次
+parameter cycle_times=8'd10;//轮询5次
 
 
 reg [7:0] times=8'd0;//轮询次数

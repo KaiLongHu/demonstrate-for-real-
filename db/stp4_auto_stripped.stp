@@ -245,7 +245,7 @@
     <single attribute="instance widget visible" value="1"/>
     <single attribute="jtag widget visible" value="1"/>
     <multi attribute="column width" size="23" value="69,34,140,74,68,70,88,88,98,98,88,88,110,101,101,101,101,101,101,101,101,107,78"/>
-    <multi attribute="frame size" size="2" value="1920,1002"/>
+    <multi attribute="frame size" size="2" value="1280,946"/>
     <multi attribute="jtag widget size" size="2" value="368,138"/>
   </global_info>
 </session>

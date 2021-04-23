@@ -1,5 +1,5 @@
 Flow report for demonstrate
-Fri Apr 23 17:11:56 2021
+Fri Apr 23 17:23:10 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Apr 23 17:11:56 2021       ;
+; Flow Status                        ; Successful - Fri Apr 23 17:23:10 2021       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; demonstrate                                 ;
 ; Top-level Entity Name              ; demonstrate                                 ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE10E22C8                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,407 / 10,320 ( 14 % )                     ;
-;     Total combinational functions  ; 1,069 / 10,320 ( 10 % )                     ;
+; Total logic elements               ; 1,404 / 10,320 ( 14 % )                     ;
+;     Total combinational functions  ; 1,067 / 10,320 ( 10 % )                     ;
 ;     Dedicated logic registers      ; 949 / 10,320 ( 9 % )                        ;
 ; Total registers                    ; 949                                         ;
 ; Total pins                         ; 22 / 92 ( 24 % )                            ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/23/2021 17:11:35 ;
+; Start date & time ; 04/23/2021 17:22:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; demonstrate         ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------------------------------------------------------------------------------+---------------+-------------+---------------------+
 ; Assignment Name                      ; Value                                                                                                         ; Default Value ; Entity Name ; Section Id          ;
 +--------------------------------------+---------------------------------------------------------------------------------------------------------------+---------------+-------------+---------------------+
-; COMPILER_SIGNATURE_ID                ; 229044587278478.161916909521360                                                                               ; --            ; --          ; --                  ;
+; COMPILER_SIGNATURE_ID                ; 229044587278478.161916976818328                                                                               ; --            ; --          ; --                  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                                            ; --            ; --          ; switch_vlg_tst      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                                            ; --            ; --          ; switch_ctrl_vlg_tst ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                                                            ; --            ; --          ; demonstrate_vlg_tst ;
@@ -144,12 +144,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 631 MB              ; 00:00:04                           ;
-; Fitter                    ; 00:00:07     ; 1.5                     ; 1339 MB             ; 00:00:07                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 520 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 613 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 488 MB              ; 00:00:02                           ;
-; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:16                           ;
+; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 631 MB              ; 00:00:05                           ;
+; Fitter                    ; 00:00:06     ; 1.0                     ; 1336 MB             ; 00:00:08                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 518 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 618 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 493 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:18                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
