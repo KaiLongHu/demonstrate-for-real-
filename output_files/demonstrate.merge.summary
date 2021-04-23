@@ -1,14 +1,14 @@
-Partition Merge Status : Successful - Fri Apr 23 17:02:33 2021
+Partition Merge Status : Successful - Thu Apr 29 19:29:33 2021
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : demonstrate
 Top-level Entity Name : demonstrate
 Family : Cyclone IV E
-Total logic elements : 1,567 / 10,320 ( 15 % )
-    Total combinational functions : 1,092 / 10,320 ( 11 % )
-    Dedicated logic registers : 1,057 / 10,320 ( 10 % )
-Total registers : 1057
-Total pins : 22 / 92 ( 24 % )
+Total logic elements : 1,570
+    Total combinational functions : 1,105
+    Dedicated logic registers : 1,051
+Total registers : 1051
+Total pins : 22
 Total virtual pins : 0
-Total memory bits : 36,864 / 423,936 ( 9 % )
-Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
-Total PLLs : 0 / 2 ( 0 % )
+Total memory bits : 36,608
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

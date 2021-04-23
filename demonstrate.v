@@ -115,7 +115,4 @@ my_uart_tx i_my_uart_tx(
 							);
 
 
-
-
-
 endmodule 
