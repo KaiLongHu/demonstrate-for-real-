@@ -9,12 +9,15 @@ output [4:0] addr,//地址
 input	  rdreq,//读使能
 output  empty,//空
 output  full,//满
-output	[7:0]  q//读数据				
+output	[7:0]  q,//读数据	
+
+//新增测试部分
+output [3:0]SS_state/*synthesis noprune*/
+			
 );
 
 //轮询间隔时间和次数可以设置
-//parameter delay_time=32'd5_000_000;//time=delay_time*20ns
-parameter delay_time=32'd5_0_000_000;//time=delay_time*20ns
+parameter delay_time=32'd1_0_000_000;//time=delay_time*10ns
 //parameter delay_time=32'd5_0;//time=delay_time*20ns-----仿真减小延迟
 parameter cycle_times=8'd3;//轮询5次
 
@@ -23,9 +26,10 @@ reg [7:0] times=8'd0;//轮询次数
 reg [31:0] delay_cnt=32'd0;//间隔时间计数
 reg [4:0] address=5'd0;
 
+assign SS_state=state;/*synthesis noprune*/
 assign addr=address;
 
-reg [3:0] state=4'd0;
+reg [3:0] state=4'd0;/*synthesis noprune*/
 parameter s_idle=4'd0;
 parameter s_start=4'd1;
 parameter s_delay=4'd2;

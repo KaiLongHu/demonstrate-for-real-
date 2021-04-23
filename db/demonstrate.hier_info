@@ -17,6 +17,10 @@ F3_8ADD_A << switch:i_switch.F3_8ADD_A
 F3_8ADD_B << switch:i_switch.F3_8ADD_B
 F3_8ADD_C << switch:i_switch.F3_8ADD_C
 unlock << max1452_top:max1452.unlock
+SSSS[0] << switch_ctrl:i_switch_ctrl.SS_state
+SSSS[1] << <GND>
+SSSS[2] << <GND>
+SSSS[3] << <GND>
 
 
 |demonstrate|LTC231512:lt1
@@ -178,14 +182,6 @@ reset_n => address[1].ACLR
 reset_n => address[2].ACLR
 reset_n => address[3].ACLR
 reset_n => address[4].ACLR
-reset_n => times[0].ACLR
-reset_n => times[1].ACLR
-reset_n => times[2].ACLR
-reset_n => times[3].ACLR
-reset_n => times[4].ACLR
-reset_n => times[5].ACLR
-reset_n => times[6].ACLR
-reset_n => times[7].ACLR
 reset_n => FIFO_data[0].ACLR
 reset_n => FIFO_data[1].ACLR
 reset_n => FIFO_data[2].ACLR
@@ -195,6 +191,14 @@ reset_n => FIFO_data[5].ACLR
 reset_n => FIFO_data[6].ACLR
 reset_n => FIFO_data[7].ACLR
 reset_n => AD_wr_en.ACLR
+reset_n => times[0].ACLR
+reset_n => times[1].ACLR
+reset_n => times[2].ACLR
+reset_n => times[3].ACLR
+reset_n => times[4].ACLR
+reset_n => times[5].ACLR
+reset_n => times[6].ACLR
+reset_n => times[7].ACLR
 reset_n => state~3.DATAIN
 flag => Selector0.IN3
 flag => Selector1.IN2
@@ -222,6 +226,10 @@ q[4] <= AD_FIFO:AD_FIFO_i.q
 q[5] <= AD_FIFO:AD_FIFO_i.q
 q[6] <= AD_FIFO:AD_FIFO_i.q
 q[7] <= AD_FIFO:AD_FIFO_i.q
+SS_state[0] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+SS_state[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+SS_state[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+SS_state[3] <= <GND>
 
 
 |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i

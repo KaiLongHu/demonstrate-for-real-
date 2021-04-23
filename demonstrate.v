@@ -21,8 +21,8 @@ module  demonstrate (
 							output 			F3_8ADD_C,
 
 							
-							output 			unlock					//MAX1452锁信号,正常工作模式配置为低电平
-			
+							output 			unlock,					//MAX1452锁信号,正常工作模式配置为低电平
+							output			[3:0]SSSS/*synthesis noprune*/
 							);
 
 wire [11:0] data_out;//AD量化值输出
@@ -68,6 +68,9 @@ wire  full;//满
 wire	[7:0]  q;//读数据
 wire 	dbflag;//消抖信号
 
+
+assign SSSS=SS_state;/*synthesis noprune*/
+
 //轮询控制
 switch_ctrl i_switch_ctrl(
 . clk(clk),//时钟50M
@@ -75,6 +78,9 @@ switch_ctrl i_switch_ctrl(
 . flag(flag),//启动flag，低电平
 . data_out(data_out[7:0]),//AD量化值输出，取高8位
 . addr(addr),//地址	
+
+
+.SS_state(SS_state),
 
 . rdreq(rdreq),//读使能
 . empty(empty),//空
