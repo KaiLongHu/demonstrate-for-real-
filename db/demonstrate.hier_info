@@ -2,25 +2,25 @@
 clk => clk.IN6
 reset_n => reset_n.IN5
 SDO => SDO.IN1
-CS_n << LTC231512:lt1.CS_n
-SCK << LTC231512:lt1.SCK
-rs_tx << my_uart_tx:i_my_uart_tx.rs_tx
-tx_1452 << max1452_top:max1452.rs_tx
+CS_n <= LTC231512:lt1.CS_n
+SCK <= LTC231512:lt1.SCK
+rs_tx <= my_uart_tx:i_my_uart_tx.rs_tx
+tx_1452 <= max1452_top:max1452.rs_tx
 flag => flag.IN1
-F1_8ADD_A << switch:i_switch.F1_8ADD_A
-F1_8ADD_B << switch:i_switch.F1_8ADD_B
-F1_8ADD_C << switch:i_switch.F1_8ADD_C
-F2_8ADD_A << switch:i_switch.F2_8ADD_A
-F2_8ADD_B << switch:i_switch.F2_8ADD_B
-F2_8ADD_C << switch:i_switch.F2_8ADD_C
-F3_8ADD_A << switch:i_switch.F3_8ADD_A
-F3_8ADD_B << switch:i_switch.F3_8ADD_B
-F3_8ADD_C << switch:i_switch.F3_8ADD_C
-unlock << max1452_top:max1452.unlock
-SSSS[0] << switch_ctrl:i_switch_ctrl.SS_state
-SSSS[1] << <GND>
-SSSS[2] << <GND>
-SSSS[3] << <GND>
+F1_8ADD_A <= switch:i_switch.F1_8ADD_A
+F1_8ADD_B <= switch:i_switch.F1_8ADD_B
+F1_8ADD_C <= switch:i_switch.F1_8ADD_C
+F2_8ADD_A <= switch:i_switch.F2_8ADD_A
+F2_8ADD_B <= switch:i_switch.F2_8ADD_B
+F2_8ADD_C <= switch:i_switch.F2_8ADD_C
+F3_8ADD_A <= switch:i_switch.F3_8ADD_A
+F3_8ADD_B <= switch:i_switch.F3_8ADD_B
+F3_8ADD_C <= switch:i_switch.F3_8ADD_C
+unlock <= max1452_top:max1452.unlock
+SSSS[0] <= switch_ctrl:i_switch_ctrl.SS_state
+SSSS[1] <= <GND>
+SSSS[2] <= <GND>
+SSSS[3] <= <GND>
 
 
 |demonstrate|LTC231512:lt1
@@ -182,6 +182,13 @@ reset_n => address[1].ACLR
 reset_n => address[2].ACLR
 reset_n => address[3].ACLR
 reset_n => address[4].ACLR
+reset_n => total_cyc_cnt[0].ACLR
+reset_n => total_cyc_cnt[1].ACLR
+reset_n => total_cyc_cnt[2].ACLR
+reset_n => total_cyc_cnt[3].ACLR
+reset_n => total_cyc_cnt[4].ACLR
+reset_n => total_cyc_cnt[5].ACLR
+reset_n => sflag.ACLR
 reset_n => FIFO_data[0].ACLR
 reset_n => FIFO_data[1].ACLR
 reset_n => FIFO_data[2].ACLR
@@ -200,8 +207,8 @@ reset_n => times[5].ACLR
 reset_n => times[6].ACLR
 reset_n => times[7].ACLR
 reset_n => state~3.DATAIN
-flag => Selector0.IN3
-flag => Selector1.IN2
+flag => state.OUTPUTSELECT
+flag => state.OUTPUTSELECT
 data_out[0] => FIFO_data.DATAB
 data_out[1] => FIFO_data.DATAB
 data_out[2] => FIFO_data.DATAB
@@ -226,10 +233,10 @@ q[4] <= AD_FIFO:AD_FIFO_i.q
 q[5] <= AD_FIFO:AD_FIFO_i.q
 q[6] <= AD_FIFO:AD_FIFO_i.q
 q[7] <= AD_FIFO:AD_FIFO_i.q
-SS_state[0] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-SS_state[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-SS_state[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-SS_state[3] <= <GND>
+SS_state[0] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+SS_state[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+SS_state[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+SS_state[3] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i

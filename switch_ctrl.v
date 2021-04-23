@@ -16,15 +16,21 @@ output [3:0]SS_state/*synthesis noprune*/
 			
 );
 
-//轮询间隔时间和次数可以设置
-parameter delay_time=32'd1_0_000_0;//time=delay_time*10ns
-//parameter delay_time=32'd5_0;//time=delay_time*20ns-----仿真减小延迟
-parameter cycle_times=8'd10;//轮询5次
 
+//轮询间隔时间和次数可以设置
+parameter delay_time=32'd5_0_000_00;//time=delay_time*10ns
+//parameter delay_time=32'd5_0;//time=delay_time*20ns-----仿真减小延迟
+parameter cycle_times=8'd3;//轮询5次
+parameter total_cyc=6'd3;//外围控制
+
+reg [5:0]total_cyc_cnt=6'd0;//外围控制计数器
+reg sflag=0;
 
 reg [7:0] times=8'd0;//轮询次数
 reg [31:0] delay_cnt=32'd0;//间隔时间计数
 reg [4:0] address=5'd0;
+
+
 
 assign SS_state=state;/*synthesis noprune*/
 assign addr=address;
@@ -38,6 +44,9 @@ parameter s_next=4'd4;
 parameter s_end=4'd5;
 parameter s_wr_0d=4'd6;
 parameter s_wr_0a=4'd7;
+parameter s_check=4'd8;
+parameter s_myreset=4'd9;
+parameter s_myend=4'd10;
 
 always@(posedge clk or negedge reset_n)
 	if(reset_n==0)//复位，低电平有效
@@ -46,6 +55,8 @@ always@(posedge clk or negedge reset_n)
 		case(state)
 			s_idle:
 				if(flag==0)//启动flag，高电平有效
+					state<=s_start;
+				else if(sflag==1)
 					state<=s_start;
 				else
 					state<=s_idle;
@@ -68,13 +79,52 @@ always@(posedge clk or negedge reset_n)
 			s_wr_0d:
 				state<=s_wr_0a;//写0a
 			s_wr_0a:
+				state<=s_check;
+			s_check:
+				if(total_cyc_cnt>=total_cyc)
+				state<=s_myend;
+				else
+				state<=s_myreset;
+			s_myreset:
+				state<=s_idle;
+			s_myend:
 				state<=s_idle;
 			default:;
 		endcase
-				
+
+
+
+
+//外围cycle控制块
+always@(posedge clk or negedge reset_n)
+	if(reset_n==0)
+		total_cyc_cnt	<=	6'd0;
+	else if(state==s_wr_0d)
+		total_cyc_cnt	<=	total_cyc_cnt	+6'd1;	
+	else
+		total_cyc_cnt	<=	total_cyc_cnt;
+	
+	
+		
+	
+// sflagk控制模块
+always@(posedge clk or negedge reset_n)
+	if(reset_n==0)
+		sflag 	<=	0;
+	else if(state==s_myreset)
+		sflag	<=	1;//1是开始采样
+	else if(state==s_myend)
+		sflag 	<=	0;
+	else
+		sflag	<=	sflag;
+
+
+		
 //间隔时间计数					
 always@(posedge clk or negedge reset_n)
 	if(reset_n==0)//复位，低电平有效
+		delay_cnt<=32'd0;
+	else if(state==s_myreset)
 		delay_cnt<=32'd0;
 	else				
 		if(state==s_delay)		
@@ -89,6 +139,12 @@ always@(posedge clk or negedge reset_n)
 		AD_wr_en<=0;
 		FIFO_data<=8'd0;
 		end
+	
+	else if(state==s_myreset)begin
+		AD_wr_en<=0;
+		FIFO_data<=8'd0;
+		end
+	
 	else				
 		if(state==s_getAD)begin
 			AD_wr_en<=1;//AD fifo写使能
@@ -108,6 +164,8 @@ always@(posedge clk or negedge reset_n)
 always@(posedge clk or negedge reset_n)
 	if(reset_n==0)//复位，低电平有效
 		address<=5'd0;
+	else if(state==s_myreset)
+		address<=5'd0;
 	else				
 		if(state==s_next)		
 			address<=address+5'd1;//地址累加
@@ -119,6 +177,8 @@ always@(posedge clk or negedge reset_n)
 always@(posedge clk or negedge reset_n)
 	if(reset_n==0)//复位，低电平有效
 		times<=8'd0;
+	else if(state==s_myreset)
+		times<=8'd0;
 	else				
 		if(state==s_start && address==5'd32)		
 			times<=times+8'd1;//轮询次数累加
@@ -128,7 +188,6 @@ always@(posedge clk or negedge reset_n)
 			times<=times;				
 			
 //FIFO 8bit 4096深度		
-
 wire [15:0] usedw;	
 AD_FIFO	AD_FIFO_i (
 	.clock ( clk ),
@@ -139,8 +198,7 @@ AD_FIFO	AD_FIFO_i (
 	.full ( full ),
 	.q ( q ),
 	.usedw ( usedw )
-	);			
-			
+	);						
 //0d 0a
 
 		
