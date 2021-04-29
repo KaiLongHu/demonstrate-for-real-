@@ -18,9 +18,9 @@ output [3:0]SS_state/*synthesis noprune*/
 
 
 //轮询间隔时间和次数可以设置
-parameter delay_time=32'd5_0_000_00;//time=delay_time*10ns
+parameter delay_time=32'd5_000_000;//time=delay_time*10ns
 parameter cycle_times=8'd1;//轮询5次
-parameter total_cyc=6'd50;//外围控制
+parameter total_cyc=6'd5;//外围控制
 
 reg [5:0]total_cyc_cnt=6'd0;//外围控制计数器
 reg sflag=0;
@@ -128,8 +128,8 @@ always@(posedge clk or negedge reset_n)
 always@(posedge clk or negedge reset_n)
 	if(reset_n==0)//复位，低电平有效
 		delay_cnt<=32'd0;
-	else if(state==s_myreset)
-		delay_cnt<=32'd0;
+//	else if(state==s_myreset)
+//		delay_cnt<=32'd0;
 	else				
 		if(state==s_delay)		
 			delay_cnt<=delay_cnt+1;

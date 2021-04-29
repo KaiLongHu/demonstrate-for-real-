@@ -1,5 +1,5 @@
 Analysis & Synthesis report for demonstrate
-Thu Apr 29 19:59:20 2021
+Thu Apr 29 20:36:40 2021
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -60,7 +60,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 29 19:59:20 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 29 20:36:40 2021       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; demonstrate                                 ;
 ; Top-level Entity Name              ; demonstrate                                 ;
@@ -172,12 +172,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.33        ;
+; Average used               ; 1.50        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  33.3%      ;
+;     Processor 2            ;  50.0%      ;
 ;     Processors 3-8         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -284,7 +284,7 @@ applicable agreement for further details.
 +---------------------------+---------------+-------------------+----------+----------------------------------+----------------------------------+
 ; Hierarchy                 ; File Name     ; Relative Location ; Change   ; Old                              ; New                              ;
 +---------------------------+---------------+-------------------+----------+----------------------------------+----------------------------------+
-; switch_ctrl:i_switch_ctrl ; switch_ctrl.v ; Project Directory ; Checksum ; 1f7e500f98b22af077b71436fe630f50 ; 02c03f60dc41cc2ccf68c1183d983faa ;
+; switch_ctrl:i_switch_ctrl ; switch_ctrl.v ; Project Directory ; Checksum ; 29ca20e4f4b8cd608dfafcbbc515b915 ; 96468682db0a0421b6b301bb8f28d412 ;
 +---------------------------+---------------+-------------------+----------+----------------------------------+----------------------------------+
 
 
@@ -293,13 +293,13 @@ applicable agreement for further details.
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                             ; Library Name ;
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |demonstrate                                       ; 561 (2)           ; 312 (0)      ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate                                                                                                                                                                    ; work         ;
+; |demonstrate                                       ; 562 (2)           ; 312 (0)      ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate                                                                                                                                                                    ; work         ;
 ;    |LTC231512:lt1|                                 ; 42 (42)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|LTC231512:lt1                                                                                                                                                      ; work         ;
 ;    |max1452_top:max1452|                           ; 166 (30)          ; 85 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|max1452_top:max1452                                                                                                                                                ; work         ;
 ;       |my_uart_tx:my_uart_tx|                      ; 101 (101)         ; 56 (56)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx                                                                                                                          ; work         ;
 ;       |speed_select:speed_select|                  ; 35 (35)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|max1452_top:max1452|speed_select:speed_select                                                                                                                      ; work         ;
 ;    |my_uart_tx:i_my_uart_tx|                       ; 101 (101)         ; 56 (56)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|my_uart_tx:i_my_uart_tx                                                                                                                                            ; work         ;
-;    |speed_select:i_speed_select|                   ; 35 (35)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|speed_select:i_speed_select                                                                                                                                        ; work         ;
+;    |speed_select:i_speed_select|                   ; 36 (36)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|speed_select:i_speed_select                                                                                                                                        ; work         ;
 ;    |switch:i_switch|                               ; 13 (13)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch:i_switch                                                                                                                                                    ; work         ;
 ;    |switch_ctrl:i_switch_ctrl|                     ; 202 (153)         ; 115 (77)     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl                                                                                                                                          ; work         ;
 ;       |AD_FIFO:AD_FIFO_i|                          ; 49 (0)            ; 38 (0)       ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |demonstrate|switch_ctrl:i_switch_ctrl|AD_FIFO:AD_FIFO_i                                                                                                                        ; work         ;
@@ -372,13 +372,12 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|delay_cnt[11]          ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|total_cyc_cnt[5]       ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx|num[3] ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|total_cyc_cnt[1]       ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |demonstrate|max1452_top:max1452|my_uart_tx:my_uart_tx|num[0] ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |demonstrate|my_uart_tx:i_my_uart_tx|num[3]                   ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|address[0]             ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|address[2]             ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|times[7]               ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|FIFO_data[4]           ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |demonstrate|switch_ctrl:i_switch_ctrl|FIFO_data[0]           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 
 
@@ -416,7 +415,7 @@ Encoding Type:  One-Hot
 +----------------+----------------------------------+--------------------+
 ; delay_time     ; 00000000010011000100101101000000 ; Unsigned Binary    ;
 ; cycle_times    ; 00000001                         ; Unsigned Binary    ;
-; total_cyc      ; 110010                           ; Unsigned Binary    ;
+; total_cyc      ; 000101                           ; Unsigned Binary    ;
 ; s_idle         ; 0000                             ; Unsigned Binary    ;
 ; s_start        ; 0001                             ; Unsigned Binary    ;
 ; s_delay        ; 0010                             ; Unsigned Binary    ;
@@ -519,7 +518,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; my_uart_tx.v                           ; Project Directory  ; work    ; e925eac45dc897ad327692f0f0a781ee ;
 ; speed_select.v                         ; Project Directory  ; work    ; 0cbeb8ecd6ddaceec62078fc1c760005 ;
 ; switch.v                               ; Project Directory  ; work    ; 22284443a2fbc80a689d15030238526d ;
-; switch_ctrl.v                          ; Project Directory  ; work    ; 02c03f60dc41cc2ccf68c1183d983faa ;
+; switch_ctrl.v                          ; Project Directory  ; work    ; 96468682db0a0421b6b301bb8f28d412 ;
 +----------------------------------------+--------------------+---------+----------------------------------+
 
 
@@ -638,7 +637,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Apr 29 19:59:13 2021
+    Info: Processing started: Thu Apr 29 20:36:33 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off demonstrate -c demonstrate
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file speed_select.v
@@ -756,7 +755,7 @@ Info (281037): Using 4 processors to synthesize 2 partitions in parallel
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Apr 29 19:59:18 2021
+    Info: Processing started: Thu Apr 29 20:36:37 2021
 Info: Command: quartus_map --parallel=1 --helper=0 --helper_type=user_partition --partition=Top demonstrate -c demonstrate
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276004): RAM logic "max1452_top:max1452|Ram0" is uninferred due to inappropriate RAM size
@@ -769,20 +768,20 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "SSSS[2]" is stuck at GND
     Warning (13410): Pin "SSSS[3]" is stuck at GND
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
-Info (21057): Implemented 645 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 647 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 26 output pins
-    Info (21061): Implemented 607 logic cells
+    Info (21061): Implemented 609 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 538 megabytes
-    Info: Processing ended: Thu Apr 29 19:59:19 2021
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 541 megabytes
+    Info: Processing ended: Thu Apr 29 20:36:39 2021
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:03
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Apr 29 19:59:18 2021
+    Info: Processing started: Thu Apr 29 20:36:37 2021
 Info: Command: quartus_map --parallel=1 --helper=2 --helper_type=user_partition --partition=sld_hub:auto_hub demonstrate -c demonstrate
 Info (281019): Starting Logic Optimization and Technology Mapping for Partition sld_hub:auto_hub
 Info (13000): Registers with preset signals will power-up high
@@ -790,20 +789,20 @@ Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal 
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
 Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
-Info (21057): Implemented 226 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 227 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 39 output pins
-    Info (21061): Implemented 166 logic cells
+    Info (21061): Implemented 167 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 538 megabytes
-    Info: Processing ended: Thu Apr 29 19:59:19 2021
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 541 megabytes
+    Info: Processing ended: Thu Apr 29 20:36:39 2021
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:03
 Info (281038): Finished parallel synthesis of all partitions
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 618 megabytes
-    Info: Processing ended: Thu Apr 29 19:59:20 2021
+    Info: Peak virtual memory: 627 megabytes
+    Info: Processing ended: Thu Apr 29 20:36:40 2021
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Total CPU time (on all processors): 00:00:09
 
 
