@@ -100,6 +100,8 @@ always@(posedge clk or negedge reset_n)
 		total_cyc_cnt	<=	6'd0;
 	else if(state==s_wr_0d)
 		total_cyc_cnt	<=	total_cyc_cnt	+6'd1;	
+	else if(state==s_myend)
+		total_cyc_cnt	<=	6'd0;
 	else
 		total_cyc_cnt	<=	total_cyc_cnt;
 	
@@ -157,6 +159,10 @@ always@(posedge clk or negedge reset_n)
 			AD_wr_en<=1;//AD fifo写使能
 			FIFO_data<=8'h0a;//
 			end
+		else if(state==s_check)begin
+			AD_wr_en<=1;//AD fifo写使能
+			FIFO_data<=8'hBB;//
+			end 
 		else
 			AD_wr_en<=0;
 			

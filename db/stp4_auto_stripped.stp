@@ -233,9 +233,9 @@
       <trigger CRC="2A2B185A" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2021/04/23 19:18:19  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
         <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
         <events use_custom_flow_control="no">
-          <level enabled="yes" name="condition1" type="basic">
-            <power_up enabled="yes">
-            </power_up><op_node/>
+          <level enabled="yes" name="condition1" type="basic"><power_up enabled="yes">
+            </power_up>
+            <op_node/>
           </level>
         </events>
         <storage_qualifier_events>
@@ -293,7 +293,7 @@
     <single attribute="instance widget visible" value="1"/>
     <single attribute="jtag widget visible" value="1"/>
     <multi attribute="column width" size="23" value="34,34,258,74,68,70,88,88,98,98,88,88,110,101,101,101,101,101,101,101,101,107,78"/>
-    <multi attribute="frame size" size="2" value="800,600"/>
+    <multi attribute="frame size" size="2" value="1280,946"/>
     <multi attribute="jtag widget size" size="2" value="368,138"/>
   </global_info>
 </session>
