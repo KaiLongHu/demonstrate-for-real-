@@ -46,6 +46,7 @@ parameter s_wr_0a=4'd7;
 parameter s_check=4'd8;
 parameter s_myreset=4'd9;
 parameter s_myend=4'd10;
+parameter s_wr_end=4'd11;
 
 always@(posedge clk or negedge reset_n)
 	if(reset_n==0)//复位，低电平有效
@@ -74,6 +75,8 @@ always@(posedge clk or negedge reset_n)
 			s_next://轮询下一地址
 				state<=s_start;
 			s_end:
+				state<=s_wr_end;//写末尾标识
+			s_wr_end:
 				state<=s_wr_0d;//写0d
 			s_wr_0d:
 				state<=s_wr_0a;//写0a
@@ -159,9 +162,9 @@ always@(posedge clk or negedge reset_n)
 			AD_wr_en<=1;//AD fifo写使能
 			FIFO_data<=8'h0a;//
 			end
-		else if(state==s_check)begin
+		else if(state==s_wr_end)begin
 			AD_wr_en<=1;//AD fifo写使能
-			FIFO_data<=8'hBB;//
+			FIFO_data<=8'hBBCC;//
 			end 
 		else
 			AD_wr_en<=0;

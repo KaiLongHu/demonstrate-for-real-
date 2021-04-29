@@ -18,15 +18,16 @@ state.100 0 1 0 0 0 1
 state.101 1 0 0 0 0 1 
 
 State Machine - |demonstrate|switch_ctrl:i_switch_ctrl|state
-Name state.s_myend state.s_myreset state.s_check state.s_wr_0a state.s_wr_0d state.s_end state.s_next state.s_getAD state.s_delay state.s_start state.0000 
-state.0000 0 0 0 0 0 0 0 0 0 0 0 
-state.s_start 0 0 0 0 0 0 0 0 0 1 1 
-state.s_delay 0 0 0 0 0 0 0 0 1 0 1 
-state.s_getAD 0 0 0 0 0 0 0 1 0 0 1 
-state.s_next 0 0 0 0 0 0 1 0 0 0 1 
-state.s_end 0 0 0 0 0 1 0 0 0 0 1 
-state.s_wr_0d 0 0 0 0 1 0 0 0 0 0 1 
-state.s_wr_0a 0 0 0 1 0 0 0 0 0 0 1 
-state.s_check 0 0 1 0 0 0 0 0 0 0 1 
-state.s_myreset 0 1 0 0 0 0 0 0 0 0 1 
-state.s_myend 1 0 0 0 0 0 0 0 0 0 1 
+Name state.s_wr_end state.s_myend state.s_myreset state.s_check state.s_wr_0a state.s_wr_0d state.s_end state.s_next state.s_getAD state.s_delay state.s_start state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+state.s_start 0 0 0 0 0 0 0 0 0 0 1 1 
+state.s_delay 0 0 0 0 0 0 0 0 0 1 0 1 
+state.s_getAD 0 0 0 0 0 0 0 0 1 0 0 1 
+state.s_next 0 0 0 0 0 0 0 1 0 0 0 1 
+state.s_end 0 0 0 0 0 0 1 0 0 0 0 1 
+state.s_wr_0d 0 0 0 0 0 1 0 0 0 0 0 1 
+state.s_wr_0a 0 0 0 0 1 0 0 0 0 0 0 1 
+state.s_check 0 0 0 1 0 0 0 0 0 0 0 1 
+state.s_myreset 0 0 1 0 0 0 0 0 0 0 0 1 
+state.s_myend 0 1 0 0 0 0 0 0 0 0 0 1 
+state.s_wr_end 1 0 0 0 0 0 0 0 0 0 0 1 

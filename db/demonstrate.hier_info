@@ -233,8 +233,8 @@ q[4] <= AD_FIFO:AD_FIFO_i.q
 q[5] <= AD_FIFO:AD_FIFO_i.q
 q[6] <= AD_FIFO:AD_FIFO_i.q
 q[7] <= AD_FIFO:AD_FIFO_i.q
-SS_state[0] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
-SS_state[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+SS_state[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+SS_state[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
 SS_state[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
 SS_state[3] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 
