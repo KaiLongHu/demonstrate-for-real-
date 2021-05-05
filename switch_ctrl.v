@@ -18,7 +18,8 @@ output [3:0]SS_state/*synthesis noprune*/
 
 
 //轮询间隔时间和次数可以设置
-parameter delay_time=32'd3_00_000;//time=delay_time*10ns
+parameter delay_time=32'd10_000;//time=delay_time*10ns,100_000=1ms
+parameter delay_time2=32'd5_0000_000;//big cyc
 parameter cycle_times=8'd1;//轮询5次
 parameter total_cyc=6'd10;//外围控制
 
@@ -48,6 +49,7 @@ parameter s_check=4'd8;
 parameter s_myreset=4'd9;
 parameter s_myend=4'd10;
 parameter s_wr_end=4'd11;
+
 
 always@(posedge clk or negedge reset_n)
 	if(reset_n==0)//复位，低电平有效
@@ -89,8 +91,10 @@ always@(posedge clk or negedge reset_n)
 				else
 				state<=s_myreset;
 			s_myreset:
-			if(delay_cnt2>=delay_time)
+			if(delay_cnt2>=delay_time2)
 				state<=s_idle;
+			else	
+				state<=s_myreset;
 			s_myend:
 				state<=s_idle;
 			default:;
@@ -142,8 +146,8 @@ always@(posedge clk or negedge reset_n)
 	if(reset_n==0)//复位，低电平有效
 		delay_cnt2<=32'd0;
 	else				
-		if(state==s_delay)		
-			delay_cnt2<=delay_cnt+1;
+		if(state==s_myreset)		
+			delay_cnt2<=delay_cnt2+1;
 		else
 			delay_cnt2<=32'd0;		
 			
