@@ -18,12 +18,12 @@ output [3:0]SS_state/*synthesis noprune*/
 
 
 //轮询间隔时间和次数可以设置
-parameter delay_time=32'd10_000;//time=delay_time*10ns,100_000=1ms
-parameter delay_time2=32'd5_0000_000;//big cyc
+parameter delay_time=32'd100_000;//time=delay_time*10ns,100_000=1ms
+parameter delay_time2=32'd100_000_00;//big cyc,100ms
 parameter cycle_times=8'd1;//轮询5次
-parameter total_cyc=6'd10;//外围控制
+parameter total_cyc=10'd100;//外围控制
 
-reg [5:0]total_cyc_cnt=6'd0;//外围控制计数器
+reg [9:0]total_cyc_cnt=10'd0;//外围控制计数器
 reg sflag=0;
 
 reg [7:0] times=8'd0;//轮询次数
@@ -106,11 +106,11 @@ always@(posedge clk or negedge reset_n)
 //外围cycle控制块
 always@(posedge clk or negedge reset_n)
 	if(reset_n==0)
-		total_cyc_cnt	<=	6'd0;
+		total_cyc_cnt	<=	10'd0;
 	else if(state==s_wr_0d)
-		total_cyc_cnt	<=	total_cyc_cnt	+6'd1;	
+		total_cyc_cnt	<=	total_cyc_cnt	+10'd1;	
 	else if(state==s_myend)
-		total_cyc_cnt	<=	6'd0;
+		total_cyc_cnt	<=	10'd0;
 	else
 		total_cyc_cnt	<=	total_cyc_cnt;
 	

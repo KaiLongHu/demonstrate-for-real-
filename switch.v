@@ -40,11 +40,11 @@ assign F3_8ADD_C=F3_8ADD[2];
 
 
 
-always@(posedge clk)begin
-	F1_8ADD	<=	3'd0;
-	F2_8ADD	<=	3'd0;
-	F3_8ADD	<=	3'd0;
-	end 
+//always@(posedge clk)begin
+//	F1_8ADD	<=	3'd0;
+//	F2_8ADD	<=	3'd0;
+//	F3_8ADD	<=	3'd0;
+//	end 
 	
 
 
@@ -98,49 +98,49 @@ always@(posedge clk)begin
 
 
 
-//always@(posedge clk)
-//	case(addr)
-//		
-//	
-//		5'd0:begin F1_8ADD<=3'd0; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end
-//		5'd1:begin F1_8ADD<=3'd1; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end
-//		5'd2:begin F1_8ADD<=3'd2; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end//
-//		5'd3:begin F1_8ADD<=3'd3; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end
-//		5'd4:begin F1_8ADD<=3'd4; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end//
-//		5'd5:begin F1_8ADD<=3'd5; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end
-//		5'd6:begin F1_8ADD<=3'd6; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end
-//		5'd7:begin F1_8ADD<=3'd7; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end
-//
-//		5'd8:begin F1_8ADD<=3'd3; F2_8ADD<=2'd0; F3_8ADD<=2'd0; end
-//		5'd9:begin F1_8ADD<=3'd1; F2_8ADD<=2'd3; F3_8ADD<=2'd0; end
-//		5'd10:begin F1_8ADD<=3'd2; F2_8ADD<=2'd3; F3_8ADD<=2'd0; end
-//		5'd11:begin F1_8ADD<=3'd3; F2_8ADD<=2'd3; F3_8ADD<=2'd0; end
-//		5'd12:begin F1_8ADD<=3'd4; F2_8ADD<=2'd3; F3_8ADD<=2'd0; end
-//		5'd13:begin F1_8ADD<=3'd5; F2_8ADD<=2'd3; F3_8ADD<=2'd0; end
-//		5'd14:begin F1_8ADD<=3'd6; F2_8ADD<=2'd3; F3_8ADD<=2'd0; end
-//		5'd15:begin F1_8ADD<=3'd7; F2_8ADD<=2'd3; F3_8ADD<=2'd0; end
-//
-//		5'd16:begin F1_8ADD<=3'd0; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
-//		5'd17:begin F1_8ADD<=3'd1; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
-//		5'd18:begin F1_8ADD<=3'd2; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
-//		5'd19:begin F1_8ADD<=3'd3; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
-//		5'd20:begin F1_8ADD<=3'd4; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
-//		5'd21:begin F1_8ADD<=3'd5; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
-//		5'd22:begin F1_8ADD<=3'd6; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
-//		5'd23:begin F1_8ADD<=3'd7; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
-//
-//		5'd24:begin F1_8ADD<=3'd0; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
-//		5'd25:begin F1_8ADD<=3'd1; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
-//		5'd26:begin F1_8ADD<=3'd2; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
-//		5'd27:begin F1_8ADD<=3'd3; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
-//		5'd28:begin F1_8ADD<=3'd4; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
-//		5'd29:begin F1_8ADD<=3'd5; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
-//		5'd30:begin F1_8ADD<=3'd6; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
-//		5'd31:begin F1_8ADD<=3'd7; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
-//
-//	
-//		default:;
-//	endcase
+always@(posedge clk)
+	case(addr)
+		
+	
+		5'd0:begin F1_8ADD<=3'd0; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end
+		5'd1:begin F1_8ADD<=3'd1; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end
+		5'd2:begin F1_8ADD<=3'd2; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end//
+		5'd3:begin F1_8ADD<=3'd3; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end
+		5'd4:begin F1_8ADD<=3'd4; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end//
+		5'd5:begin F1_8ADD<=3'd5; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end
+		5'd6:begin F1_8ADD<=3'd6; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end
+		5'd7:begin F1_8ADD<=3'd7; F2_8ADD<=2'd2; F3_8ADD<=2'd0; end
+
+		5'd8:begin F1_8ADD<=3'd3; F2_8ADD<=2'd0; F3_8ADD<=2'd0; end
+		5'd9:begin F1_8ADD<=3'd1; F2_8ADD<=2'd3; F3_8ADD<=2'd0; end
+		5'd10:begin F1_8ADD<=3'd2; F2_8ADD<=2'd3; F3_8ADD<=2'd0; end
+		5'd11:begin F1_8ADD<=3'd3; F2_8ADD<=2'd3; F3_8ADD<=2'd0; end
+		5'd12:begin F1_8ADD<=3'd4; F2_8ADD<=2'd3; F3_8ADD<=2'd0; end
+		5'd13:begin F1_8ADD<=3'd5; F2_8ADD<=2'd3; F3_8ADD<=2'd0; end
+		5'd14:begin F1_8ADD<=3'd6; F2_8ADD<=2'd3; F3_8ADD<=2'd0; end
+		5'd15:begin F1_8ADD<=3'd7; F2_8ADD<=2'd3; F3_8ADD<=2'd0; end
+
+		5'd16:begin F1_8ADD<=3'd0; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
+		5'd17:begin F1_8ADD<=3'd1; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
+		5'd18:begin F1_8ADD<=3'd2; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
+		5'd19:begin F1_8ADD<=3'd3; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
+		5'd20:begin F1_8ADD<=3'd4; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
+		5'd21:begin F1_8ADD<=3'd5; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
+		5'd22:begin F1_8ADD<=3'd6; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
+		5'd23:begin F1_8ADD<=3'd7; F2_8ADD<=2'd4; F3_8ADD<=2'd0; end
+
+		5'd24:begin F1_8ADD<=3'd0; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
+		5'd25:begin F1_8ADD<=3'd1; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
+		5'd26:begin F1_8ADD<=3'd2; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
+		5'd27:begin F1_8ADD<=3'd3; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
+		5'd28:begin F1_8ADD<=3'd4; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
+		5'd29:begin F1_8ADD<=3'd5; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
+		5'd30:begin F1_8ADD<=3'd6; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
+		5'd31:begin F1_8ADD<=3'd7; F2_8ADD<=2'd5; F3_8ADD<=2'd0; end
+
+	
+		default:;
+	endcase
 
 
 endmodule
